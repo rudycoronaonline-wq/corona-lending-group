@@ -1,0 +1,211 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TrustBar from '../components/TrustBar.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import TestimonialCard from '../components/TestimonialCard.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTABanner from '../components/CTABanner.astro';
+import { services } from '../data/services';
+import { testimonials } from '../data/testimonials';
+import { faqs } from '../data/faqs';
+
+const homepageFaqs = faqs.filter((f) => f.category === 'General').slice(0, 6);
+const site = 'https://coronalendinggroup.com';
+---
+
+<Layout
+  title="Corona Lending Group | Southern California Mortgage Advisor"
+  description="Rudy Corona helps first-time buyers, seniors, and homeowners in Southern California get the best mortgage rates. Conventional, FHA, DSCR, Reverse Mortgage, and more."
+  pathname="/"
+>
+  <!-- JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Corona Lending Group',
+    description: 'Southern California mortgage advisor helping first-time buyers, seniors, and homeowners.',
+    url: site,
+    telephone: '+1-555-123-4567',
+    email: 'rudycoronaonline@gmail.com',
+    address: { '@type': 'PostalAddress', addressRegion: 'CA', addressCountry: 'US' },
+    sameAs: [],
+  })} />
+
+  <!-- Section 1: Hero -->
+  <section class="min-h-[90vh] bg-navy text-white flex items-center py-12 md:py-0">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="order-2 md:order-1">
+          <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            Your Southern California Mortgage Advisor — From First Home to Dream Home
+          </h1>
+          <p class="text-grey-light text-lg mb-8 max-w-xl">
+            I help first-time buyers, seniors, and homeowners navigate the mortgage process and get the best rates — without the confusion or runaround.
+          </p>
+          <div class="flex flex-wrap gap-4 mb-8">
+            <a
+              href="/contact"
+              class="inline-flex items-center justify-center min-h-[44px] px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg text-lg transition-all duration-200 hover:scale-105 animate-pulse"
+            >
+              Book Your Free Consultation
+            </a>
+            <a
+              href="#services"
+              class="inline-flex items-center justify-center min-h-[44px] px-8 py-4 border-2 border-white text-white font-semibold rounded-lg text-lg hover:bg-white/10 transition-all duration-200"
+            >
+              See My Loan Options
+            </a>
+          </div>
+          <ul class="space-y-3 text-white/90">
+            <li class="flex items-center gap-2">
+              <span class="text-green-400" aria-hidden="true">✓</span>
+              Lock in the lowest rate for your situation
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-green-400" aria-hidden="true">✓</span>
+              Close in as few as 21 days
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-green-400" aria-hidden="true">✓</span>
+              Expert guidance every step of the way
+            </li>
+          </ul>
+          <TrustBar />
+        </div>
+        <div class="order-1 md:order-2 flex justify-center md:justify-end">
+          <img
+            src="/images/rudy-headshot.jpg"
+            alt="Rudy Corona, Southern California Mortgage Advisor"
+            class="rounded-2xl shadow-2xl w-full max-w-md aspect-square object-cover"
+            width="400"
+            height="400"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Problem & Solution -->
+  <section class="bg-sky-light py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-heading text-navy text-3xl md:text-4xl font-semibold mb-6">
+        The Mortgage Process Doesn't Have to Feel Overwhelming
+      </h2>
+      <p class="text-dark/90 leading-relaxed mb-6">
+        Most people approach buying a home or refinancing feeling confused, overwhelmed by jargon, and unsure who to trust. Big banks treat you like a number. Online lenders leave you guessing. You deserve a real advisor in your corner.
+      </p>
+      <p class="text-dark/90 leading-relaxed">
+        That's exactly why I started <strong>Corona Lending Group</strong>. Whether you're buying your first home, tapping your home's equity in retirement, or investing in your next property — I'll walk with you through every step, explain every option, and fight to get you the best deal possible.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 3: Benefits -->
+  <section class="bg-white py-20 px-4">
+    <div class="container mx-auto">
+      <h2 class="font-heading text-navy text-3xl md:text-4xl font-semibold text-center mb-12">Why Clients Choose Rudy</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="p-6 rounded-xl border border-grey-light hover:shadow-lg transition-all duration-200">
+          <div class="w-14 h-14 rounded-lg bg-sky-light flex items-center justify-center text-sky-500 mb-4">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-navy text-xl mb-2">Save Money</h3>
+          <p class="text-dark/80 leading-relaxed">Access to 50+ lenders means I shop the market so you don't have to. You get competitive rates tailored to YOUR financial picture.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-grey-light hover:shadow-lg transition-all duration-200">
+          <div class="w-14 h-14 rounded-lg bg-sky-light flex items-center justify-center text-sky-500 mb-4">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-navy text-xl mb-2">Save Time</h3>
+          <p class="text-dark/80 leading-relaxed">I handle the paperwork, coordinate with lenders, and keep you updated every step. You focus on your life — I handle the loan.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-grey-light hover:shadow-lg transition-all duration-200">
+          <div class="w-14 h-14 rounded-lg bg-sky-light flex items-center justify-center text-sky-500 mb-4">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-navy text-xl mb-2">Peace of Mind</h3>
+          <p class="text-dark/80 leading-relaxed">From first call to closing day, you'll always know exactly where you stand. No surprises. No confusing fine print. Just honest guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Testimonials -->
+  <section class="bg-navy py-20 px-4">
+    <div class="container mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-semibold text-white text-center mb-12">What Our Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        {testimonials.map((t) => (
+          <TestimonialCard name={t.name} loanType={t.loanType} quote={t.quote} stars={t.stars} city={t.city} />
+        ))}
+      </div>
+      <p class="text-center text-white/90 mt-8">Join hundreds of happy homeowners</p>
+      <div class="text-center mt-4">
+        <a href="/contact" class="inline-block min-h-[44px] px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105">
+          Book Your Free Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Services -->
+  <section id="services" class="bg-page py-20 px-4 scroll-mt-24">
+    <div class="container mx-auto">
+      <h2 class="font-heading text-navy text-3xl md:text-4xl font-semibold text-center mb-12">Mortgage Solutions for Every Stage of Life</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {services.map((s) => (
+          <ServiceCard slug={s.slug} title={s.title} shortDesc={s.shortDesc} />
+        ))}
+      </div>
+      <div class="text-center mt-10">
+        <a href="/services" class="inline-block min-h-[44px] px-8 py-4 bg-navy hover:bg-navy-600 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105">
+          View All Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Two Futures -->
+  <section class="py-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+      <div class="bg-navy-900 text-white px-8 md:px-12 py-16">
+        <h3 class="font-heading text-2xl font-semibold mb-6">Without the Right Advisor...</h3>
+        <ul class="space-y-3 text-white/90">
+          <li>• Spend weeks comparing rates with no guidance</li>
+          <li>• Get rejected or offered high rates due to wrong lender</li>
+          <li>• Lose your dream home to a faster, better-prepared buyer</li>
+          <li>• Feel confused and stressed through the whole process</li>
+        </ul>
+      </div>
+      <div class="bg-sky-light text-dark px-8 md:px-12 py-16">
+        <h3 class="font-heading text-2xl font-semibold text-navy mb-6">With Rudy Corona...</h3>
+        <ul class="space-y-3 text-dark/90">
+          <li>• Get matched to the perfect loan in your first call</li>
+          <li>• Close fast with expert coordination</li>
+          <li>• Walk into your new home with confidence</li>
+          <li>• Have an advisor for life — for every future purchase or refinance</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-sky-500 py-6 px-4 text-center text-white">
+      <p class="font-semibold mb-2">The difference is one conversation.</p>
+      <a href="/contact" class="inline-block min-h-[44px] px-8 py-3 bg-white text-sky-500 font-semibold rounded-lg hover:bg-white/90 transition-all duration-200">
+        Book a Free Call
+      </a>
+    </div>
+  </section>
+
+  <!-- Section 7: FAQ + Final CTA -->
+  <section class="bg-white py-20 px-4">
+    <div class="container mx-auto">
+      <h2 class="font-heading text-navy text-3xl md:text-4xl font-semibold text-center mb-12">Frequently Asked Questions</h2>
+      <FAQAccordion items={homepageFaqs.map((f) => ({ question: f.question, answer: f.answer }))} />
+    </div>
+    <CTABanner
+      headline="Ready to Make Your Move?"
+      sub="Whether you're buying your first home or your tenth, let's find the right loan for you. Your consultation is 100% free."
+      buttonText="Book My Free Consultation"
+      buttonHref="/contact"
+    />
+  </section>
+</Layout>

@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const categoryLabels: Record<string, string> = {
+  'first-time-buyers': 'First-Time Buyers',
+  'refinance': 'Refinance',
+  'seniors': 'Seniors',
+  'investors': 'Investors',
+  'market-news': 'Market News',
+};
+const categoryParam = Astro.url.searchParams.get('category');
+const filteredPosts = categoryParam
+  ? posts.filter((p) => p.data.category === categoryParam)
+  : posts;
+---
+
+<Layout
+  title="Mortgage Tips & Resources | Corona Lending Group Blog"
+  description="Expert mortgage advice, homebuying tips, and market updates from Rudy Corona."
+  pathname="/blog"
+>
+  <section class="bg-navy text-white py-16 md:py-20 px-4">
+    <div class="container mx-auto text-center">
+      <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Mortgage Tips, Market Updates & Homebuyer Resources</h1>
+      <p class="text-white/90 text-lg max-w-2xl mx-auto">
+        Straightforward advice to help you make smart decisions about your mortgage.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-page">
+    <div class="container mx-auto">
+      <!-- Category filter -->
+      <div class="flex flex-wrap gap-2 mb-10 justify-center">
+        <a
+          href="/blog"
+          class:list={['px-4 py-2 rounded-lg font-medium transition-colors', !categoryParam ? 'bg-navy text-white' : 'bg-white text-dark border border-grey-light hover:border-sky-500']}
+        >
+          All
+        </a>
+        {Object.entries(categoryLabels).map(([slug, label]) => (
+          <a
+            href={`/blog?category=${slug}`}
+            class:list={['px-4 py-2 rounded-lg font-medium transition-colors', categoryParam === slug ? 'bg-navy text-white' : 'bg-white text-dark border border-grey-light hover:border-sky-500']}
+          >
+            {label}
+          </a>
+        ))}
+      </div>
+
+      <!-- Featured (most recent) -->
+      {filteredPosts.length > 0 && (
+        <div class="mb-12">
+          <h2 class="font-heading text-navy text-2xl font-semibold mb-6">Featured</h2>
+          <BlogCard
+            slug={filteredPosts[0].slug}
+            title={filteredPosts[0].data.title}
+            description={filteredPosts[0].data.description}
+            pubDate={filteredPosts[0].data.pubDate}
+            category={categoryLabels[filteredPosts[0].data.category]}
+            image={filteredPosts[0].data.image}
+          />
+        </div>
+      )}
+
+      <!-- Post grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filteredPosts.slice(1).map((entry) => (
+          <BlogCard
+            slug={entry.slug}
+            title={entry.data.title}
+            description={entry.data.description}
+            pubDate={entry.data.pubDate}
+            category={categoryLabels[entry.data.category]}
+            image={entry.data.image}
+          />
+        ))}
+      </div>
+
+      <!-- Sidebar CTA placeholder -->
+      <aside class="mt-12 p-6 bg-white rounded-xl border border-grey-light max-w-md">
+        <p class="font-semibold text-navy mb-2">Ready to take the next step?</p>
+        <p class="text-dark/80 text-sm mb-4">Book a free consultation with Rudy.</p>
+        <a href="/contact" class="inline-block min-h-[44px] px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg">
+          Book a Call
+        </a>
+      </aside>
+    </div>
+  </section>
+</Layout>

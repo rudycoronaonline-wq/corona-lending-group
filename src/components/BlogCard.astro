@@ -1,0 +1,33 @@
+---
+interface Props {
+  slug: string;
+  title: string;
+  description: string;
+  pubDate: Date;
+  category?: string;
+  image?: string;
+}
+
+const { slug, title, description, pubDate, category, image } = Astro.props;
+const dateStr = typeof pubDate === 'string' ? new Date(pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<article class="bg-white rounded-xl overflow-hidden border border-grey-light shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200">
+  <a href={`/blog/${slug}`} class="block">
+    <div class="aspect-video bg-sky-light flex items-center justify-center">
+      {image ? (
+        <img src={image} alt="" class="w-full h-full object-cover" loading="lazy" />
+      ) : (
+        <span class="text-sky-500/50 text-4xl">📄</span>
+      )}
+    </div>
+    <div class="p-6">
+      {category && (
+        <span class="text-xs font-medium text-sky-500 uppercase tracking-wide">{category.replace(/-/g, ' ')}</span>
+      )}
+      <h3 class="font-heading font-semibold text-navy text-xl mt-2 mb-2">{title}</h3>
+      <p class="text-dark/80 text-sm line-clamp-2 mb-3">{description}</p>
+      <time class="text-dark/60 text-sm" datetime={typeof pubDate === 'string' ? pubDate : pubDate.toISOString()}>{dateStr}</time>
+    </div>
+  </a>
+</article>

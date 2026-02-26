@@ -1,0 +1,110 @@
+---
+interface Props {
+  pathname?: string;
+}
+const { pathname = '' } = Astro.props;
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/services', label: 'Services' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/testimonials', label: 'Testimonials' },
+  { href: '/faq', label: 'FAQ' },
+  { href: '/contact', label: 'Contact' },
+];
+const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href));
+---
+
+<div class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+  <!-- NMLS bar -->
+  <div class="bg-navy text-white text-xs py-1.5 text-center">
+    NMLS# 123456 | Licensed in CA
+  </div>
+
+  <header class="container mx-auto px-4 flex items-center justify-between h-16 md:h-18">
+    <a href="/" class="flex items-center shrink-0" aria-label="Corona Lending Group home">
+      <img src="/images/logo.png" alt="Corona Lending Group" class="h-12 w-auto" width="180" height="48" />
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+      {navLinks.map(({ href, label }) => (
+        <a
+          href={href}
+          class:list={[
+            'min-h-[44px] flex items-center font-medium transition-colors',
+            isActive(href) ? 'text-sky-500 border-b-2 border-sky-500' : 'text-dark hover:text-sky-500',
+          ]}
+        >
+          {label}
+        </a>
+      ))}
+      <a
+        href="/contact"
+        class="min-h-[44px] flex items-center bg-navy text-white px-6 py-2.5 rounded-lg hover:bg-navy-600 transition-all duration-200 hover:scale-105 font-medium"
+      >
+        Book a Call
+      </a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button
+      type="button"
+      id="mobile-menu-btn"
+      class="md:hidden p-2 rounded-lg text-dark hover:bg-sky-light min-h-[44px] min-w-[44px] flex items-center justify-center"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- Mobile nav -->
+  <div
+    id="mobile-nav"
+    class="md:hidden overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0"
+    aria-hidden="true"
+  >
+    <nav class="container mx-auto px-4 py-4 bg-white border-t border-grey-light flex flex-col gap-1" aria-label="Mobile navigation">
+      {navLinks.map(({ href, label }) => (
+        <a
+          href={href}
+          class:list={[
+            'min-h-[44px] flex items-center px-4 rounded-lg font-medium transition-colors',
+            isActive(href) ? 'text-sky-500 bg-sky-light' : 'text-dark hover:bg-sky-light',
+          ]}
+        >
+          {label}
+        </a>
+      ))}
+      <a
+        href="/contact"
+        class="min-h-[44px] flex items-center justify-center mt-2 bg-navy text-white px-6 py-3 rounded-lg hover:bg-navy-600 font-medium"
+      >
+        Book a Call
+      </a>
+    </nav>
+  </div>
+</div>
+
+<!-- Spacer so content isn't under fixed header -->
+<div class="h-[88px] md:h-[92px]" aria-hidden="true"></div>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const nav = document.getElementById('mobile-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const open = nav.getAttribute('aria-hidden') !== 'true';
+      nav.setAttribute('aria-hidden', String(open));
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('max-h-0', open);
+      nav.classList.toggle('opacity-0', open);
+      nav.classList.toggle('max-h-[400px]', !open);
+      nav.classList.toggle('opacity-100', !open);
+    });
+  }
+</script>

@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const categoryLabels: Record<string, string> = {
+  'first-time-buyers': 'First-Time Buyers',
+  'refinance': 'Refinance',
+  'seniors': 'Seniors',
+  'investors': 'Investors',
+  'market-news': 'Market News',
+};
+---
+
+<Layout
+  title={`${entry.data.title} | Corona Lending Group Blog`}
+  description={entry.data.description}
+  pathname={`/blog/${entry.slug}`}
+>
+  <article class="py-16 px-4 bg-page">
+    <div class="container mx-auto max-w-3xl">
+      <header class="mb-8">
+        <span class="text-sky-500 font-medium text-sm uppercase tracking-wide">{categoryLabels[entry.data.category]}</span>
+        <h1 class="font-heading text-navy text-3xl md:text-4xl font-bold mt-2">{entry.data.title}</h1>
+        <p class="text-dark/70 mt-2">
+          By {entry.data.author} · <time datetime={entry.data.pubDate.toISOString()}>{entry.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+        </p>
+      </header>
+      <div class="prose prose-lg max-w-none text-dark/90">
+        <Content />
+      </div>
+      <footer class="mt-12 pt-8 border-t border-grey-light">
+        <a href="/blog" class="text-sky-500 font-semibold hover:underline">← Back to blog</a>
+        <p class="mt-6">
+          <a href="/contact" class="inline-block min-h-[44px] px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg">Book a free consultation</a>
+        </p>
+      </footer>
+    </div>
+  </article>
+</Layout>

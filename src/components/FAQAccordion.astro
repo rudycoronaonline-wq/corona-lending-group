@@ -1,0 +1,46 @@
+---
+interface Props {
+  items: { question: string; answer: string }[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="max-w-3xl mx-auto space-y-2">
+  {items.map((item, i) => (
+    <div class="faq-item border border-grey-light rounded-lg overflow-hidden bg-white">
+      <button
+        type="button"
+        class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4 font-medium text-navy hover:bg-sky-light/50 transition-colors min-h-[44px]"
+        aria-expanded="false"
+        aria-controls={`faq-answer-${i}`}
+        id={`faq-q-${i}`}
+      >
+        <span>{item.question}</span>
+        <span class="faq-icon shrink-0 text-sky-500 transition-transform" aria-hidden="true">▼</span>
+      </button>
+      <div
+        id={`faq-answer-${i}`}
+        class="faq-answer hidden px-6 pb-4 text-dark/90 leading-relaxed"
+        role="region"
+        aria-labelledby={`faq-q-${i}`}
+      >
+        {item.answer}
+      </div>
+    </div>
+  ))}
+</div>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach((item) => {
+    const btn = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    const icon = item.querySelector('.faq-icon');
+    if (!btn || !answer) return;
+    btn.addEventListener('click', () => {
+      const open = answer.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!open));
+      if (icon) icon.style.transform = open ? '' : 'rotate(180deg)';
+    });
+  });
+</script>

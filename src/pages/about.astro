@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import headshotImage from '../assets/images/rudy-headshot.jpg';
 ---
 
 <Layout
@@ -19,7 +20,7 @@ import Layout from '../layouts/Layout.astro';
         </a>
       </div>
       <div class="flex justify-center md:justify-end">
-        <img src="/images/rudy-headshot.jpg" alt="Rudy Corona" class="rounded-2xl shadow-2xl w-full max-w-md aspect-square object-cover" width="400" height="400" />
+        <img src={headshotImage.src} alt="Rudy Corona" class="rounded-2xl shadow-2xl w-full max-w-md aspect-square object-cover" width="400" height="400" />
       </div>
     </div>
   </section>
@@ -40,7 +41,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="container mx-auto max-w-3xl">
       <h2 class="font-heading text-navy text-3xl font-semibold mb-6">Credentials & Experience</h2>
       <ul class="space-y-2 text-dark/90">
-        <li><strong>NMLS License #</strong> 123456</li>
+        <li><strong>NMLS License #</strong> 999113</li>
         <li>Licensed in California</li>
         <li>15+ years in the mortgage industry</li>
         <li>Access to 50+ lenders and programs</li>

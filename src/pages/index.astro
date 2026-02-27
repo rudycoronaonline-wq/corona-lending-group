@@ -8,6 +8,7 @@ import CTABanner from '../components/CTABanner.astro';
 import { services } from '../data/services';
 import { testimonials } from '../data/testimonials';
 import { faqs } from '../data/faqs';
+import headshotImage from '../assets/images/rudy-headshot.jpg';
 
 const homepageFaqs = faqs.filter((f) => f.category === 'General').slice(0, 6);
 const site = 'https://coronalendinggroup.com';
@@ -25,9 +26,16 @@ const site = 'https://coronalendinggroup.com';
     name: 'Corona Lending Group',
     description: 'Southern California mortgage advisor helping first-time buyers, seniors, and homeowners.',
     url: site,
-    telephone: '+1-555-123-4567',
-    email: 'rudycoronaonline@gmail.com',
-    address: { '@type': 'PostalAddress', addressRegion: 'CA', addressCountry: 'US' },
+    telephone: '+1-310-594-5362',
+    email: 'rudycoronalending@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '1611 S Pacific Coast Highway #102',
+      addressLocality: 'Redondo Beach',
+      addressRegion: 'CA',
+      postalCode: '90277',
+      addressCountry: 'US',
+    },
     sameAs: [],
   })} />
 
@@ -74,7 +82,7 @@ const site = 'https://coronalendinggroup.com';
         </div>
         <div class="order-1 md:order-2 flex justify-center md:justify-end">
           <img
-            src="/images/rudy-headshot.jpg"
+            src={headshotImage.src}
             alt="Rudy Corona, Southern California Mortgage Advisor"
             class="rounded-2xl shadow-2xl w-full max-w-md aspect-square object-cover"
             width="400"
@@ -160,6 +168,37 @@ const site = 'https://coronalendinggroup.com';
       <div class="text-center mt-10">
         <a href="/services" class="inline-block min-h-[44px] px-8 py-4 bg-navy hover:bg-navy-600 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105">
           View All Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculators section -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="font-heading text-navy text-3xl md:text-4xl font-semibold text-center mb-4">Plan Your Payment</h2>
+      <p class="text-dark/80 text-center mb-10 max-w-2xl mx-auto">Estimate your monthly mortgage or compare renting vs owning with our free calculators.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <a href="/calculators#mortgage-calculator" class="block p-6 rounded-xl border-2 border-grey-light hover:border-sky-500 hover:shadow-lg transition-all duration-200 group">
+          <div class="w-12 h-12 rounded-lg bg-sky-light flex items-center justify-center text-sky-500 mb-4 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-navy text-xl mb-2">Mortgage Calculator</h3>
+          <p class="text-dark/80 text-sm">Estimate your monthly principal, interest, tax, and insurance.</p>
+          <span class="inline-block mt-3 text-sky-500 font-medium text-sm group-hover:underline">Use calculator →</span>
+        </a>
+        <a href="/calculators#rent-vs-own" class="block p-6 rounded-xl border-2 border-grey-light hover:border-sky-500 hover:shadow-lg transition-all duration-200 group">
+          <div class="w-12 h-12 rounded-lg bg-sky-light flex items-center justify-center text-sky-500 mb-4 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-navy text-xl mb-2">Rent vs Own Calculator</h3>
+          <p class="text-dark/80 text-sm">Compare monthly rent to the cost of owning a home.</p>
+          <span class="inline-block mt-3 text-sky-500 font-medium text-sm group-hover:underline">Use calculator →</span>
+        </a>
+      </div>
+      <div class="text-center mt-8">
+        <a href="/calculators" class="inline-block min-h-[44px] px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg transition-all duration-200">
+          View All Calculators
         </a>
       </div>
     </div>

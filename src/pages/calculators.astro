@@ -1,0 +1,224 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Mortgage & Rent vs Own Calculators | Corona Lending Group"
+  description="Estimate your monthly mortgage payment and compare renting vs buying. Free calculators from your Southern California mortgage advisor."
+  pathname="/calculators"
+>
+  <section class="bg-navy text-white py-16 md:py-20 px-4">
+    <div class="container mx-auto text-center">
+      <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Mortgage Calculators</h1>
+      <p class="text-white/90 text-lg max-w-2xl mx-auto">
+        Estimate your payment and see how renting compares to owning. For personalized numbers, book a free consultation.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 bg-page">
+    <div class="container mx-auto max-w-5xl space-y-16">
+      <!-- Mortgage Calculator -->
+      <article id="mortgage-calculator" class="bg-white rounded-2xl shadow-lg border border-grey-light overflow-hidden scroll-mt-24">
+        <div class="bg-sky-light px-6 py-4 border-b border-grey-light">
+          <h2 class="font-heading text-navy text-2xl font-semibold">Monthly Mortgage Payment Calculator</h2>
+          <p class="text-dark/80 text-sm mt-1">Estimate your principal and interest payment. Add tax and insurance for a full picture.</p>
+        </div>
+        <div class="p-6 md:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+              <label for="mc-loan" class="block text-sm font-medium text-dark">Loan amount ($)</label>
+              <input type="number" id="mc-loan" value="400000" min="10000" step="1000" class="w-full px-4 py-3 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none" />
+              <label for="mc-rate" class="block text-sm font-medium text-dark">Interest rate (% per year)</label>
+              <input type="number" id="mc-rate" value="7" min="0.5" max="20" step="0.125" class="w-full px-4 py-3 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none" />
+              <label for="mc-term" class="block text-sm font-medium text-dark">Loan term (years)</label>
+              <select id="mc-term" class="w-full px-4 py-3 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none">
+                <option value="10">10 years</option>
+                <option value="15">15 years</option>
+                <option value="20">20 years</option>
+                <option value="30" selected>30 years</option>
+              </select>
+              <label for="mc-down" class="block text-sm font-medium text-dark">Down payment ($) — optional</label>
+              <input type="number" id="mc-down" value="0" min="0" step="1000" class="w-full px-4 py-3 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none" />
+              <label for="mc-tax" class="block text-sm font-medium text-dark">Property tax ($/month) — optional</label>
+              <input type="number" id="mc-tax" value="0" min="0" step="50" class="w-full px-4 py-3 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none" />
+              <label for="mc-ins" class="block text-sm font-medium text-dark">Insurance ($/month) — optional</label>
+              <input type="number" id="mc-ins" value="0" min="0" step="25" class="w-full px-4 py-3 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none" />
+            </div>
+            <div class="flex flex-col justify-center">
+              <div class="bg-navy text-white rounded-xl p-6 text-center">
+                <p class="text-white/80 text-sm uppercase tracking-wide mb-1">Estimated monthly payment</p>
+                <p id="mc-result-pi" class="text-3xl md:text-4xl font-bold font-heading">—</p>
+                <p id="mc-result-label" class="text-white/70 text-sm mt-2">Principal &amp; interest</p>
+                <p id="mc-result-total-label" class="text-white/80 text-sm mt-4 hidden">Total (P&amp;I + tax + insurance)</p>
+                <p id="mc-result-total" class="text-xl font-semibold hidden">—</p>
+              </div>
+              <p class="text-dark/60 text-xs mt-4">This is an estimate only. Get a real quote by booking a consultation.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Rent vs Own Calculator -->
+      <article id="rent-vs-own" class="bg-white rounded-2xl shadow-lg border border-grey-light overflow-hidden scroll-mt-24">
+        <div class="bg-sky-light px-6 py-4 border-b border-grey-light">
+          <h2 class="font-heading text-navy text-2xl font-semibold">Rent vs Own Calculator</h2>
+          <p class="text-dark/80 text-sm mt-1">Compare your current or expected rent to the monthly cost of owning a home.</p>
+        </div>
+        <div class="p-6 md:p-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div>
+              <h3 class="font-heading text-navy text-lg font-semibold mb-4">Renting</h3>
+              <label for="rv-rent" class="block text-sm font-medium text-dark mb-1">Monthly rent ($)</label>
+              <input type="number" id="rv-rent" value="2500" min="0" step="50" class="w-full px-4 py-3 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 outline-none mb-6" />
+              <h3 class="font-heading text-navy text-lg font-semibold mb-4">Owning</h3>
+              <div class="space-y-3">
+                <div>
+                  <label for="rv-price" class="block text-sm font-medium text-dark">Home price ($)</label>
+                  <input type="number" id="rv-price" value="500000" min="50000" step="10000" class="w-full px-4 py-2 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 outline-none" />
+                </div>
+                <div>
+                  <label for="rv-down" class="block text-sm font-medium text-dark">Down payment ($)</label>
+                  <input type="number" id="rv-down" value="100000" min="0" step="5000" class="w-full px-4 py-2 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 outline-none" />
+                </div>
+                <div>
+                  <label for="rv-rate" class="block text-sm font-medium text-dark">Interest rate (% per year)</label>
+                  <input type="number" id="rv-rate" value="7" min="0.5" max="20" step="0.125" class="w-full px-4 py-2 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 outline-none" />
+                </div>
+                <div>
+                  <label for="rv-term" class="block text-sm font-medium text-dark">Loan term (years)</label>
+                  <select id="rv-term" class="w-full px-4 py-2 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 outline-none">
+                    <option value="15">15 years</option>
+                    <option value="30" selected>30 years</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="rv-tax" class="block text-sm font-medium text-dark">Property tax ($/year)</label>
+                  <input type="number" id="rv-tax" value="6000" min="0" step="500" class="w-full px-4 py-2 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 outline-none" />
+                </div>
+                <div>
+                  <label for="rv-ins" class="block text-sm font-medium text-dark">Home insurance ($/year)</label>
+                  <input type="number" id="rv-ins" value="1500" min="0" step="100" class="w-full px-4 py-2 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 outline-none" />
+                </div>
+                <div>
+                  <label for="rv-hoa" class="block text-sm font-medium text-dark">HOA ($/month, if any)</label>
+                  <input type="number" id="rv-hoa" value="0" min="0" step="25" class="w-full px-4 py-2 rounded-lg border border-grey-light focus:ring-2 focus:ring-sky-500 outline-none" />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <div class="border-2 border-grey-light rounded-xl p-6 space-y-6">
+                <div class="flex justify-between items-center">
+                  <span class="text-dark/80">Rent (monthly)</span>
+                  <span id="rv-rent-display" class="text-xl font-semibold text-navy">$2,500</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-dark/80">Own (monthly P&amp;I + tax + insurance + HOA)</span>
+                  <span id="rv-own-display" class="text-xl font-semibold text-navy">—</span>
+                </div>
+                <div class="border-t border-grey-light pt-4">
+                  <p id="rv-summary" class="text-dark/90 text-sm">Enter values to see comparison.</p>
+                </div>
+              </div>
+              <p class="text-dark/60 text-xs mt-4">Owning builds equity; rent does not. This tool does not include maintenance or tax benefits. Consult a professional for your situation.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 bg-sky-light text-center">
+    <p class="text-navy font-semibold text-lg mb-4">Want numbers tailored to your situation?</p>
+    <a href="/contact" class="inline-block min-h-[44px] px-8 py-4 bg-navy hover:bg-navy-600 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105">
+      Book a Free Consultation
+    </a>
+  </section>
+</Layout>
+
+<script>
+  function formatCurrency(n) {
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
+  }
+
+  function monthlyPayment(principal, annualRatePercent, years) {
+    if (principal <= 0) return 0;
+    const r = annualRatePercent / 100 / 12;
+    const n = years * 12;
+    if (r === 0) return principal / n;
+    return principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+  }
+
+  const mcLoan = document.getElementById('mc-loan');
+  const mcRate = document.getElementById('mc-rate');
+  const mcTerm = document.getElementById('mc-term');
+  const mcDown = document.getElementById('mc-down');
+  const mcTax = document.getElementById('mc-tax');
+  const mcIns = document.getElementById('mc-ins');
+  const mcResultPi = document.getElementById('mc-result-pi');
+  const mcResultLabel = document.getElementById('mc-result-label');
+  const mcResultTotalLabel = document.getElementById('mc-result-total-label');
+  const mcResultTotal = document.getElementById('mc-result-total');
+
+  function updateMortgageCalc() {
+    const loan = Math.max(0, Number(mcLoan?.value) || 0) - Math.max(0, Number(mcDown?.value) || 0);
+    const rate = Number(mcRate?.value) || 0;
+    const term = Number(mcTerm?.value) || 30;
+    const tax = Number(mcTax?.value) || 0;
+    const ins = Number(mcIns?.value) || 0;
+    const pi = monthlyPayment(loan, rate, term);
+    if (mcResultPi) mcResultPi.textContent = formatCurrency(pi);
+    const total = pi + tax + ins;
+    if (tax > 0 || ins > 0) {
+      if (mcResultTotalLabel) { mcResultTotalLabel.classList.remove('hidden'); mcResultTotalLabel.classList.add('block'); }
+      if (mcResultTotal) { mcResultTotal.textContent = formatCurrency(total); mcResultTotal.classList.remove('hidden'); }
+    } else {
+      if (mcResultTotalLabel) mcResultTotalLabel.classList.add('hidden');
+      if (mcResultTotal) mcResultTotal.classList.add('hidden');
+    }
+  }
+
+  [mcLoan, mcRate, mcTerm, mcDown, mcTax, mcIns].forEach(el => el?.addEventListener('input', updateMortgageCalc));
+  [mcLoan, mcRate, mcTerm, mcDown, mcTax, mcIns].forEach(el => el?.addEventListener('change', updateMortgageCalc));
+  updateMortgageCalc();
+
+  const rvRent = document.getElementById('rv-rent');
+  const rvPrice = document.getElementById('rv-price');
+  const rvDown = document.getElementById('rv-down');
+  const rvRate = document.getElementById('rv-rate');
+  const rvTerm = document.getElementById('rv-term');
+  const rvTax = document.getElementById('rv-tax');
+  const rvIns = document.getElementById('rv-ins');
+  const rvHoa = document.getElementById('rv-hoa');
+  const rvRentDisplay = document.getElementById('rv-rent-display');
+  const rvOwnDisplay = document.getElementById('rv-own-display');
+  const rvSummary = document.getElementById('rv-summary');
+
+  function updateRentVsOwn() {
+    const rent = Number(rvRent?.value) || 0;
+    const price = Number(rvPrice?.value) || 0;
+    const down = Number(rvDown?.value) || 0;
+    const principal = Math.max(0, price - down);
+    const rate = Number(rvRate?.value) || 0;
+    const term = Number(rvTerm?.value) || 30;
+    const taxYear = Number(rvTax?.value) || 0;
+    const insYear = Number(rvIns?.value) || 0;
+    const hoa = Number(rvHoa?.value) || 0;
+    const pi = monthlyPayment(principal, rate, term);
+    const taxMonth = taxYear / 12;
+    const insMonth = insYear / 12;
+    const ownTotal = pi + taxMonth + insMonth + hoa;
+    if (rvRentDisplay) rvRentDisplay.textContent = formatCurrency(rent);
+    if (rvOwnDisplay) rvOwnDisplay.textContent = formatCurrency(ownTotal);
+    if (rvSummary) {
+      const diff = ownTotal - rent;
+      if (diff > 0) rvSummary.textContent = `Owning would cost about ${formatCurrency(diff)} more per month than renting, but you build equity over time.`;
+      else if (diff < 0) rvSummary.textContent = `Owning could be about ${formatCurrency(-diff)} less per month than renting, plus you build equity.`;
+      else rvSummary.textContent = 'Monthly costs are about the same. Owning also builds equity.';
+    }
+  }
+
+  [rvRent, rvPrice, rvDown, rvRate, rvTerm, rvTax, rvIns, rvHoa].forEach(el => el?.addEventListener('input', updateRentVsOwn));
+  [rvRent, rvPrice, rvDown, rvRate, rvTerm, rvTax, rvIns, rvHoa].forEach(el => el?.addEventListener('change', updateRentVsOwn));
+  updateRentVsOwn();
+</script>

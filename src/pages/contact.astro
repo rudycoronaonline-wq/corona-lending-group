@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ContactForm from '../components/ContactForm.astro';
+import headshotImage from '../assets/images/rudy-headshot.jpg';
+const officeHours = 'Mon–Fri 9am–6pm PT';
+const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=1611+S+Pacific+Coast+Highway+%23102+Redondo+Beach+CA+90277';
 ---
 
 <Layout
@@ -12,32 +15,62 @@ import ContactForm from '../components/ContactForm.astro';
     <div class="container mx-auto text-center">
       <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Let's Find Your Perfect Loan</h1>
       <p class="text-white/90 text-lg max-w-2xl mx-auto">
-        Fill out the form below or book a call. Your consultation is 100% free.
+        Fill out the form below, call, or email. Your consultation is 100% free.
       </p>
     </div>
   </section>
 
-  <section class="py-20 px-4 bg-page">
+  <section id="form" class="py-20 px-4 bg-page scroll-mt-24">
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
       <div>
         <h2 class="font-heading text-navy text-2xl font-semibold mb-6">Send a Message</h2>
+        <p class="text-dark/80 text-sm mb-6">Tell me about your situation and I'll get back to you within 24 hours.</p>
         <ContactForm />
       </div>
       <div>
-        <h2 class="font-heading text-navy text-2xl font-semibold mb-6">Or Book a Call</h2>
-        <p class="text-dark/80 mb-6">Schedule a time that works for you. We'll go over your situation and next steps.</p>
-        <div class="bg-white rounded-xl p-6 border border-grey-light mb-8">
-          <p class="font-semibold text-navy mb-2">Direct contact</p>
-          <p>Phone: <a href="tel:+15551234567" class="text-sky-500 hover:underline">(555) 123-4567</a></p>
-          <p>Email: <a href="mailto:rudycoronaonline@gmail.com" class="text-sky-500 hover:underline">rudycoronaonline@gmail.com</a></p>
-          <p class="mt-2 text-dark/70 text-sm">NMLS# 123456 · Licensed in CA</p>
+        <div class="flex flex-col items-center lg:items-start mb-6">
+          <img
+            src={headshotImage.src}
+            alt="Rudy Corona"
+            class="rounded-2xl shadow-lg w-40 h-40 object-cover mb-4"
+            width="160"
+            height="160"
+            loading="eager"
+          />
+          <h2 class="font-heading text-navy text-2xl font-semibold mb-2">Get in Touch</h2>
+          <p class="text-dark/80 text-sm">Rudy Corona · Corona Lending Group</p>
         </div>
-        <p class="text-dark/70 text-sm">Typical response time: within 24 hours. Office hours: Mon–Fri 9am–6pm PT.</p>
-        <!-- Placeholder for Calendly/High Level embed -->
-        <div class="mt-6 p-6 bg-sky-light rounded-xl text-center">
-          <p class="text-navy font-medium mb-2">Prefer to pick a time?</p>
-          <a href="/contact#form" class="inline-block min-h-[44px] px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg">
-            Book a call (link your calendar here)
+
+        <div class="bg-white rounded-xl p-6 border border-grey-light shadow-sm space-y-4 mb-6">
+          <p class="font-semibold text-navy border-b border-grey-light pb-2">Contact &amp; Location</p>
+          <p class="flex items-start gap-3">
+            <span class="text-sky-500 shrink-0" aria-hidden="true">📞</span>
+            <a href="tel:+13105945362" class="text-dark hover:text-sky-500 font-medium">(310) 594-5362</a>
+          </p>
+          <p class="flex items-start gap-3">
+            <span class="text-sky-500 shrink-0" aria-hidden="true">✉️</span>
+            <a href="mailto:rudycoronalending@gmail.com" class="text-dark hover:text-sky-500 break-all">rudycoronalending@gmail.com</a>
+          </p>
+          <p class="flex items-start gap-3">
+            <span class="text-sky-500 shrink-0" aria-hidden="true">📍</span>
+            <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="text-dark hover:text-sky-500">
+              1611 S Pacific Coast Hwy #102<br />Redondo Beach, CA 90277
+            </a>
+          </p>
+          <p class="text-dark/70 text-sm pt-2">NMLS# 999113 · Licensed in California</p>
+        </div>
+
+        <div class="bg-sky-light rounded-xl p-4 mb-6">
+          <p class="text-navy font-medium text-sm">Office hours</p>
+          <p class="text-dark/80 text-sm">{officeHours}</p>
+          <p class="text-dark/60 text-xs mt-1">Typical response: within 24 hours</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-xl border border-grey-light text-center">
+          <p class="text-navy font-semibold mb-2">Prefer to talk now?</p>
+          <p class="text-dark/80 text-sm mb-4">Call or text (310) 594-5362 for a quick conversation.</p>
+          <a href="tel:+13105945362" class="inline-block min-h-[44px] px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105">
+            Call (310) 594-5362
           </a>
         </div>
       </div>

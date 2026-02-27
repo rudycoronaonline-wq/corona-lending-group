@@ -25,4 +25,4 @@ Typically you need a minimum DSCR (e.g., 1.0 or 1.25, meaning rent covers 100% o
 
 DSCR loans are ideal when you're buying or refinancing rental property and want to qualify based on cash flow rather than W-2 income. They're also useful when you've hit conventional limits on number of financed properties.
 
-If you're an investor in Southern California and want to explore DSCR options, reach out for a free consultation.
+If you're an investor in California and want to explore DSCR options, reach out for a free consultation.

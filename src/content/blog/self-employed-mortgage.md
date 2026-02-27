@@ -21,4 +21,4 @@ Common requirements include 12–24 months of bank statements, sometimes a profi
 
 You can still get competitive rates. We shop multiple lenders and use programs designed for business owners and freelancers. Whether you're a sole proprietor or run an S-corp, we can find a fit.
 
-If you're self-employed and ready to buy or refinance in Southern California, book a free consultation and we'll map out your options.
+If you're self-employed and ready to buy or refinance in California, book a free consultation and we'll map out your options.

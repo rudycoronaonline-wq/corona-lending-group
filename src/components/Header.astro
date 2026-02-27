@@ -17,14 +17,9 @@ const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.s
 ---
 
 <div class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-  <!-- NMLS bar -->
-  <div class="bg-navy text-white text-xs py-1.5 text-center">
-    NMLS# 999113 | Licensed in CA
-  </div>
-
-  <header class="container mx-auto px-4 flex items-center justify-between h-16 md:h-18">
+  <header class="container mx-auto px-4 flex items-center justify-between h-16 md:h-24">
     <a href="/" class="flex items-center shrink-0" aria-label="Corona Lending Group home">
-      <img src="/images/logo.png" alt="Corona Lending Group" class="h-12 w-auto" width="180" height="48" />
+      <img src="/images/logo.png?v=2" alt="Corona Lending Group" class="w-auto" style="height: 88px;" width="320" height="88" />
     </a>
 
     <!-- Desktop nav -->
@@ -92,7 +87,7 @@ const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.s
 </div>
 
 <!-- Spacer so content isn't under fixed header -->
-<div class="h-[88px] md:h-[92px]" aria-hidden="true"></div>
+<div class="h-[80px] md:h-[96px]" aria-hidden="true"></div>
 
 <script>
   const btn = document.getElementById('mobile-menu-btn');

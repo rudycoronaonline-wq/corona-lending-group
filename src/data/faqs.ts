@@ -11,7 +11,7 @@ export const faqs: FAQItem[] = [
   { category: 'General', question: 'How long does the process take?', answer: 'Most loans close in 21–30 days. I\'ll give you a realistic timeline on our first call.' },
   { category: 'General', question: 'Do you work with self-employed borrowers?', answer: 'Absolutely. I specialize in flexible documentation options for business owners.' },
   { category: 'General', question: 'Is there a cost to get pre-approved?', answer: 'No. Pre-approval is free and the first step to knowing exactly what you can afford.' },
-  { category: 'General', question: 'What areas do you serve?', answer: 'I\'m licensed in California and serve all of Southern California.' },
+  { category: 'General', question: 'What areas do you serve?', answer: 'I\'m licensed in California and serve all of California.' },
   // First-Time Buyers
   { category: 'First-Time Buyers', question: 'What is the minimum credit score to buy a home?', answer: 'FHA loans can go as low as 580; conventional usually 620 or higher. I can walk you through what\'s possible for you.' },
   { category: 'First-Time Buyers', question: 'How much do I need saved for a down payment?', answer: 'It varies by program: FHA can be 3.5% down, conventional as low as 3%. Some programs offer down payment assistance.' },

@@ -1,13 +1,13 @@
 ---
 title: 5 Things Every First-Time Homebuyer in SoCal Needs to Know
-description: Essential tips for first-time buyers in Southern California—from pre-approval to closing.
+description: Essential tips for first-time buyers in California—from pre-approval to closing.
 pubDate: 2024-01-15
 author: Rudy Corona
 category: first-time-buyers
 featured: true
 ---
 
-Buying your first home in Southern California is exciting, but it can feel overwhelming. Here are five things every first-time homebuyer should know before you start.
+Buying your first home in California is exciting, but it can feel overwhelming. Here are five things every first-time homebuyer should know before you start.
 
 ## 1. Get Pre-Approved First
 
@@ -23,7 +23,7 @@ Your monthly payment isn't just principal and interest. Factor in property taxes
 
 ## 4. Work With a Local Advisor
 
-Rates and programs can vary. A local mortgage advisor who knows the Southern California market can help you choose the right loan, avoid delays, and close on time. I work with first-time buyers every day and keep the process clear and stress-free.
+Rates and programs can vary. A local mortgage advisor who knows the California market can help you choose the right loan, avoid delays, and close on time. I work with first-time buyers every day and keep the process clear and stress-free.
 
 ## 5. Don't Make Big Financial Changes Before Closing
 

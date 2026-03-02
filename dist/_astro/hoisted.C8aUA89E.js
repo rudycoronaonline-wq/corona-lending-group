@@ -1,0 +1,1 @@
+import"./hoisted.BLbCJUL1.js";document.querySelectorAll(".faq-item").forEach(e=>{const t=e.querySelector(".faq-question"),r=e.querySelector(".faq-answer"),n=e.querySelector(".faq-icon");!t||!r||t.addEventListener("click",()=>{const o=r.classList.toggle("hidden");t.setAttribute("aria-expanded",String(!o)),n&&(n.style.transform=o?"":"rotate(180deg)")})});

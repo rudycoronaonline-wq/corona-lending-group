@@ -1,0 +1,5 @@
+{
+  "buildCommand": "echo 'Using pre-built dist'",
+  "outputDirectory": "dist",
+  "framework": null
+}

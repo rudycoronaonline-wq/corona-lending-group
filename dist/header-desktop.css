@@ -1,0 +1,51 @@
+/* Thin blue bar on top of header - desktop only */
+@media (min-width: 768px) {
+  body .fixed.top-0.left-0.right-0.z-50.bg-white.shadow-md::before {
+    content: '';
+    display: block;
+    height: 28px;
+    width: 100%;
+    background: #1b3a6b;
+  }
+}
+
+/* Desktop header and logo height - a bit smaller */
+@media (min-width: 768px) {
+  body .fixed.top-0.left-0.right-0.z-50.bg-white.shadow-md {
+    overflow-x: visible;
+  }
+  body .fixed.top-0.left-0.right-0.z-50.bg-white.shadow-md > header {
+    height: 200px !important;
+    overflow: visible !important;
+  }
+  body .header-logo-img {
+    height: 200px !important;
+    max-height: 200px !important;
+  }
+  /* Logo further to the left on desktop */
+  body .fixed.top-0.left-0.right-0.z-50.bg-white.shadow-md > header > a[href="/"] {
+    margin-left: -3rem;
+  }
+  /* Phone number to the right of Book a Call on desktop */
+  body .fixed.top-0.left-0.right-0.z-50.bg-white.shadow-md > header > a[href^="tel:"] {
+    font-size: 1.375rem !important;
+    min-height: 52px;
+    order: 1;
+  }
+  body .fixed.top-0.left-0.right-0.z-50.bg-white.shadow-md > header > nav a {
+    font-size: 1.25rem !important;
+    min-height: 52px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Offset first section so content clears fixed header (no white gap) */
+main > section:first-of-type {
+  padding-top: 80px;
+}
+@media (min-width: 768px) {
+  main > section:first-of-type {
+    padding-top: 228px; /* 200px header + 28px blue bar */
+  }
+}

@@ -15,12 +15,12 @@
     overflow-x: visible;
   }
   body .fixed.top-0.left-0.right-0.z-50.bg-white.shadow-md > header {
-    height: 200px !important;
+    height: 140px !important;
     overflow: visible !important;
   }
   body .header-logo-img {
-    height: 200px !important;
-    max-height: 200px !important;
+    height: 140px !important;
+    max-height: 140px !important;
   }
   /* Logo further to the left on desktop */
   body .fixed.top-0.left-0.right-0.z-50.bg-white.shadow-md > header > a[href="/"] {
@@ -46,6 +46,6 @@ main > section:first-of-type {
 }
 @media (min-width: 768px) {
   main > section:first-of-type {
-    padding-top: 228px; /* 200px header + 28px blue bar */
+    padding-top: 168px; /* 140px header + 28px blue bar */
   }
 }

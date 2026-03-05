@@ -7,6 +7,10 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://rudycorona.com',
   integrations: [sitemap()],
+  server: {
+    port: 4321,
+    host: true
+  },
   vite: {
     plugins: [tailwindcss()]
   }

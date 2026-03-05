@@ -1,0 +1,154 @@
+---
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+
+const posts = await getCollection('blog');
+const sorted = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+function formatCategory(cat) {
+  if (cat === 'seniors') return 'Seniors';
+  if (cat === 'first-time-buyers') return 'First-Time Buyers';
+  if (cat === 'investors') return 'Investors';
+  return cat.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog | Corona Lending Group</title>
+    <meta name="description" content="Expert mortgage advice, homebuying tips, and reverse mortgage guides from Rudy Corona in Southern California." />
+  </head>
+  <body>
+    <main class="blog-page">
+      <header class="blog-header">
+        <h1>Mortgage Tips &amp; Resources</h1>
+        <p>Straightforward advice to help you make smart decisions about your mortgage.</p>
+      </header>
+
+      <section class="blog-list">
+        <h2>All Posts</h2>
+        <div class="blog-grid">
+          {sorted.map((entry) => {
+            const slug = entry.data.slug ?? entry.id.replace(/\.md$/, '');
+            const categoryLabel = formatCategory(entry.data.category);
+            return (
+              <article class="blog-card">
+                <a href={`/blog/${slug}`}>
+                  {entry.data.image ? (
+                    <div class="blog-card-image">
+                      <img src={entry.data.image} alt="" />
+                    </div>
+                  ) : (
+                    <div class="blog-card-image placeholder" aria-hidden="true"></div>
+                  )}
+                  <div class="blog-card-content">
+                    <span class="blog-card-category">{categoryLabel}</span>
+                    <h3>{entry.data.title}</h3>
+                    <p>{entry.data.description}</p>
+                    <time datetime={entry.data.date instanceof Date ? entry.data.date.toISOString() : entry.data.date}>
+                      {(entry.data.date instanceof Date ? entry.data.date : new Date(entry.data.date)).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </time>
+                  </div>
+                </a>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  .blog-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  .blog-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .blog-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .blog-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  .blog-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .blog-card:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  .blog-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .blog-card-image {
+    aspect-ratio: 16 / 10;
+    background: #e0f2fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .blog-card-image.placeholder {
+    background: #e0f2fe;
+  }
+  .blog-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blog-card-content {
+    padding: 1.25rem;
+  }
+  .blog-card-category {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #0284c7;
+  }
+  .blog-card-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+    line-height: 1.3;
+  }
+  .blog-card-content p {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .blog-card-content time {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+</style>

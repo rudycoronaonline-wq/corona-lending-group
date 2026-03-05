@@ -4,6 +4,7 @@ description: One of the most searched reverse mortgage questions. What happens t
 slug: what-happens-to-reverse-mortgage-when-you-die
 date: 2025-03-01
 category: seniors
+image: /images/Blog-Reverse-mortgage.png
 ---
 
 # What Happens to a Reverse Mortgage When You Die?

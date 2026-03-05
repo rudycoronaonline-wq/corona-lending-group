@@ -42,11 +42,15 @@ const categoryLabel = formatCategory(entry.data.category);
   <body>
     <main class="post-page">
       <article>
-        {entry.data.image && (
-          <div class="post-hero-image">
-            <img src={entry.data.image} alt="" />
-          </div>
-        )}
+        {(() => {
+          const imageSrc = entry.data.image ?? (entry.data.category === 'seniors' ? '/images/Blog-Reverse-mortgage.png' : '/images/blog-placeholder.png');
+          const imageUrl = imageSrc.includes('%') ? imageSrc : encodeURI(imageSrc);
+          return (
+            <div class="post-hero-image">
+              <img src={imageUrl} alt="" />
+            </div>
+          );
+        })()}
         <header class="post-header">
           <span class="post-category">{categoryLabel}</span>
           <h1>{entry.data.title}</h1>

@@ -27,22 +27,23 @@ function formatCategory(cat) {
         <p>Straightforward advice to help you make smart decisions about your mortgage.</p>
       </header>
 
+      <section class="blog-hero">
+        <img src="/images/blog-hero.png" alt="Mortgage Tips &amp; Resources" class="blog-hero-image" />
+      </section>
       <section class="blog-list">
         <h2>All Posts</h2>
         <div class="blog-grid">
           {sorted.map((entry) => {
             const slug = entry.data.slug ?? entry.id.replace(/\.md$/, '');
             const categoryLabel = formatCategory(entry.data.category);
+            const imageSrc = entry.data.image ?? (entry.data.category === 'seniors' ? '/images/Blog-Reverse-mortgage.png' : '/images/blog-placeholder.png');
+            const imageUrl = imageSrc.includes('%') ? imageSrc : encodeURI(imageSrc);
             return (
               <article class="blog-card">
                 <a href={`/blog/${slug}`}>
-                  {entry.data.image ? (
-                    <div class="blog-card-image">
-                      <img src={entry.data.image} alt="" />
-                    </div>
-                  ) : (
-                    <div class="blog-card-image placeholder" aria-hidden="true"></div>
-                  )}
+                  <div class="blog-card-image">
+                    <img src={imageUrl} alt="" />
+                  </div>
                   <div class="blog-card-content">
                     <span class="blog-card-category">{categoryLabel}</span>
                     <h3>{entry.data.title}</h3>
@@ -78,6 +79,18 @@ function formatCategory(cat) {
   .blog-header h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+  }
+  .blog-hero {
+    margin: 0 -1.5rem 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: #e0f2fe;
+  }
+  .blog-hero-image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
   }
   .blog-list h2 {
     font-size: 1.5rem;

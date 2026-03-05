@@ -4,6 +4,7 @@ description: Is a reverse mortgage right for you? Rudy Corona gives you the hone
 slug: is-a-reverse-mortgage-a-good-idea
 date: 2025-03-01
 category: seniors
+image: /images/Blog-Reverse-mortgage.png
 ---
 
 # Is a Reverse Mortgage a Good Idea? An Honest Look at Who It Helps and Who It Does Not

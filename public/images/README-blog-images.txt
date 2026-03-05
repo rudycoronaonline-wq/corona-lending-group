@@ -1,5 +1,11 @@
 Place your blog images in this folder. The blog expects these filenames (paths are used in frontmatter):
 
+Main blog page (hero banner at top of /blog):
+  blog-hero.png
+
+Fallback when a post has no image (optional):
+  blog-placeholder.png
+
 Simple names (use as-is):
   Blog-3-simple-steps.png
   Blog-Self-Employed.png

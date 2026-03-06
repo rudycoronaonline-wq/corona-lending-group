@@ -16,6 +16,7 @@ Simple names (use as-is):
   Blog-California-1st-time-buyer.png
 
 Names with spaces (use exactly as shown; URLs will be encoded):
+  What Is a Reverse Mortgage and How Does It Really Work?.png  (for "What Is a Reverse Mortgage..." post)
   How much house can I afford_.png
   Rent or buy in SoCal_.png
   The Honest Truth About Down Payments for First-Time Buyers in Southern California.png

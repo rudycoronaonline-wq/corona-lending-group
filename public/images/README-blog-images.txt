@@ -11,11 +11,11 @@ Simple names (use as-is):
   Blog-Self-Employed.png
   Blog-Reverse-mortgage.png
   what-is-a-reverse-mortgage-how-does-it-work.png  (for "What Is a Reverse Mortgage and How Does It Really Work?" post)
+  7-reverse-mortgage-myths-blog.png  (for "7 Reverse Mortgage Myths..." post — use this name, no spaces)
   Blog-DSCR.png
   Blog-California-1st-time-buyer.png
 
 Names with spaces (use exactly as shown; URLs will be encoded):
-  7 Reverse Mortgage Myths That Are Keeping Southern California Seniors from Financial Freedom-blog.png  (for "7 Reverse Mortgage Myths..." post)
   What Is a Reverse Mortgage and How Does It Really Work?.png  (for "What Is a Reverse Mortgage..." post)
   How much house can I afford_.png
   Rent or buy in SoCal_.png

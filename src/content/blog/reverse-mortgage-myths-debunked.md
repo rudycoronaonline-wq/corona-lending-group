@@ -4,7 +4,7 @@ description: Think the bank takes your home? That your kids lose everything? Tha
 slug: reverse-mortgage-myths-debunked
 date: 2025-03-01
 category: seniors
-image: "/images/7 Reverse Mortgage Myths That Are Keeping Southern California Seniors from Financial Freedom.png"
+image: "/images/7 Reverse Mortgage Myths That Are Keeping Southern California Seniors from Financial Freedom-blog.png"
 ---
 
 # 7 Reverse Mortgage Myths That Are Keeping Southern California Seniors from Financial Freedom

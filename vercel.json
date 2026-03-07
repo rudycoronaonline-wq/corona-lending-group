@@ -2,16 +2,5 @@
   "buildCommand": "echo 'Using pre-built dist'",
   "outputDirectory": "dist",
   "framework": null,
-  "redirects": [
-    {
-      "source": "/favicon.ico",
-      "destination": "/images/logo.png",
-      "permanent": false
-    },
-    {
-      "source": "/favicon.svg",
-      "destination": "/images/logo.png",
-      "permanent": false
-    }
-  ]
+  "redirects": []
 }

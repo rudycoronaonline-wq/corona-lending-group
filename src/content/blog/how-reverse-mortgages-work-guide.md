@@ -11,7 +11,7 @@ image: /images/Blog-Reverse-mortgage.png
 
 ## Introduction
 
-Reverse mortgages have a complicated reputation. Some people swear by them as a retirement planning tool that gives seniors the financial freedom they deserve. Others have heard [horror stories](/blog/reverse-mortgage-myths-debunked) and want nothing to do with them.
+Reverse mortgages have a complicated reputation. Some people swear by them as a retirement planning tool that gives seniors the financial freedom they deserve. Others have heard horror stories and want nothing to do with them.
 
 The truth, as it usually is, lives somewhere in the middle — and the difference between a reverse mortgage being a great decision or a bad one almost always comes down to whether the homeowner truly understood what they were getting into.
 
@@ -19,15 +19,15 @@ I am Rudy Corona, a Mortgage Advisor serving Southern California, and I work wit
 
 ## What Is a Reverse Mortgage?
 
-A [reverse mortgage](/blog/what-is-a-reverse-mortgage-how-does-it-work) is a home loan designed specifically for homeowners 62 years of age or older that allows you to convert a portion of your home equity into cash — without selling your home or making monthly mortgage payments.
+A reverse mortgage is a home loan designed specifically for homeowners 62 years of age or older that allows you to convert a portion of your home equity into cash — without selling your home or making monthly mortgage payments.
 
 The most common type is the Home Equity Conversion Mortgage, or HECM, which is insured by the Federal Housing Administration (FHA). There are also proprietary reverse mortgages offered by private lenders for homeowners with higher-value homes.
 
-Here is the key distinction from a traditional mortgage: instead of you paying the lender each month, the lender pays you (or provides you a line of credit or lump sum). The loan balance grows over time as interest accrues, and it is repaid when you sell the home, move out permanently, or [pass away](/blog/what-happens-to-reverse-mortgage-when-you-die).
+Here is the key distinction from a traditional mortgage: instead of you paying the lender each month, the lender pays you (or provides you a line of credit or lump sum). The loan balance grows over time as interest accrues, and it is repaid when you sell the home, move out permanently, or pass away.
 
 ## How Is the Loan Amount Determined?
 
-The [amount you can borrow](/blog/how-much-money-can-you-get-from-a-reverse-mortgage) through a reverse mortgage depends on three main factors:
+The amount you can borrow through a reverse mortgage depends on three main factors:
 
 - **Your age:** The older you are, the more you can typically borrow. This is because a shorter loan period means less risk to the lender.
 - **Your home's appraised value:** Higher home value means more available equity.
@@ -97,6 +97,8 @@ It may NOT be the right fit if you plan to move within a few years, if your heir
 
 A reverse mortgage is not right for everyone — but for the right homeowner, it can be a genuinely powerful financial tool that funds a more comfortable, secure retirement. The key is getting complete, honest information from an advisor who has your best interests at heart, not a commission check.
 
-If you or a loved one is curious about [whether a reverse mortgage makes sense](/blog/is-a-reverse-mortgage-a-good-idea), I am happy to walk you through it — no pressure, no obligation.
+If you or a loved one is curious about whether a reverse mortgage makes sense, I am happy to walk you through it — no pressure, no obligation.
+
+[What Is a Reverse Mortgage and How Does It Really Work?](/blog/what-is-a-reverse-mortgage-how-does-it-work) · [Reverse Mortgage Myths Debunked](/blog/reverse-mortgage-myths-debunked) · [What Happens to a Reverse Mortgage When You Die?](/blog/what-happens-to-reverse-mortgage-when-you-die) · [How Much Money Can You Get from a Reverse Mortgage?](/blog/how-much-money-can-you-get-from-a-reverse-mortgage) · [Is a Reverse Mortgage a Good Idea?](/blog/is-a-reverse-mortgage-a-good-idea)
 
 Want to know how much equity you could access? Book a free reverse mortgage consultation with Rudy Corona at Corona Lending Group. We serve seniors all across Southern California and will always give you a straight answer.

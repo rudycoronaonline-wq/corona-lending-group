@@ -99,6 +99,8 @@ A reverse mortgage is not right for everyone — but for the right homeowner, it
 
 If you or a loved one is curious about whether a reverse mortgage makes sense, I am happy to walk you through it — no pressure, no obligation.
 
+Want to know how much equity you could access? Book a free reverse mortgage consultation with Rudy Corona at Corona Lending Group. We serve seniors all across Southern California and will always give you a straight answer.
+
 **Related links**
 
 - [What Is a Reverse Mortgage and How Does It Really Work?](/blog/what-is-a-reverse-mortgage-how-does-it-work)
@@ -106,5 +108,3 @@ If you or a loved one is curious about whether a reverse mortgage makes sense, I
 - [What Happens to a Reverse Mortgage When You Die?](/blog/what-happens-to-reverse-mortgage-when-you-die)
 - [How Much Money Can You Get from a Reverse Mortgage?](/blog/how-much-money-can-you-get-from-a-reverse-mortgage)
 - [Is a Reverse Mortgage a Good Idea?](/blog/is-a-reverse-mortgage-a-good-idea)
-
-Want to know how much equity you could access? Book a free reverse mortgage consultation with Rudy Corona at Corona Lending Group. We serve seniors all across Southern California and will always give you a straight answer.

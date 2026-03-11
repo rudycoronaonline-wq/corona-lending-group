@@ -81,3 +81,4 @@ These costs can be significant, particularly the upfront MIP. Most of them are f
 If you choose the line of credit option, something remarkable happens: the unused portion of your line of credit grows over time at the same rate as the interest rate on your loan. This means the longer you leave funds untouched, the more you have available.
 
 For homeowners who want to preserve the option of large future draws, perhaps for long-term care or major home repairs, this growth feature can turn a line of credit that starts at $300,000 into something significantly larger ten years down the road. No other financial product works this way.
+

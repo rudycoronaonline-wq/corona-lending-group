@@ -65,3 +65,4 @@ A reverse mortgage has changed the lives of people I have had the privilege of w
 I have also told people it was not right for them. And those conversations matter just as much to me, because my goal is not to close a loan. It is to bless people's lives financially. Sometimes that means saying yes. Sometimes that means saying not yet, or try this instead.
 
 If you are asking whether a reverse mortgage is a good idea, the only honest answer is: it depends on your specific situation. Come talk to me. Bring your questions, bring your concerns, bring your adult children if you want. I will give you the same honest conversation I give everyone who sits across from me.
+

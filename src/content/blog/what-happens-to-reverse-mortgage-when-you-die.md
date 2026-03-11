@@ -77,3 +77,4 @@ The homeowners whose families have the smoothest experience after a reverse mort
 - If you have a younger spouse, make sure we structure the loan to include appropriate protections for them
 
 A reverse mortgage does not have to be a source of stress for your family. With proper planning and clear communication, it can be one of the most orderly parts of your estate.
+

@@ -92,3 +92,4 @@ There are bad actors in every corner of the financial world, and seniors should 
 The seniors who benefit most from reverse mortgages are the ones who take the time to understand how they actually work, talk to a trusted advisor who will be honest with them, and make a decision based on real information rather than fear.
 
 If you have been holding back because of something you heard, I want to have that conversation. You might be surprised by what is actually true.
+

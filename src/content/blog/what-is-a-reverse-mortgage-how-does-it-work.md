@@ -98,3 +98,4 @@ For homes valued above the HECM limit, jumbo or proprietary reverse mortgage pro
 A reverse mortgage is not a last resort. It is not a trick. It is not the bank taking your home. It is a federally regulated financial tool designed specifically to help homeowners 62 and older access the equity they have spent a lifetime building, while continuing to live in the home they love.
 
 Whether it is the right tool for your situation depends on your goals, your financial picture, and your family's plans. That is exactly the conversation I have with every family that comes to me. No pressure. No obligation. Just an honest look at what is possible.
+

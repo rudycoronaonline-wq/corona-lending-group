@@ -1,4 +1,5 @@
 ---
+import '../../styles/global.css';
 const resources = [
   {
     title: 'Manhattan Beach Homes',
@@ -17,26 +18,26 @@ const resources = [
     <meta name="description" content="Guides and resources for homebuyers in the South Bay — Manhattan Beach, Hermosa Beach, Redondo Beach, Torrance and beyond." />
     <link rel="canonical" href="https://rudycorona.com/resources/" />
   </head>
-  <body class="min-h-screen bg-white text-gray-900">
-    <header class="border-b border-gray-200 bg-[#1B3A6B] text-white px-4 py-3">
-      <div class="max-w-4xl mx-auto flex items-center justify-between">
-        <a href="/blog" class="font-semibold text-lg">Corona Lending Group</a>
-        <nav class="flex gap-4 text-sm">
-          <a href="/blog" class="hover:underline">Blog</a>
-          <a href="/resources/manhattan-beach-homes" class="hover:underline">Manhattan Beach</a>
+  <body class="min-h-screen bg-white text-gray-900" style="min-height: 100vh; background: #fff; color: #111; font-family: system-ui, sans-serif; margin: 0;">
+    <header class="border-b border-gray-200 bg-[#1B3A6B] text-white px-4 py-3" style="background: #1B3A6B; color: #fff; padding: 0.75rem 1rem; border-bottom: 1px solid #e5e7eb;">
+      <div class="max-w-4xl mx-auto flex items-center justify-between" style="max-width: 56rem; margin: 0 auto; padding: 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+        <a href="/blog" class="font-semibold text-lg" style="color: #fff; font-weight: 600; font-size: 1.125rem; text-decoration: none;">Corona Lending Group</a>
+        <nav class="flex gap-4 text-sm" style="display: flex; gap: 1rem; font-size: 0.875rem;">
+          <a href="/blog" class="hover:underline" style="color: #fff; text-decoration: none;">Blog</a>
+          <a href="/resources/manhattan-beach-homes" class="hover:underline" style="color: #fff; text-decoration: none;">Manhattan Beach</a>
         </nav>
       </div>
     </header>
-    <main class="max-w-4xl mx-auto px-4 py-12">
-      <h1 class="text-3xl font-bold text-[#1B3A6B] mb-2">Resources</h1>
-      <p class="text-gray-600 mb-10">Guides to buying and financing homes in Southern California.</p>
-      <ul class="space-y-6">
+    <main class="max-w-4xl mx-auto px-4 py-12" style="max-width: 56rem; margin: 0 auto; padding: 2rem 1rem;">
+      <h1 class="text-3xl font-bold text-[#1B3A6B] mb-2" style="font-size: 1.875rem; font-weight: 700; color: #1B3A6B; margin: 0 0 0.5rem;">Resources</h1>
+      <p class="text-gray-600 mb-10" style="color: #4b5563; margin: 0 0 2rem;">Guides to buying and financing homes in Southern California.</p>
+      <ul class="space-y-6" style="list-style: none; padding: 0; margin: 0;">
         {resources.map((r) => (
-          <li>
-            <a href={r.href} class="block p-6 rounded-xl border border-gray-200 hover:border-[#1B3A6B] hover:shadow-md transition-all group">
-              <h2 class="text-xl font-semibold text-[#1B3A6B] group-hover:underline">{r.title}</h2>
-              <p class="mt-2 text-gray-600 text-sm">{r.description}</p>
-              <span class="inline-block mt-3 text-sm font-medium text-[#1B3A6B]">Read guide →</span>
+          <li style="margin-bottom: 1.5rem;">
+            <a href={r.href} class="block p-6 rounded-xl border border-gray-200 hover:border-[#1B3A6B] hover:shadow-md transition-all group" style="display: block; padding: 1.5rem; border: 1px solid #e5e7eb; border-radius: 12px; text-decoration: none; color: inherit; background: #fff;">
+              <h2 class="text-xl font-semibold text-[#1B3A6B] group-hover:underline" style="font-size: 1.25rem; font-weight: 600; color: #1B3A6B; margin: 0 0 0.5rem;">{r.title}</h2>
+              <p class="mt-2 text-gray-600 text-sm" style="margin: 0.5rem 0 0; color: #4b5563; font-size: 0.875rem; line-height: 1.5;">{r.description}</p>
+              <span class="inline-block mt-3 text-sm font-medium text-[#1B3A6B]" style="display: inline-block; margin-top: 0.75rem; font-size: 0.875rem; font-weight: 500; color: #1B3A6B;">Read guide →</span>
             </a>
           </li>
         ))}

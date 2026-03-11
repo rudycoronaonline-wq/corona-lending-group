@@ -1,0 +1,49 @@
+---
+const resources = [
+  {
+    title: 'Manhattan Beach Homes',
+    description: 'Homes for sale in Manhattan Beach CA 90266 & 90267 — Sand Section, Tree Section, Hill Section, East Manhattan & The Strand. Expert jumbo mortgage financing.',
+    href: '/resources/manhattan-beach-homes',
+  },
+];
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" type="image/png" />
+    <title>Resources | Corona Lending Group</title>
+    <meta name="description" content="Guides and resources for homebuyers in the South Bay — Manhattan Beach, Hermosa Beach, Redondo Beach, Torrance and beyond." />
+    <link rel="canonical" href="https://rudycorona.com/resources/" />
+  </head>
+  <body class="min-h-screen bg-white text-gray-900">
+    <header class="border-b border-gray-200 bg-[#1B3A6B] text-white px-4 py-3">
+      <div class="max-w-4xl mx-auto flex items-center justify-between">
+        <a href="/blog" class="font-semibold text-lg">Corona Lending Group</a>
+        <nav class="flex gap-4 text-sm">
+          <a href="/blog" class="hover:underline">Blog</a>
+          <a href="/resources/manhattan-beach-homes" class="hover:underline">Manhattan Beach</a>
+        </nav>
+      </div>
+    </header>
+    <main class="max-w-4xl mx-auto px-4 py-12">
+      <h1 class="text-3xl font-bold text-[#1B3A6B] mb-2">Resources</h1>
+      <p class="text-gray-600 mb-10">Guides to buying and financing homes in Southern California.</p>
+      <ul class="space-y-6">
+        {resources.map((r) => (
+          <li>
+            <a href={r.href} class="block p-6 rounded-xl border border-gray-200 hover:border-[#1B3A6B] hover:shadow-md transition-all group">
+              <h2 class="text-xl font-semibold text-[#1B3A6B] group-hover:underline">{r.title}</h2>
+              <p class="mt-2 text-gray-600 text-sm">{r.description}</p>
+              <span class="inline-block mt-3 text-sm font-medium text-[#1B3A6B]">Read guide →</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-12 text-sm text-gray-500">
+        <a href="/blog" class="text-[#1B3A6B] hover:underline">← Back to blog</a>
+      </p>
+    </main>
+  </body>
+</html>

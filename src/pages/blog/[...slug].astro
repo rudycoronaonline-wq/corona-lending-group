@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -17,7 +17,11 @@ if (!slug) {
 }
 
 const posts = await getCollection('blog');
-const entry = posts.find((p) => (p.data.slug || p.id.replace(/\.md$/, '')) === slug);
+const found = posts.find((p) => (p.data.slug || p.id.replace(/\.md$/, '')) === slug);
+if (!found) {
+  return Astro.redirect('/blog');
+}
+const entry = await getEntry('blog', found.id);
 if (!entry) {
   return Astro.redirect('/blog');
 }

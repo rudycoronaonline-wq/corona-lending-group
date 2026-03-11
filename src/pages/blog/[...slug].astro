@@ -47,6 +47,19 @@ const categoryLabel = formatCategory(entry.data.category);
   <body>
     <main class="post-page">
       <article>
+        <header class="post-header post-header-above">
+          <span class="post-category">{categoryLabel}</span>
+          <h1 class="post-title">{entry.data.title}</h1>
+          <p class="post-meta">
+            By Rudy Corona · <time datetime={entry.data.date instanceof Date ? entry.data.date.toISOString() : entry.data.date}>
+              {(entry.data.date instanceof Date ? entry.data.date : new Date(entry.data.date)).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </time>
+          </p>
+        </header>
         {(() => {
           const imageSrc = entry.data.image ?? (entry.data.category === 'seniors' ? '/images/Blog-Reverse-mortgage.png' : '/images/blog-placeholder.png');
           const imageUrl = imageSrc.includes('%') ? imageSrc : encodeURI(imageSrc);
@@ -68,19 +81,6 @@ const categoryLabel = formatCategory(entry.data.category);
             </ul>
           </nav>
         )}
-        <header class="post-header">
-          <span class="post-category">{categoryLabel}</span>
-          <h1>{entry.data.title}</h1>
-          <p class="post-meta">
-            By Rudy Corona · <time datetime={entry.data.date instanceof Date ? entry.data.date.toISOString() : entry.data.date}>
-              {(entry.data.date instanceof Date ? entry.data.date : new Date(entry.data.date)).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              })}
-            </time>
-          </p>
-        </header>
         <div class="post-content blog-content">
           <Content />
         </div>
@@ -146,6 +146,9 @@ const categoryLabel = formatCategory(entry.data.category);
   .post-header {
     margin-bottom: 2.25rem;
   }
+  .post-header-above {
+    margin-bottom: 1rem;
+  }
   .post-category {
     font-size: 0.8125rem;
     font-weight: 600;
@@ -153,11 +156,15 @@ const categoryLabel = formatCategory(entry.data.category);
     letter-spacing: 0.06em;
     color: #1b3a6b;
   }
-  .post-header h1 {
+  .post-header h1,
+  .post-title {
     font-size: 1.875rem;
     line-height: 1.25;
     margin: 0.5rem 0 0.25rem;
     color: #1b3a6b;
+  }
+  .post-title {
+    margin-bottom: 2.25rem;
   }
   .post-meta {
     font-size: 0.875rem;

@@ -17,6 +17,8 @@ toc:
   - { title: "The Truth About Reverse Mortgages", slug: "the-truth-about-reverse-mortgages" }
 ---
 
+The Fear Is Real. But Most of What You Have Heard Is Simply Wrong.
+
 ## Fear Keeps More People From This Than Anything Else
 
 Over the years, I have sat with hundreds of Southern California seniors who were curious about reverse mortgages but afraid to move forward. And almost every time, the fear was not based on how reverse mortgages actually work today. It was based on stories, rumors, half-truths, and outdated information from a decade or two ago.
@@ -93,3 +95,6 @@ The seniors who benefit most from reverse mortgages are the ones who take the ti
 
 If you have been holding back because of something you heard, I want to have that conversation. You might be surprised by what is actually true.
 
+Get the Truth About Reverse Mortgages from Rudy Corona
+
+Free consultation | No pressure | Corona Lending Group | NMLS# 999113 | Serving SoCal Seniors

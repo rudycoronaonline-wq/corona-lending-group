@@ -5,31 +5,23 @@ slug: is-a-reverse-mortgage-a-good-idea
 date: 2025-03-01
 category: seniors
 image: /images/Blog-Reverse-mortgage.png
+toc:
+  - { title: "I Am Going to Give You the Answer Nobody Wants to Give You", slug: "i-am-going-to-give-you-the-answer-nobody-wants-to-give-you" }
+  - { title: "When a Reverse Mortgage Is a Genuinely Great Idea", slug: "when-a-reverse-mortgage-is-a-genuinely-great-idea" }
+  - { title: "When a Reverse Mortgage Is Not the Right Choice", slug: "when-a-reverse-mortgage-is-not-the-right-choice" }
+  - { title: "The Summary", slug: "the-summary" }
+  - { title: "What I Tell Every Senior Who Asks Me This Question", slug: "what-i-tell-every-senior-who-asks-me-this-question" }
 ---
-
-# Is a Reverse Mortgage a Good Idea? An Honest Look at Who It Helps and Who It Does Not
-
-The Unfiltered Truth From a Mortgage Advisor Who Puts People Over Transactions
 
 ## I Am Going to Give You the Answer Nobody Wants to Give You
 
-Most financial content you read about reverse mortgages falls into one of two camps.
-
-Either it is written by a lender who wants to sell you one and tells you only the good parts.
-
-Or it is written by someone who has decided reverse mortgages are always bad and tells you only the bad parts.
+Most financial content you read about reverse mortgages falls into one of two camps. Either it is written by a lender who wants to sell you one and tells you only the good parts. Or it is written by someone who has decided reverse mortgages are always bad and tells you only the bad parts.
 
 Neither of those serves you.
 
-The honest truth is that a reverse mortgage is a powerful financial tool that is genuinely life-changing for some homeowners and genuinely wrong for others.
+The honest truth is that a reverse mortgage is a powerful financial tool that is genuinely life-changing for some homeowners and genuinely wrong for others. My job is to help you figure out which category you are in, and then tell you the truth regardless of which direction that leads.
 
-My job is to help you figure out which category you are in, and then tell you the truth regardless of which direction that leads.
-
-That is how I work with every senior who comes to me.
-
-Not to close a loan.
-
-To help you make the right decision for your situation.
+That is how I work with every senior who comes to me. Not to close a loan. To help you make the right decision for your situation.
 
 ## When a Reverse Mortgage Is a Genuinely Great Idea
 
@@ -68,28 +60,8 @@ To help you make the right decision for your situation.
 
 ## What I Tell Every Senior Who Asks Me This Question
 
-A reverse mortgage has changed the lives of people I have had the privilege of working with in Southern California.
+A reverse mortgage has changed the lives of people I have had the privilege of working with in Southern California. I have seen it relieve financial pressure that was robbing people of the retirement they spent a lifetime earning. I have seen it fund care that kept someone in their home with their memories and their independence intact. I have seen it do exactly what it is supposed to do.
 
-I have seen it relieve financial pressure that was robbing people of the retirement they spent a lifetime earning.
+I have also told people it was not right for them. And those conversations matter just as much to me, because my goal is not to close a loan. It is to bless people's lives financially. Sometimes that means saying yes. Sometimes that means saying not yet, or try this instead.
 
-I have seen it fund care that kept someone in their home with their memories and their independence intact.
-
-I have seen it do exactly what it is supposed to do.
-
-I have also told people it was not right for them.
-
-And those conversations matter just as much to me, because my goal is not to close a loan.
-
-It is to bless people's lives financially.
-
-Sometimes that means saying yes.
-
-Sometimes that means saying not yet, or try this instead.
-
-If you are asking whether a reverse mortgage is a good idea, the only honest answer is: it depends on your specific situation.
-
-Come talk to me.
-
-Bring your questions, bring your concerns, bring your adult children if you want.
-
-I will give you the same honest conversation I give everyone who sits across from me.
+If you are asking whether a reverse mortgage is a good idea, the only honest answer is: it depends on your specific situation. Come talk to me. Bring your questions, bring your concerns, bring your adult children if you want. I will give you the same honest conversation I give everyone who sits across from me.

@@ -5,21 +5,20 @@ slug: how-much-money-can-you-get-from-a-reverse-mortgage
 date: 2025-03-01
 category: seniors
 image: /images/Blog-Reverse-mortgage.png
+toc:
+  - { title: "The Number Everyone Wants to Know", slug: "the-number-everyone-wants-to-know" }
+  - { title: "The Three Factors That Determine Your Amount", slug: "the-three-factors-that-determine-your-amount" }
+  - { title: "The Principal Limit Factor (PLF)", slug: "the-principal-limit-factor-plf" }
+  - { title: "Real Numbers for Southern California Homeowners", slug: "real-numbers-for-southern-california-homeowners" }
+  - { title: "Costs That Come Out of Your Proceeds", slug: "costs-that-come-out-of-your-proceeds" }
+  - { title: "The Line of Credit Benefit: Your Amount Can Grow", slug: "the-line-of-credit-benefit-your-amount-can-grow" }
 ---
-
-# How Much Money Can You Get from a Reverse Mortgage?
-
-Real Numbers for Southern California Homeowners in 2025
 
 ## The Number Everyone Wants to Know
 
 Before anything else, you want to know one thing: how much money will I actually get?
 
-It is the most practical question you can ask, and I respect it.
-
-Understanding your real numbers is what allows you to make a real decision, not a hypothetical one.
-
-So let me walk you through exactly how a reverse mortgage loan amount is calculated, and then give you some real estimates based on Southern California home values.
+It is the most practical question you can ask, and I respect it. Understanding your real numbers is what allows you to make a real decision, not a hypothetical one. So let me walk you through exactly how a reverse mortgage loan amount is calculated, and then give you some real estimates based on Southern California home values.
 
 ## The Three Factors That Determine Your Amount
 
@@ -33,9 +32,7 @@ Your reverse mortgage loan amount, called the Principal Limit, is determined by 
 
 ## The Principal Limit Factor (PLF)
 
-The government sets a table of Principal Limit Factors that translates your age and interest rate into a percentage of your home's value that you can access.
-
-Here are approximate ranges:
+The government sets a table of Principal Limit Factors that translates your age and interest rate into a percentage of your home's value that you can access. Here are approximate ranges:
 
 | Age of Youngest Borrower | Approximate PLF Range (varies by rate) | Rough % of Home Value Accessible |
 |-------------------------|----------------------------------------|----------------------------------|
@@ -46,17 +43,11 @@ Here are approximate ranges:
 | 80 | 53% to 63% | Significantly more equity accessible |
 | 85+ | 58% to 68%+ | Highest access percentages available |
 
-These are ranges.
-
-Your exact number depends on a full calculation using current rates and your specific age.
-
-Call me and I will run your actual numbers in about 15 minutes.
+These are ranges. Your exact number depends on a full calculation using current rates and your specific age. Call me and I will run your actual numbers in about 15 minutes.
 
 ## Real Numbers for Southern California Homeowners
 
-Southern California home values mean the reverse mortgage amounts available here are often substantially higher than national averages.
-
-Here are realistic estimates based on common SoCal scenarios:
+Southern California home values mean the reverse mortgage amounts available here are often substantially higher than national averages. Here are realistic estimates based on common SoCal scenarios:
 
 | Homeowner Profile | Home Value | Accessible Principal Limit (Est.) | After Existing Mortgage Payoff (Est.) |
 |-------------------|------------|-----------------------------------|---------------------------------------|
@@ -68,9 +59,7 @@ Here are realistic estimates based on common SoCal scenarios:
 | Age 80, $200,000 remaining mortgage | $1,000,000 | $530,000 to $630,000 | $330,000 to $430,000 available after payoff |
 | Age 80, home $1,500,000 (jumbo) | $1,500,000 | Jumbo program; potentially $700,000+ | Based on jumbo proprietary program terms |
 
-Southern California advantage: Because SoCal home values are among the highest in the nation, homeowners here often have access to reverse mortgage amounts that far exceed what's possible in lower-cost markets.
-
-A $900,000 home provides dramatically more equity access than the same borrower profile in a $300,000 market.
+Southern California advantage: Because SoCal home values are among the highest in the nation, homeowners here often have access to reverse mortgage amounts that far exceed what's possible in lower-cost markets. A $900,000 home provides dramatically more equity access than the same borrower profile in a $300,000 market.
 
 ## Costs That Come Out of Your Proceeds
 
@@ -85,16 +74,10 @@ Before you receive your net funds, certain costs are typically paid from the loa
 | Closing Costs (Miscellaneous) | $1,000 to $2,500 |
 | Existing Mortgage Payoff | Whatever balance remains on any existing liens |
 
-These costs can be significant, particularly the upfront MIP. Most of them are financed into the loan rather than paid out of pocket, which means they reduce your net proceeds but do not require cash at closing.
-
-I will show you an exact closing cost disclosure before you ever make a decision.
+These costs can be significant, particularly the upfront MIP. Most of them are financed into the loan rather than paid out of pocket, which means they reduce your net proceeds but do not require cash at closing. I will show you an exact closing cost disclosure before you ever make a decision.
 
 ## The Line of Credit Benefit: Your Amount Can Grow
 
-If you choose the line of credit option, something remarkable happens: the unused portion of your line of credit grows over time at the same rate as the interest rate on your loan.
+If you choose the line of credit option, something remarkable happens: the unused portion of your line of credit grows over time at the same rate as the interest rate on your loan. This means the longer you leave funds untouched, the more you have available.
 
-This means the longer you leave funds untouched, the more you have available.
-
-For homeowners who want to preserve the option of large future draws, perhaps for long-term care or major home repairs, this growth feature can turn a line of credit that starts at $300,000 into something significantly larger ten years down the road.
-
-No other financial product works this way.
+For homeowners who want to preserve the option of large future draws, perhaps for long-term care or major home repairs, this growth feature can turn a line of credit that starts at $300,000 into something significantly larger ten years down the road. No other financial product works this way.

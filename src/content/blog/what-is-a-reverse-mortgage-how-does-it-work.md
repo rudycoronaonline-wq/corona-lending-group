@@ -74,9 +74,7 @@ A reverse mortgage is not unconditional. To keep the loan in good standing, you 
 - Maintain homeowner's insurance
 - Keep the home in reasonable condition
 
-These are the same responsibilities you have as any homeowner.
-
-They are not additional burdens created by the reverse mortgage.
+These are the same responsibilities you have as any homeowner. They are not additional burdens created by the reverse mortgage.
 
 ## Who Qualifies
 

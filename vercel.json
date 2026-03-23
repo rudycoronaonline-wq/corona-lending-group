@@ -2,12 +2,5 @@
   "buildCommand": "echo 'Using pre-built dist'",
   "outputDirectory": "dist",
   "framework": null,
-  "redirects": [
-    { "source": "/resources/hermosa-beach-homes", "destination": "/hermosa-beach-homes", "permanent": true },
-    { "source": "/resources/hermosa-beach-homes/", "destination": "/hermosa-beach-homes/", "permanent": true },
-    { "source": "/resources/redondo-beach-homes", "destination": "/redondo-beach-homes", "permanent": true },
-    { "source": "/resources/redondo-beach-homes/", "destination": "/redondo-beach-homes/", "permanent": true },
-    { "source": "/resources/torrance-homes", "destination": "/torrance-homes", "permanent": true },
-    { "source": "/resources/torrance-homes/", "destination": "/torrance-homes/", "permanent": true }
-  ]
+  "redirects": []
 }

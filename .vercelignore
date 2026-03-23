@@ -1,0 +1,12 @@
+# Pre-built site: only dist/ + config need to upload (avoid locked/local-only files)
+node_modules
+.astro
+src
+scripts
+upload-manhattan-beach
+*.zip
+*.docx
+*.pdf
+ADD-*.md
+DO-*.md
+VERCEL-CONNECT.md

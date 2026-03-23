@@ -357,6 +357,7 @@
     .btn-submit { background: var(--navy); color: #fff; padding: 1rem 2rem; border-radius: 8px; border: none; font-weight: 700; font-size: 0.97rem; font-family: var(--font-body); cursor: pointer; width: 100%; transition: background 0.15s, transform 0.15s; }
     .btn-submit:hover { background: var(--navy-deep); transform: translateY(-1px); }
     .form-disclaimer { font-size: 0.7rem; color: var(--text-muted); text-align: center; margin-top: 0.7rem; line-height: 1.5; }
+    .form-status { margin-top: 0.75rem; font-size: 0.92rem; font-weight: 600; min-height: 1.25em; text-align: center; }
 
     /* ═══ GOLD STRIP ═══ */
     .cta-strip { background: var(--gold); padding: 2.5rem 1.5rem; text-align: center; }
@@ -1133,6 +1134,7 @@
           <p class="form-sub">Tell me what you're looking for — I'll reach out same day.</p>
           <form name="pre-approval-manhattan-beach" method="POST" action="https://formspree.io/f/xpqyvdkg">
             <input type="hidden" name="_subject" value="Pre-approval request — Manhattan Beach Homes" />
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="form-row">
               <div class="form-group">
                 <label for="fname">First Name</label>
@@ -1186,6 +1188,7 @@
               <textarea id="message" name="message" placeholder="Timeline, budget, questions — anything helps..."></textarea>
             </div>
             <button type="submit" class="btn-submit">Send My Request →</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
             <p class="form-disclaimer">By submitting this form you agree to be contacted by Corona Lending Group. NMLS# 999113. Not a commitment to lend. All loans subject to credit and property approval.</p>
           </form>
         </div>
@@ -1288,6 +1291,52 @@
         menuBtn?.setAttribute('aria-expanded','false');
       });
     });
+  </script>
+  <script is:inline>
+    (function () {
+      var form = document.querySelector('#contact form');
+      if (!form || !form.action || form.action.indexOf('formspree.io') === -1) return;
+      var btn = form.querySelector('button[type="submit"]');
+      var btnLabel = btn ? btn.textContent : '';
+      function parseErr(data) {
+        if (!data) return 'Something went wrong. Please call (310) 594-5362.';
+        if (typeof data.error === 'string') return data.error;
+        if (data.errors) {
+          var e = data.errors;
+          if (typeof e === 'string') return e;
+          var k = Object.keys(e)[0];
+          if (k && e[k]) return Array.isArray(e[k]) ? e[k][0] : e[k];
+        }
+        return 'Something went wrong. Please call (310) 594-5362.';
+      }
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var status = document.getElementById('form-status');
+        if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+        if (status) { status.textContent = ''; status.style.color = ''; }
+        try {
+          var fd = new FormData(form);
+          var res = await fetch(form.action, {
+            method: 'POST',
+            body: fd,
+            headers: { Accept: 'application/json' },
+          });
+          var data = {};
+          try {
+            data = await res.json();
+          } catch (_) {}
+          if (res.ok) {
+            if (status) { status.textContent = 'Thanks — we received your request.'; status.style.color = '#166534'; }
+            form.reset();
+          } else {
+            if (status) { status.textContent = parseErr(data); status.style.color = '#b91c1c'; }
+          }
+        } catch (err) {
+          if (status) { status.textContent = 'Network error. Please try again or call (310) 594-5362.'; status.style.color = '#b91c1c'; }
+        }
+        if (btn) { btn.disabled = false; btn.textContent = btnLabel; }
+      });
+    })();
   </script>
 
 </body>

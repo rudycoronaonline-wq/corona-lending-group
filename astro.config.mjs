@@ -12,10 +12,6 @@ export default defineConfig({
     host: true
   },
   vite: {
-    build: {
-      // Keep legacy static pages in dist/ (contact, calculators, etc.) when building
-      emptyOutDir: false
-    },
     plugins: [tailwindcss()]
   }
 });

@@ -33,6 +33,7 @@ const categoryLabel = formatCategory(entry.data.category);
     <link rel="icon" href="/favicon.ico" type="image/png" />
     <title>{entry.data.title} | Corona Lending Group</title>
     <meta name="description" content={entry.data.description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname.endsWith('/') ? Astro.url.pathname : Astro.url.pathname + '/', Astro.site).href} />
     <style is:global>
       main.post-page .post-content h2 { color: #0284c7 !important; font-size: 1.5rem !important; font-weight: 700 !important; }
       main.post-page .post-content h3 { color: #0284c7 !important; font-size: 1.25rem !important; font-weight: 600 !important; }

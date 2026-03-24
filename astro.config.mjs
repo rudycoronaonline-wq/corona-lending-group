@@ -5,7 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://rudycorona.com',
+  site: 'https://www.rudycorona.com',
+  trailingSlash: 'always',
   integrations: [sitemap()],
   server: {
     port: 4321,

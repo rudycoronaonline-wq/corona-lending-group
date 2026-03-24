@@ -1,5 +1,6 @@
 ---
 title: Is a Reverse Mortgage a Good Idea? An Honest Look at Who It Helps and Who It Doesn't
+seoTitle: "Is a Reverse Mortgage a Good Idea? | CA | Rudy Corona"
 description: Is a reverse mortgage right for you? Rudy Corona gives you the honest, balanced truth. When it works brilliantly, when it doesn't, and how to know which category you're in.
 slug: is-a-reverse-mortgage-a-good-idea
 date: 2025-03-01

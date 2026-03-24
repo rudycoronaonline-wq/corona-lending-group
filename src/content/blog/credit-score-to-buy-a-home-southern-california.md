@@ -1,5 +1,6 @@
 ---
 title: What Credit Score Do You Actually Need to Buy a Home?
+seoTitle: "Credit Score Needed to Buy a Home | Southern California | Rudy Corona"
 description: Find out the minimum credit score for FHA, conventional, and VA loans in SoCal. Plus real strategies for improving your score before you buy. Written by SoCal mortgage advisor Rudy Corona.
 slug: credit-score-to-buy-a-home-southern-california
 date: 2026-02-08

@@ -1,5 +1,6 @@
 ---
 title: What Is a Reverse Mortgage and How Does It Really Work?
+seoTitle: "What Is a Reverse Mortgage? | California | Rudy Corona"
 description: Thinking about a reverse mortgage but not sure how it works? Rudy Corona explains reverse mortgages in plain language for Southern California homeowners 62+. No pressure, no jargon.
 slug: what-is-a-reverse-mortgage-how-does-it-work
 date: 2025-03-01

@@ -1,5 +1,6 @@
 ---
 title: How Much Money Can You Get from a Reverse Mortgage?
+seoTitle: "How Much Can You Get From a Reverse Mortgage? | California | Rudy Corona"
 description: Wondering how much a reverse mortgage will pay? Rudy Corona breaks down exactly how the numbers work, what factors affect your amount, and real estimates for Southern California homeowners.
 slug: how-much-money-can-you-get-from-a-reverse-mortgage
 date: 2025-03-01

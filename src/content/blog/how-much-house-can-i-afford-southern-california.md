@@ -1,5 +1,6 @@
 ---
 title: How Much House Can I Afford in Southern California?
+seoTitle: "How Much House Can I Afford | Southern CA | Rudy Corona"
 description: Wondering how much home you can actually afford in SoCal? Learn how lenders calculate your buying power, what down payment you need, and how to get pre-approved. Written by mortgage advisor Rudy Corona.
 slug: how-much-house-can-i-afford-southern-california
 date: 2026-02-12

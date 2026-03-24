@@ -1,5 +1,6 @@
 ---
 title: What Is a DSCR Loan? A Complete Guide for Real Estate Investors
+seoTitle: "DSCR Loans for Investors | California | Rudy Corona"
 description: DSCR loans let real estate investors qualify based on rental income — not personal income. Learn how they work, who qualifies, and if they are right for your portfolio.
 slug: what-is-a-dscr-loan-real-estate-investors
 date: 2026-02-18

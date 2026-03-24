@@ -1,5 +1,6 @@
 ---
 title: What Happens to a Reverse Mortgage When You Die?
+seoTitle: "What Happens to a Reverse Mortgage When You Die? | California | Rudy Corona"
 description: One of the most searched reverse mortgage questions. What happens to your home, your heirs, and your equity after you pass away? Rudy Corona explains every scenario clearly and honestly.
 slug: what-happens-to-reverse-mortgage-when-you-die
 date: 2025-03-01

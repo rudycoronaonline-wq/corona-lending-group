@@ -31,7 +31,7 @@ const categoryLabel = formatCategory(entry.data.category);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" type="image/png" />
-    <title>{entry.data.title} | Corona Lending Group</title>
+    <title>{entry.data.seoTitle ?? entry.data.title}</title>
     <meta name="description" content={entry.data.description} />
     <link rel="canonical" href={new URL(Astro.url.pathname.endsWith('/') ? Astro.url.pathname : Astro.url.pathname + '/', Astro.site).href} />
     <style is:global>

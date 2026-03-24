@@ -1,5 +1,6 @@
 ---
 title: Self-Employed and Buying a Home? Here Is What You Need to Know
+seoTitle: "Self-Employed Home Loans | California | Rudy Corona"
 description: Self-employed borrowers face unique challenges when getting a mortgage. Mortgage Advisor Rudy Corona explains your options, required documents, and how to get approved.
 slug: self-employed-mortgage-guide
 date: 2026-02-22

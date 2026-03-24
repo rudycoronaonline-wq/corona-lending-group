@@ -1,5 +1,6 @@
 ---
 title: 7 Reverse Mortgage Myths That Are Keeping Southern California Seniors from Financial Freedom
+seoTitle: "Reverse Mortgage Myths Debunked | California | Rudy Corona"
 description: Think the bank takes your home? That your kids lose everything? That it's only for desperate seniors? Every one of those is a myth. Rudy Corona sets the record straight on the most common reverse mortgage misconceptions.
 slug: reverse-mortgage-myths-debunked
 date: 2025-03-01

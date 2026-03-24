@@ -1,5 +1,6 @@
 ---
 title: "CalHFA and Down Payment Assistance in Southern California: A Complete Guide"
+seoTitle: "CalHFA Down Payment Assistance | Southern California | Rudy Corona"
 description: "A complete guide to CalHFA MyHome, Dream For All, and local down payment assistance programs available to first-time buyers in Southern California. Written by SoCal mortgage advisor Rudy Corona."
 slug: calhfa-down-payment-assistance-southern-california
 date: 2026-02-04

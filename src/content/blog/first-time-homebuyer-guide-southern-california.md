@@ -1,5 +1,6 @@
 ---
 title: 5 Things Every First-Time Homebuyer in Southern California Needs to Know
+seoTitle: "First-Time Home Buyer Guide | Southern California | Rudy Corona"
 description: Buying your first home in SoCal? Mortgage Advisor Rudy Corona shares the 5 most important things first-time buyers need to know before they start shopping.
 slug: first-time-homebuyer-guide-southern-california
 date: 2026-02-15

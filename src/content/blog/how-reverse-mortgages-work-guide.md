@@ -1,5 +1,6 @@
 ---
 title: How Reverse Mortgages Work — And Who They Are Really For
+seoTitle: "How Reverse Mortgages Work | California | Rudy Corona"
 description: Reverse mortgages are widely misunderstood. Rudy Corona breaks down how they actually work, who qualifies, and the real pros and cons for homeowners 62 and older.
 slug: how-reverse-mortgages-work-guide
 date: 2026-02-20

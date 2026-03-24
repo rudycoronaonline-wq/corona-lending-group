@@ -1,5 +1,6 @@
 ---
 title: How to Get Pre-Approved for a Mortgage in 3 Simple Steps
+seoTitle: "How to Get Pre-Approved for a Mortgage | California | Rudy Corona"
 description: Getting pre-approved for a mortgage does not have to be complicated. Mortgage Advisor Rudy Corona walks you through the exact 3 steps to get pre-approved and start shopping with confidence.
 slug: how-to-get-pre-approved-mortgage
 date: 2026-02-25

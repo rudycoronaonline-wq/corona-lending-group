@@ -1,5 +1,6 @@
 ---
 title: The Honest Truth About Down Payments for First-Time Buyers in SoCal
+seoTitle: "First-Time Buyer Down Payment Help | Southern California | Rudy Corona"
 description: The 20% down payment myth stops more first-time buyers than anything else. Here is the real minimum down payment for every major loan program in Southern California, plus down payment assistance options.
 slug: down-payment-first-time-buyer-southern-california
 date: 2026-02-10

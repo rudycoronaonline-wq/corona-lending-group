@@ -1,5 +1,6 @@
 ---
 title: "Rent vs. Buy in Southern California: What Nobody Tells You"
+seoTitle: "Rent vs Buy in Southern California | Rudy Corona"
 description: "Is it better to rent or buy in Southern California right now? Rudy Corona breaks down the real financial math, including equity, appreciation, and rent increases most buyers forget to factor in."
 slug: rent-vs-buy-southern-california
 date: 2026-02-06

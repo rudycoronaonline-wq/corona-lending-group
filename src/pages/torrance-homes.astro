@@ -1,4 +1,5 @@
 ---
+import ServiceAreaCityGrid from '../components/ServiceAreaCityGrid.astro';
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -573,16 +574,7 @@
   <section class="areas-section" id="areas-served" aria-labelledby="areas-heading">
     <div class="container">
       <div class="section-header"><div class="section-label">Service Area</div><h2 class="section-title" id="areas-heading">Areas We Serve Near Torrance</h2><p class="section-sub">Based in Redondo Beach and serving buyers across the entire South Bay corridor and beyond.</p></div>
-      <div class="areas-grid">
-        <div class="area-card"><div class="area-name">Redondo Beach</div><div class="area-zips">90277 · 90278</div><div class="area-desc">Hollywood Riviera, The Avenues, North Redondo. FHA through jumbo. $900K–$4M+.</div><a href="https://www.rudycorona.com/redondo-beach-homes" class="area-link">View page →</a></div>
-        <div class="area-card"><div class="area-name">Manhattan Beach</div><div class="area-zips">90266 · 90267</div><div class="area-desc">Sand Section, Tree Section, East Manhattan. Median $3.3M. Jumbo and super jumbo specialists.</div><a href="https://www.rudycorona.com/manhattan-beach-homes" class="area-link">View page →</a></div>
-        <div class="area-card"><div class="area-name">Hermosa Beach</div><div class="area-zips">90254</div><div class="area-desc">Sand Section, Tree Section, East Hermosa. Median $2.2M. Jumbo across most transactions.</div><a href="https://www.rudycorona.com/hermosa-beach-homes" class="area-link">View page →</a></div>
-        <div class="area-card"><div class="area-name">El Segundo</div><div class="area-zips">90245</div><div class="area-desc">Hidden gem near LAX. Walkable, strong schools, tight-knit community.</div><a href="https://www.rudycorona.com/contact" class="area-link">Ask about El Segundo →</a></div>
-        <div class="area-card"><div class="area-name">Hawthorne</div><div class="area-zips">90250</div><div class="area-desc">Accessible entry to South Bay. FHA-friendly, strong rental demand, rapid appreciation.</div><a href="https://www.rudycorona.com/contact" class="area-link">Ask about Hawthorne →</a></div>
-        <div class="area-card"><div class="area-name">Gardena</div><div class="area-zips">90247–90249</div><div class="area-desc">Value-priced just inland. FHA and conventional buyers find room here when coastal prices stretch.</div><a href="https://www.rudycorona.com/contact" class="area-link">Ask about Gardena →</a></div>
-        <div class="area-card"><div class="area-name">Lawndale</div><div class="area-zips">90260</div><div class="area-desc">South Bay proximity at accessible prices. Good starting point for first-time buyers in the area.</div><a href="https://www.rudycorona.com/contact" class="area-link">Ask about Lawndale →</a></div>
-        <div class="area-card"><div class="area-name">All South Bay</div><div class="area-zips">+ More Areas</div><div class="area-desc">Serving Carson, Lomita, Palos Verdes, Long Beach, and across all of Southern California.</div><a href="https://www.rudycorona.com/contact" class="area-link">Contact me →</a></div>
-      </div>
+      <ServiceAreaCityGrid excludeSlug="torrance-homes" />
     </div>
   </section>
 

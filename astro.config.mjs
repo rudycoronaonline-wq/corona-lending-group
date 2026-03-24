@@ -12,6 +12,9 @@ export default defineConfig({
     host: true
   },
   vite: {
-    plugins: [tailwindcss()]
-  }
+    build: {
+      emptyOutDir: false,
+    },
+    plugins: [tailwindcss()],
+  },
 });

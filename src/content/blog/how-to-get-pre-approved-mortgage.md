@@ -94,4 +94,4 @@ Getting pre-approved is not complicated — it is just a matter of gathering you
 
 If you are thinking about buying in California and want to know exactly what you qualify for, I would love to connect. The first conversation is always free, always honest, and always focused on what is best for you.
 
-Ready to get pre-approved? Start today with a free consultation at Corona Lending Group. Rudy Corona will review your situation, explain your options, and get you a pre-approval letter you can shop with confidence. Visit the Contact page to get started.
+Ready to get pre-approved? Start today with a free consultation with Rudy Corona. Rudy will review your situation, explain your options, and get you a pre-approval letter you can shop with confidence. Visit the Contact page to get started.

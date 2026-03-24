@@ -98,4 +98,4 @@ If you have been holding back because of something you heard, I want to have tha
 
 Get the Truth About Reverse Mortgages from Rudy Corona
 
-Free consultation | No pressure | Corona Lending Group | NMLS# 999113 | Serving SoCal Seniors
+Free consultation | No pressure | Rudy Corona | NMLS# 999113 | Serving SoCal Seniors

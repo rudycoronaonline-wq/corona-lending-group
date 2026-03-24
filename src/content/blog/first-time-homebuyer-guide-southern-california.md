@@ -92,4 +92,4 @@ Buying your first home in Southern California is absolutely achievable — even 
 
 If you have questions about any of this, or if you want to find out exactly what you qualify for, I would love to have a conversation. The first consultation is always free.
 
-Ready to take the first step? Book your free mortgage consultation with Rudy Corona at Corona Lending Group. No pressure, no commitment — just answers. Visit the Contact page to get started.
+Ready to take the first step? Book your free mortgage consultation with Rudy Corona. No pressure, no commitment — just answers. Visit the Contact page to get started.

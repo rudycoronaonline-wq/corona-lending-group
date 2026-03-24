@@ -98,4 +98,4 @@ The best way to know is to have a quick conversation with a mortgage advisor who
 
 DSCR loans have opened the door for a new generation of real estate investors who build real wealth through rental income but cannot qualify through traditional channels. If that sounds like you, I would love to walk you through the numbers on your next deal.
 
-Thinking about buying a rental property? Let us run the numbers together. Book a free consultation with Rudy Corona at Corona Lending Group and find out if a DSCR loan is the right fit for your investment strategy.
+Thinking about buying a rental property? Let us run the numbers together. Book a free consultation with Rudy Corona and find out if a DSCR loan is the right fit for your investment strategy.

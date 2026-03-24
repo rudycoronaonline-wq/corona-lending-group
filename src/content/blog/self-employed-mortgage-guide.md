@@ -80,4 +80,4 @@ Being self-employed does not mean being locked out of homeownership. It means yo
 
 I work with self-employed borrowers regularly and have access to lenders with both bank statement and 1099 programs. If you want to find out exactly what you qualify for, let us talk.
 
-Self-employed and ready to buy a home? Book a free consultation with Rudy Corona at Corona Lending Group. I will find the loan that works for your real income — not just what the IRS sees.
+Self-employed and ready to buy a home? Book a free consultation with Rudy Corona. I will find the loan that works for your real income — not just what the IRS sees.

@@ -100,7 +100,7 @@ A reverse mortgage is not right for everyone — but for the right homeowner, it
 
 If you or a loved one is curious about whether a reverse mortgage makes sense, I am happy to walk you through it — no pressure, no obligation.
 
-Want to know how much equity you could access? Book a free reverse mortgage consultation with Rudy Corona at Corona Lending Group. We serve seniors all across Southern California and will always give you a straight answer.
+Want to know how much equity you could access? Book a free reverse mortgage consultation with Rudy Corona. We serve seniors all across Southern California and will always give you a straight answer.
 
 **Related links**
 

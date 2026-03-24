@@ -32,6 +32,121 @@
       "source": "/resources/torrance-homes/",
       "destination": "/torrance-homes",
       "permanent": true
+    },
+    {
+      "source": "/resources/manhattan-beach-homes",
+      "destination": "/manhattan-beach-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/manhattan-beach-homes/",
+      "destination": "/manhattan-beach-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/gardena-homes",
+      "destination": "/gardena-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/gardena-homes/",
+      "destination": "/gardena-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/san-pedro-homes",
+      "destination": "/san-pedro-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/san-pedro-homes/",
+      "destination": "/san-pedro-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/carson-homes",
+      "destination": "/carson-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/carson-homes/",
+      "destination": "/carson-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/lawndale-homes",
+      "destination": "/lawndale-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/lawndale-homes/",
+      "destination": "/lawndale-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/long-beach-homes",
+      "destination": "/long-beach-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/long-beach-homes/",
+      "destination": "/long-beach-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/wilmington-homes",
+      "destination": "/wilmington-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/wilmington-homes/",
+      "destination": "/wilmington-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/lomita-homes",
+      "destination": "/lomita-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/lomita-homes/",
+      "destination": "/lomita-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/palos-verdes-homes",
+      "destination": "/palos-verdes-homes",
+      "permanent": true
+    },
+    {
+      "source": "/resources/palos-verdes-homes/",
+      "destination": "/palos-verdes-homes",
+      "permanent": true
+    },
+    {
+      "source": "/torrance-homes",
+      "destination": "/torrance-homes/",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tmp/workspace/production/leadgen/common/builder-preview/locales/no.json",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/_preview",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/_preview/",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }

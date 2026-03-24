@@ -1,0 +1,106 @@
+---
+/**
+ * Service Area: the 11 other city guides (Resources hub cities), excluding the current page.
+ */
+interface Props {
+  /** Page you're on — this city is omitted; the other 11 appear (e.g. carson-homes). */
+  excludeSlug: string;
+}
+
+const BASE = 'https://www.rudycorona.com';
+
+type CityRow = { slug: string; name: string; zips: string; desc: string };
+
+const allCities: CityRow[] = [
+  {
+    slug: 'carson-homes',
+    name: 'Carson',
+    zips: '90745 · 90746',
+    desc: 'FHA, conventional, DSCR, and reverse mortgages across Carson & the South Bay.',
+  },
+  {
+    slug: 'gardena-homes',
+    name: 'Gardena',
+    zips: '90247 · 90248 · 90249',
+    desc: 'Three zips — FHA through jumbo. Strong value just inland from the beach cities.',
+  },
+  {
+    slug: 'hermosa-beach-homes',
+    name: 'Hermosa Beach',
+    zips: '90254',
+    desc: 'Sand Section, Tree Section, East Hermosa & The Strand — jumbo across most deals.',
+  },
+  {
+    slug: 'lawndale-homes',
+    name: 'Lawndale',
+    zips: '90260',
+    desc: 'South Bay pocket city — FHA, conventional, DSCR, and reverse mortgages.',
+  },
+  {
+    slug: 'lomita-homes',
+    name: 'Lomita',
+    zips: '90710 · 90717',
+    desc: 'Harbor-adjacent — FHA, conventional, DSCR, and reverse mortgages.',
+  },
+  {
+    slug: 'long-beach-homes',
+    name: 'Long Beach',
+    zips: '90802–90815',
+    desc: 'Eleven zip codes — Downtown to Belmont Shore. FHA through jumbo.',
+  },
+  {
+    slug: 'manhattan-beach-homes',
+    name: 'Manhattan Beach',
+    zips: '90266 · 90267',
+    desc: 'Sand Section, Tree Section, East Manhattan & The Strand — expert jumbo financing.',
+  },
+  {
+    slug: 'palos-verdes-homes',
+    name: 'Palos Verdes',
+    zips: '90274 · 90275',
+    desc: 'Jumbo & super jumbo on the Peninsula — PVE, RPV, Rolling Hills & more.',
+  },
+  {
+    slug: 'redondo-beach-homes',
+    name: 'Redondo Beach',
+    zips: '90277 · 90278',
+    desc: 'Hollywood Riviera, North & South Redondo — FHA through jumbo.',
+  },
+  {
+    slug: 'san-pedro-homes',
+    name: 'San Pedro',
+    zips: '90731 · 90732',
+    desc: 'Harbor & coastal South Bay — FHA, jumbo, DSCR, and reverse mortgages.',
+  },
+  {
+    slug: 'torrance-homes',
+    name: 'Torrance',
+    zips: '90501–90506',
+    desc: 'Five zip codes, top schools — FHA-friendly entry to jumbo near PV.',
+  },
+  {
+    slug: 'wilmington-homes',
+    name: 'Wilmington',
+    zips: '90744 · 90748',
+    desc: 'Port-adjacent — FHA, conventional, DSCR, and reverse mortgages.',
+  },
+];
+
+const { excludeSlug } = Astro.props;
+const cities = allCities.filter((c) => c.slug !== excludeSlug);
+---
+
+<div class="areas-grid">
+  {
+    cities.map((c) => (
+      <div class="area-card">
+        <div class="area-name">{c.name}</div>
+        <div class="area-zips">{c.zips}</div>
+        <div class="area-desc">{c.desc}</div>
+        <a href={`${BASE}/${c.slug}`} class="area-link">
+          View page →
+        </a>
+      </div>
+    ))
+  }
+</div>

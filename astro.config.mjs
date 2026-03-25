@@ -7,7 +7,11 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://www.rudycorona.com',
   trailingSlash: 'always',
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      customPages: ['https://www.rudycorona.com/blog/jumbo-loans-south-bay/'],
+    }),
+  ],
   server: {
     port: 4321,
     host: true

@@ -4,6 +4,21 @@
   "framework": null,
   "redirects": [
     {
+      "source": "/services",
+      "destination": "/LoanOptions/",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "destination": "/LoanOptions/",
+      "permanent": true
+    },
+    {
+      "source": "/services/:path*",
+      "destination": "/LoanOptions/:path*",
+      "permanent": true
+    },
+    {
       "source": "/resources/redondo-beach-homes",
       "destination": "/redondo-beach-homes",
       "permanent": true

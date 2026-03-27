@@ -45,7 +45,7 @@
     .nav-links a:hover { color: var(--sky); background: var(--sky-light); }
     .nav-links .nav-cta { background: var(--navy); color: #fff !important; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700 !important; margin-left: 0.4rem; }
     .nav-links .nav-cta:hover { background: var(--navy-deep); filter: none; }
-    .menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; flex-direction: column; gap: 5px; }
+    .menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; flex-direction: column; gap: 5px; align-items: center; justify-content: center; flex-shrink: 0; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
     .menu-btn span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; }
     .hero { min-height: 76vh; display: flex; align-items: center; position: relative; overflow: hidden; }
     .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 90px; background: linear-gradient(to top, var(--white), transparent); }
@@ -252,8 +252,19 @@
       .loans-grid, .market-grid, .areas-grid { grid-template-columns: 1fr 1fr; }
       .hoods-grid, .blog-grid { grid-template-columns: 1fr 1fr; }
       .guide-sidebar { position: static; }
+      .site-nav { flex-wrap: nowrap; align-items: center; overflow: visible; }
+      .nav-logo { flex: 1 1 auto; min-width: 0; max-width: calc(100% - 52px); }
+      .nav-logo img { max-height: 52px; height: auto; width: auto; }
       .nav-links { display: none; }
-      .menu-btn { display: flex; }
+      .menu-btn {
+        display: flex;
+        margin-left: auto;
+        z-index: 101;
+        position: relative;
+        min-width: 44px;
+        min-height: 44px;
+        padding: 0.65rem;
+      }
       .form-row { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
@@ -262,7 +273,24 @@
       .stat-cards { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
     }
-    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
+    .nav-mobile-open .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 102;
+      background: var(--navy);
+      padding: 1rem 1.5rem 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      gap: 0.2rem;
+      align-items: flex-start;
+      box-shadow: 0 12px 28px rgba(17,36,72,0.22);
+    }
+    .nav-mobile-open .nav-links a { color: rgba(255,255,255,0.92); }
+    .nav-mobile-open .nav-links a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+    .nav-mobile-open .nav-links .nav-cta { background: var(--gold); color: var(--navy-deep) !important; margin-left: 0; margin-top: 0.35rem; text-align: center; width: 100%; }
 
 
     /* FAQ PAGE */
@@ -410,7 +438,7 @@
       <li><a href="https://www.rudycorona.com/contact">Contact</a></li>
       <li><a href="https://www.rudycorona.com/contact" class="nav-cta">Book a Call</a></li>
     </ul>
-    <button class="menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false">
+    <button type="button" class="menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>
   </nav>

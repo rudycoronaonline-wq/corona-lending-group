@@ -1,0 +1,8 @@
+---
+/**
+ * Commercial URL serves the same static FHA HTML as /LoanOptions/fha (replacement per site update).
+ */
+export const prerender = true;
+import fhaContentHtml from './_fha-content.html?raw';
+---
+<Fragment set:html={fhaContentHtml} />

@@ -1,0 +1,8 @@
+---
+/**
+ * FHA loan page: serves _fha-content.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import fhaContentHtml from './_fha-content.html?raw';
+---
+<Fragment set:html={fhaContentHtml} />

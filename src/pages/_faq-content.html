@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Testimonials | What Homeowners Say About Rudy Corona | NMLS# 999113</title>
-  <meta name="description" content="Real reviews from South Bay homebuyers, investors, and seniors who worked with Rudy Corona. FHA, Jumbo, DSCR, Reverse Mortgage, and more. NMLS# 999113." />
-  <link rel="canonical" href="https://www.rudycorona.com/testimonials" />
+  <title>Mortgage FAQ California | Home Loans | Rudy Corona | NMLS# 999113</title>
+  <meta name="description" content="Quick answers about credit scores, down payments, FHA, refinancing, DSCR, reverse mortgages, and self-employed borrowers. California mortgage broker Rudy Corona. NMLS# 999113." />
+  <link rel="canonical" href="https://www.rudycorona.com/faq" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -265,108 +265,46 @@
     .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
 
 
-    /* TESTIMONIALS PAGE */
-    .t-hero {
+    /* FAQ PAGE */
+    .faq-hero {
       background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1e4d8c 100%);
-      padding: 5rem 1.5rem 6.5rem;
+      padding: 5rem 1.5rem 6rem;
       position: relative; overflow: hidden; text-align: center;
     }
-    .t-hero::before {
+    .faq-hero::before {
       content:''; position:absolute; top:-80px; right:-80px;
       width:420px; height:420px; border-radius:50%;
       background:rgba(74,144,217,0.07); pointer-events:none;
     }
-    .t-hero::after {
+    .faq-hero::after {
       content:''; position:absolute; bottom:0; left:0; right:0; height:80px;
       background:linear-gradient(to top, var(--sand), transparent);
     }
-    .t-hero-inner { position:relative; z-index:2; max-width:700px; margin:0 auto; }
-    .t-eyebrow {
+    .faq-hero-inner { position:relative; z-index:2; max-width:720px; margin:0 auto; }
+    .faq-eyebrow {
       display:inline-flex; align-items:center; gap:0.5rem;
       background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.4);
       color:var(--gold); font-size:0.75rem; font-weight:700; letter-spacing:0.1em;
       text-transform:uppercase; padding:0.38rem 1rem; border-radius:100px; margin-bottom:1.4rem;
     }
-    .t-hero h1 {
-      font-family:var(--font-display); font-size:clamp(2.2rem,5vw,3.8rem);
+    .faq-hero h1 {
+      font-family:var(--font-display); font-size:clamp(2.2rem,5vw,3.6rem);
       font-weight:700; color:#fff; line-height:1.1; margin-bottom:1rem;
     }
-    .t-hero h1 em { color:var(--gold); font-style:italic; }
-    .t-hero p { font-size:1.05rem; color:rgba(255,255,255,0.78); line-height:1.72; max-width:540px; margin:0 auto; }
+    .faq-hero h1 em { color:var(--gold); font-style:italic; }
+    .faq-hero p { font-size:1.05rem; color:rgba(255,255,255,0.78); line-height:1.72; max-width:560px; margin:0 auto; }
+    .faq-category-block { margin-bottom: 3rem; }
+    .faq-category-block:last-child { margin-bottom: 0; }
+    .faq-category-title {
+      font-family: var(--font-display); font-size: 1.65rem; font-weight: 700; color: var(--navy);
+      margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--gold);
+    }
+    .skip-link {
+      position: absolute; left: -9999px; z-index: 999;
+      padding: 0.5rem 1rem; background: var(--navy); color: #fff; font-weight: 600;
+    }
+    .skip-link:focus { left: 0.5rem; top: 0.5rem; }
 
-    /* STATS */
-    .t-stats { background:var(--navy-deep); padding:2rem 1.5rem; }
-    .t-stats-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
-    .t-stat { text-align:center; }
-    .t-stat-value { font-family:var(--font-display); font-size:2.2rem; font-weight:700; color:var(--gold); line-height:1; }
-    .t-stat-label { font-size:0.78rem; color:rgba(255,255,255,0.6); margin-top:0.3rem; }
-
-    /* FILTER */
-    .t-filter { background:var(--white); border-bottom:2px solid var(--sand-dark); padding:0 1.5rem; display:flex; justify-content:center; position:sticky; top:72px; z-index:90; }
-    .t-filter-inner { max-width:1100px; width:100%; display:flex; gap:0.5rem; flex-wrap:wrap; padding:0.75rem 0; }
-    .t-filter-btn {
-      padding:0.45rem 1.1rem; font-size:0.82rem; font-weight:700;
-      background:var(--sand); border:1.5px solid var(--sand-dark); border-radius:100px;
-      cursor:pointer; color:var(--text-muted); font-family:var(--font-body);
-      transition:all 0.15s; white-space:nowrap;
-    }
-    .t-filter-btn:hover { background:var(--sky-light); border-color:var(--sky); color:var(--navy); }
-    .t-filter-btn.active { background:var(--navy); color:#fff; border-color:var(--navy); }
-
-    /* GRID */
-    .t-section { background:var(--sand); padding:4rem 1.5rem 5rem; }
-    .t-section-inner { max-width:1100px; margin:0 auto; }
-    .t-grid {
-      display:grid; grid-template-columns:repeat(3,1fr);
-      gap:1.5rem; margin-top:2.5rem;
-    }
-    .t-card {
-      background:var(--white); border-radius:16px; padding:1.75rem;
-      box-shadow:var(--shadow); border-top:4px solid var(--gold);
-      display:flex; flex-direction:column; transition:transform 0.2s, box-shadow 0.2s;
-    }
-    .t-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
-    .t-card-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem; }
-    .t-stars { color:var(--gold); font-size:0.95rem; letter-spacing:0.08em; }
-    .t-loan-badge {
-      font-size:0.7rem; font-weight:700; padding:0.2rem 0.65rem;
-      border-radius:100px; border:1px solid; letter-spacing:0.04em;
-    }
-    .t-quote {
-      font-size:0.935rem; color:var(--text); line-height:1.78;
-      margin-bottom:1.5rem; flex-grow:1; font-style:italic;
-    }
-    .t-author { display:flex; align-items:center; gap:0.75rem; margin-top:auto; }
-    .t-avatar {
-      width:42px; height:42px; border-radius:50%;
-      display:flex; align-items:center; justify-content:center;
-      font-family:var(--font-display); font-size:0.95rem; font-weight:700;
-      color:#fff; flex-shrink:0;
-    }
-    .t-name { font-weight:700; font-size:0.9rem; color:var(--navy); }
-    .t-detail { font-size:0.76rem; color:var(--text-muted); margin-top:0.1rem; }
-
-    /* FEATURED QUOTE */
-    .t-featured { background:var(--navy); padding:5rem 1.5rem; }
-    .t-featured-inner { max-width:860px; margin:0 auto; text-align:center; }
-    .t-featured-stars { color:var(--gold); font-size:1.5rem; letter-spacing:0.12em; margin-bottom:1.5rem; }
-    .t-featured-quote {
-      font-family:var(--font-display); font-size:clamp(1.4rem,3vw,2rem);
-      font-weight:600; color:#fff; line-height:1.55; margin-bottom:1.75rem;
-      font-style:italic;
-    }
-    .t-featured-quote::before { content:'"'; color:var(--gold); }
-    .t-featured-quote::after { content:'"'; color:var(--gold); }
-    .t-featured-author { display:inline-flex; align-items:center; gap:0.85rem; }
-    .t-featured-avatar {
-      width:52px; height:52px; border-radius:50%; background:var(--gold);
-      display:flex; align-items:center; justify-content:center;
-      font-family:var(--font-display); font-size:1.2rem; font-weight:700; color:var(--navy-deep);
-    }
-    .t-featured-name { font-weight:700; color:#fff; font-size:0.95rem; }
-    .t-featured-detail { font-size:0.78rem; color:rgba(255,255,255,0.6); margin-top:0.15rem; }
-
-    /* CTA */
     .t-cta { background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 100%); padding:5rem 1.5rem; text-align:center; }
     .t-cta h2 { font-family:var(--font-display); font-size:clamp(2rem,4vw,2.9rem); font-weight:700; color:#fff; margin-bottom:0.75rem; }
     .t-cta h2 em { color:var(--gold); font-style:italic; }
@@ -375,15 +313,6 @@
     .btn-gold:hover { filter:brightness(1.08); transform:translateY(-1px); color:var(--navy-deep); text-decoration:none; }
     .btn-outline-white { background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.45); padding:0.9rem 2rem; border-radius:8px; font-weight:600; font-size:0.96rem; transition:border-color 0.15s; text-decoration:none; display:inline-block; }
     .btn-outline-white:hover { border-color:#fff; color:#fff; text-decoration:none; }
-
-    @media(max-width:900px) {
-      .t-stats-inner { grid-template-columns:repeat(2,1fr); }
-      .t-grid { grid-template-columns:repeat(2,1fr); }
-    }
-    @media(max-width:600px) {
-      .t-grid { grid-template-columns:1fr; }
-      .t-stats-inner { grid-template-columns:repeat(2,1fr); }
-    }
   </style>
 </head>
 <body>
@@ -398,7 +327,7 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="https://www.rudycorona.com">Home</a></li>
       <li><a href="https://www.rudycorona.com/about">About</a></li>
-      <li><a href="https://www.rudycorona.com/services">Loan Options</a></li>
+      <li><a href="https://www.rudycorona.com/LoanOptions/">Loan Options</a></li>
       <li><a href="https://www.rudycorona.com/calculators">Calculators</a></li>
       <li><a href="https://www.rudycorona.com/resources">Resources</a></li>
       <li><a href="https://www.rudycorona.com/blog">Blog</a></li>
@@ -412,244 +341,137 @@
     </button>
   </nav>
 
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
   <!-- HERO -->
-  <section class="t-hero">
-    <div class="t-hero-inner">
-      <div class="t-eyebrow">⭐ Real Stories from Real Clients</div>
-      <h1>What Our Clients<br><em>Say About Rudy.</em></h1>
-      <p>Hundreds of Southern California families have trusted Rudy Corona to guide them through one of the biggest financial decisions of their lives. Here is what they had to say.</p>
+  <section class="faq-hero" aria-labelledby="faq-heading">
+    <div class="faq-hero-inner">
+      <div class="faq-eyebrow">✓ You are on the UPDATED site — California Modern Mortgage Advisor</div>
+      <h1 id="faq-heading">Frequently Asked <em>Questions</em></h1>
+      <p>Quick answers to common questions. Still have questions? Reach out anytime.</p>
     </div>
   </section>
 
-  <!-- STATS -->
-  <div class="t-stats">
-    <div class="t-stats-inner">
-      <div class="t-stat"><div class="t-stat-value">★ 5.0</div><div class="t-stat-label">Average Client Rating</div></div>
-      <div class="t-stat"><div class="t-stat-value">100+</div><div class="t-stat-label">Happy Clients Served</div></div>
-      <div class="t-stat"><div class="t-stat-value">21</div><div class="t-stat-label">Avg. Days to Close</div></div>
-      <div class="t-stat"><div class="t-stat-value">20+</div><div class="t-stat-label">Years Serving California</div></div>
-    </div>
-  </div>
-
-  <!-- FILTER TABS -->
-  <div class="t-filter">
-    <div class="t-filter-inner">
-      <button class="t-filter-btn active" onclick="filterCards('all',this)">All Reviews</button>
-      <button class="t-filter-btn" onclick="filterCards('FHA',this)">FHA</button>
-      <button class="t-filter-btn" onclick="filterCards('Conventional',this)">Conventional</button>
-      <button class="t-filter-btn" onclick="filterCards('Jumbo',this)">Jumbo</button>
-      <button class="t-filter-btn" onclick="filterCards('DSCR',this)">DSCR / Investors</button>
-      <button class="t-filter-btn" onclick="filterCards('Reverse Mortgage',this)">Reverse Mortgage</button>
-      <button class="t-filter-btn" onclick="filterCards('Self-Employed',this)">Self-Employed</button>
-      <button class="t-filter-btn" onclick="filterCards('Refinance',this)">Refinance</button>
-    </div>
-  </div>
-
-  <!-- FEATURED QUOTE -->
-  <section class="t-featured">
-    <div class="t-featured-inner">
-      <div class="t-featured-stars">★★★★★</div>
-      <p class="t-featured-quote">Rudy saved my retirement. After my husband passed, I was struggling with my mortgage payment on a fixed income. He explained how a reverse mortgage could eliminate that payment and let me stay in my home. I cannot thank him enough.</p>
-      <div class="t-featured-author">
-        <div class="t-featured-avatar">YM</div>
+  <section class="faq-section" id="main">
+    <div class="container">
+      <div class="faq-layout">
         <div>
-          <div class="t-featured-name">Yvonne M.</div>
-          <div class="t-featured-detail">Reverse Mortgage · Gardena, CA</div>
+          <div class="faq-category-block"><h2 class="faq-category-title">General</h2><div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">What credit score do I need to qualify?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>It depends on the loan type. FHA allows scores as low as 580. Conventional typically starts at 620. I will find options for your specific profile.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">How much do I need for a down payment?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>As little as 3.5% with FHA, 0% with certain programs. Let us review your situation together.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">How long does the process take?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Most loans close in 21–30 days. I will give you a realistic timeline on our first call.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">Do you work with self-employed borrowers?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Absolutely. I specialize in flexible documentation options for business owners.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">Is there a cost to get pre-approved?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>No. Pre-approval is free and the first step to knowing exactly what you can afford.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">What areas do you serve?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>I am licensed in California and serve all of California.</p></div>
+            </div>
+          </div></div>          <div class="faq-category-block"><h2 class="faq-category-title">First-Time Buyers</h2><div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">What is the minimum credit score to buy a home?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>FHA loans can go as low as 580; conventional usually 620 or higher. I can walk you through what is possible for you.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">How much do I need saved for a down payment?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>It varies by program: FHA can be 3.5% down, conventional as low as 3%. Some programs offer down payment assistance.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">What is the difference between pre-qualification and pre-approval?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Pre-qualification is a quick estimate. Pre-approval means we have reviewed your docs and you get a conditional commitment—stronger when making an offer.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">How long does it take to close on a house?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Typically 21–30 days from contract to closing. I will keep you on track every step of the way.</p></div>
+            </div>
+          </div></div>          <div class="faq-category-block"><h2 class="faq-category-title">Refinancing</h2><div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">When should I refinance my mortgage?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>When rates are lower than your current rate, or when you want to shorten the term, cash out equity, or switch from an ARM to a fixed rate.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">How much does it cost to refinance?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Closing costs vary (typically 2–5% of the loan). I will provide a clear breakdown and help you decide if it pays off.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">Can I cash out equity when I refinance?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Yes. Cash-out refinances let you tap your home equity for renovations, debt payoff, or other needs—subject to eligibility.</p></div>
+            </div>
+          </div></div>          <div class="faq-category-block"><h2 class="faq-category-title">Seniors & Reverse Mortgages</h2><div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">What is a reverse mortgage and how does it work?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>A reverse mortgage lets you access your home equity without monthly payments. You stay in the home; the loan is repaid when you sell or no longer live there.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">Who qualifies for a reverse mortgage?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Generally homeowners 62+ with sufficient equity. I will walk you through eligibility and whether it is right for you.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">Is a reverse mortgage safe?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Yes. They are federally insured (HECM) and regulated. I explain all costs and terms so you can decide with confidence.</p></div>
+            </div>
+          </div></div>          <div class="faq-category-block"><h2 class="faq-category-title">Investors</h2><div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">What is a DSCR loan?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>A DSCR loan qualifies you based on the property's rental income (debt service coverage ratio) rather than your personal income—great for investors.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">What is the difference between hard money and conventional?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Conventional is long-term, rate-focused, and income-based. Hard money is short-term, asset-based, and used for speed (e.g., fix-and-flip).</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">Can I use rental income to qualify for a mortgage?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Yes. We can use existing rental income or projected rent (with an appraisal) to help you qualify for investment purchases.</p></div>
+            </div>
+          </div></div>          <div class="faq-category-block"><h2 class="faq-category-title">Self-Employed</h2><div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">How do self-employed borrowers qualify for a mortgage?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Through bank statements, profit-and-loss statements, and other documentation that shows stable income. I specialize in these programs.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">What documents do I need as a self-employed borrower?<span class="faq-chevron" aria-hidden="true">▼</span></button>
+              <div class="faq-answer"><p>Typically 1–2 years of tax returns, bank statements, and sometimes a P&L. I will tell you exactly what we need for your situation.</p></div>
+            </div>
+          </div></div>
         </div>
+        <aside class="guide-sidebar">
+          <div class="faq-cta-card">
+            <h3>Still have questions?</h3>
+            <p>Every situation is different. A quick conversation is often the fastest way to get clarity.</p>
+            <ul class="faq-cta-list">
+              <li>Free, no-obligation consultation</li>
+              <li>Clear answers in plain language</li>
+              <li>Licensed in California · NMLS# 999113</li>
+            </ul>
+            <a href="https://www.rudycorona.com/contact" class="btn-gold-full" style="display:inline-block;width:100%;text-align:center;margin-bottom:0.75rem;">Contact us</a>
+            <a href="tel:+13105945362" class="btn-navy" style="display:inline-block;width:100%;text-align:center;">(310) 594-5362</a>
+          </div>
+        </aside>
       </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS GRID -->
-  <section class="t-section" id="main">
-    <div class="t-section-inner">
-      <div class="section-header" style="text-align:center;">
-        <div class="section-label">Client Reviews</div>
-        <h2 class="section-title">Real Stories, Real Results</h2>
-        <p class="section-sub" style="margin:0 auto;">Every loan type. Every situation. Use the filter above to find stories that match yours.</p>
-      </div>
-      <div class="t-grid" id="t-grid">
-        <div class="t-card" data-loan="FHA">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#4A90D922;color:#4A90D9;border-color:#4A90D944;">FHA</span>
-          </div>
-          <p class="t-quote">"Rudy made our first home purchase completely stress-free. He explained every step, answered every question, and got us a great rate. We closed in 24 days and I cried happy tears on closing day."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#4A90D9;">MG</div>
-            <div>
-              <div class="t-name">Maria G.</div>
-              <div class="t-detail">FHA Loan · Los Angeles, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="Refinance">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#16a34a22;color:#16a34a;border-color:#16a34a44;">Refinance</span>
-          </div>
-          <p class="t-quote">"We refinanced with Rudy and saved over $200 a month. Professional, responsive, and completely honest about what made sense for our situation. He told us when the numbers worked and when they didn't. That kind of honesty is rare."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#16a34a;">JL</div>
-            <div>
-              <div class="t-name">James & Lisa T.</div>
-              <div class="t-detail">Conventional Refinance · San Diego, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="DSCR">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#7c3aed22;color:#7c3aed;border-color:#7c3aed44;">DSCR</span>
-          </div>
-          <p class="t-quote">"As an investor I needed someone who actually understood DSCR loans — not just someone who Googled it. Rudy knew exactly what lenders wanted and got me approved quickly. The process was smooth from start to finish."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#7c3aed;">RS</div>
-            <div>
-              <div class="t-name">Robert S.</div>
-              <div class="t-detail">DSCR Loan · Orange County, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="Reverse Mortgage">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#16a34a22;color:#16a34a;border-color:#16a34a44;">Reverse Mortgage</span>
-          </div>
-          <p class="t-quote">"My husband and I were nervous about a reverse mortgage — there is so much misinformation out there. Rudy sat with us for over an hour, answered every question honestly, and never once pressured us. We felt truly cared for. He changed our retirement."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#16a34a;">PT</div>
-            <div>
-              <div class="t-name">Patricia & Tom L.</div>
-              <div class="t-detail">Reverse Mortgage · Palos Verdes, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="Self-Employed">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#C9A84C22;color:#C9A84C;border-color:#C9A84C44;">Self-Employed</span>
-          </div>
-          <p class="t-quote">"I'm self-employed and every bank told me no. Rudy found a bank statement loan that qualified on my actual income — not my tax returns. Closed on a property in Redondo Beach I thought was completely out of reach."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#C9A84C;">DK</div>
-            <div>
-              <div class="t-name">David K.</div>
-              <div class="t-detail">Bank Statement Loan · Redondo Beach, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="FHA">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#4A90D922;color:#4A90D9;border-color:#4A90D944;">FHA</span>
-          </div>
-          <p class="t-quote">"Rudy helped me qualify for my first home when I had no idea where to start. My credit wasn't perfect and I didn't have a huge down payment. He found a way. I tell everyone I know to call him first."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#4A90D9;">SE</div>
-            <div>
-              <div class="t-name">Sandra E.</div>
-              <div class="t-detail">FHA Loan · Torrance, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="Conventional">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#4A90D922;color:#4A90D9;border-color:#4A90D944;">Conventional</span>
-          </div>
-          <p class="t-quote">"In a market as competitive as Manhattan Beach, we needed a lender who could move fast. Rudy had our pre-approval letter ready in under 24 hours and we closed in 19 days. Our agent said she'd never seen anything like it."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#4A90D9;">MR</div>
-            <div>
-              <div class="t-name">Michael & Rosa T.</div>
-              <div class="t-detail">Conventional · Manhattan Beach, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="DSCR">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#7c3aed22;color:#7c3aed;border-color:#7c3aed44;">DSCR</span>
-          </div>
-          <p class="t-quote">"I was building my rental portfolio and needed a lender who understood investment property financing. Rudy structured the DSCR loan perfectly, walked me through the cash flow analysis, and closed on time. Already working with him on my next property."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#7c3aed;">CW</div>
-            <div>
-              <div class="t-name">Carlos W.</div>
-              <div class="t-detail">DSCR Loan · Long Beach, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="Jumbo">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#C9A84C22;color:#C9A84C;border-color:#C9A84C44;">Jumbo</span>
-          </div>
-          <p class="t-quote">"We were buying above the conforming limit and nervous about the jumbo process. Rudy has relationships with jumbo lenders that most brokers simply don't have. Got us a rate we couldn't find anywhere else. Truly exceptional service."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#C9A84C;">AN</div>
-            <div>
-              <div class="t-name">Angela N.</div>
-              <div class="t-detail">Jumbo Loan · Hermosa Beach, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="Hard Money">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#e05d4422;color:#e05d44;border-color:#e05d4444;">Hard Money</span>
-          </div>
-          <p class="t-quote">"I needed to close a fix-and-flip deal in 8 days or lose it. Rudy made it happen. I don't know how, but he did. That deal made me $60K in profit. Worth every penny and then some."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#e05d44;">BJ</div>
-            <div>
-              <div class="t-name">Brian J.</div>
-              <div class="t-detail">Hard Money · Carson, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="Reverse Mortgage">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#16a34a22;color:#16a34a;border-color:#16a34a44;">Reverse Mortgage</span>
-          </div>
-          <p class="t-quote">"After my husband passed, I was struggling with my mortgage payment on a fixed income. Rudy explained how a reverse mortgage could eliminate that payment and let me stay in my home. He saved my retirement. I cannot thank him enough."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#16a34a;">YM</div>
-            <div>
-              <div class="t-name">Yvonne M.</div>
-              <div class="t-detail">Reverse Mortgage · Gardena, CA</div>
-            </div>
-          </div>
-        </div>
-        <div class="t-card" data-loan="Conventional">
-          <div class="t-card-top">
-            <div class="t-stars">★★★★★</div>
-            <span class="t-loan-badge" style="background:#4A90D922;color:#4A90D9;border-color:#4A90D944;">Conventional</span>
-          </div>
-          <p class="t-quote">"We were relocating from out of state and needed someone we could trust remotely. Rudy was available at all hours, walked us through everything virtually, and made the whole experience feel personal. We bought our dream home without ever feeling lost."</p>
-          <div class="t-author">
-            <div class="t-avatar" style="background:#4A90D9;">KP</div>
-            <div>
-              <div class="t-name">Kevin & Priya P.</div>
-              <div class="t-detail">Conventional · El Segundo, CA</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="t-no-results" style="display:none;text-align:center;padding:3rem;color:var(--text-muted);">
-        <div style="font-size:2rem;margin-bottom:0.75rem;">📭</div>
-        <p>No reviews in this category yet — more coming soon.</p>
-      </div>
+      <p style="margin-top:2.5rem;text-align:center;font-size:0.95rem;color:var(--text-muted);"><a href="https://www.rudycorona.com/contact" style="color:var(--sky);font-weight:600;">Contact us</a> for more help.</p>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="t-cta">
     <div style="max-width:620px;margin:0 auto;">
-      <h2>Ready to Be Our<br><em>Next Success Story?</em></h2>
-      <p>Your free consultation is one call away. No pressure, no obligation — just a straight conversation about what's possible for your situation.</p>
+      <h2>Ready to Talk Through <em>Your Situation?</em></h2>
+      <p>Book a free consultation—no pressure, just straight answers about what is possible for you.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="https://www.rudycorona.com/contact" class="btn-gold">Book a Free Consultation →</a>
         <a href="tel:+13105945362" class="btn-outline-white">📞 (310) 594-5362</a>

@@ -1,0 +1,8 @@
+---
+/**
+ * Hard money loan page: serves _hard-money-content.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import hardMoneyContentHtml from './_hard-money-content.html?raw';
+---
+<Fragment set:html={hardMoneyContentHtml} />

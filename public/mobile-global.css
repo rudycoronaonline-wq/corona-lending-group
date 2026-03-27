@@ -74,6 +74,30 @@ code {
     hyphens: auto;
     -webkit-hyphens: auto;
   }
+
+  /* Wide numeric reference tables (e.g. conventional loan limits): scroll horizontally; do not squash columns */
+  .limits-table-wrap table.limits-table {
+    width: auto;
+    max-width: none;
+    min-width: 36rem;
+    table-layout: auto;
+  }
+
+  .limits-table-wrap th,
+  .limits-table-wrap td {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: manual;
+    -webkit-hyphens: manual;
+  }
+}
+
+/* Conforming limits: override global td/th overflow-wrap outside the 900px block too */
+.limits-table-wrap th,
+.limits-table-wrap td {
+  overflow-wrap: normal;
+  word-wrap: normal;
+  word-break: normal;
 }
 
 /* Common layout containers — avoid flex/grid forcing page width */

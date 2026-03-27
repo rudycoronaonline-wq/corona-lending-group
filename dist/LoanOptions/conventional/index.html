@@ -377,43 +377,54 @@
     .step-title { font-weight:700; font-size:0.94rem; color:var(--navy); margin-bottom:0.25rem; }
     .step-desc { font-size:0.875rem; color:var(--text-muted); line-height:1.65; }
 
-    /* LOAN LIMITS TABLE — wide grid: horizontal scroll on small screens (beats global table-layout:fixed) */
+    /* LOAN LIMITS TABLE — horizontal scroll on small screens; numbers stay intact (see mobile-global .limits-table-wrap) */
     .limits-table-wrap {
+      display: block;
+      width: 100%;
       overflow-x: auto;
+      overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
+      overscroll-behavior-x: contain;
+      touch-action: pan-x pan-y;
       margin-top: 1.25rem;
       margin-left: -0.35rem;
       margin-right: -0.35rem;
-      padding: 0.15rem 0.35rem 0.5rem;
-      max-width: 100%;
+      padding: 0.15rem 0.35rem 0.75rem;
       box-sizing: border-box;
     }
     .limits-table {
-      width: 100%;
-      min-width: 620px;
+      display: table;
+      width: max-content;
+      min-width: 36rem;
+      max-width: none;
       table-layout: auto;
       border-collapse: collapse;
       margin-top: 0;
       font-size: 0.875rem;
       font-variant-numeric: tabular-nums;
+      font-feature-settings: "tnum" 1;
     }
     .limits-table th,
     .limits-table td {
-      word-break: normal;
-      overflow-wrap: normal;
-      hyphens: manual;
+      word-break: normal !important;
+      overflow-wrap: normal !important;
+      word-wrap: normal !important;
+      hyphens: manual !important;
+      -webkit-hyphens: manual !important;
     }
-    .limits-table th:not(:first-child),
     .limits-table td:not(:first-child) {
       white-space: nowrap;
+      text-align: right;
     }
     .limits-table th:first-child,
     .limits-table td:first-child {
       white-space: normal;
-      min-width: 6.75rem;
-      max-width: 11rem;
+      text-align: left;
+      min-width: 7rem;
+      max-width: 10.5rem;
     }
     .limits-table th { background:var(--navy); color:#fff; padding:0.75rem 1rem; text-align:left; font-weight:700; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; }
+    .limits-table th:not(:first-child) { white-space: nowrap; }
     .limits-table th:first-child { border-radius:8px 0 0 0; }
     .limits-table th:last-child { border-radius:0 8px 0 0; }
     .limits-table td { padding:0.75rem 1rem; border-bottom:1px solid var(--sand-dark); color:var(--text); }

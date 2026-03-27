@@ -1,0 +1,8 @@
+---
+/**
+ * Reverse mortgage page: serves _reverse-content.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import reverseContentHtml from './_reverse-content.html?raw';
+---
+<Fragment set:html={reverseContentHtml} />

@@ -38,7 +38,7 @@
     .topbar { background: var(--navy-deep); color: rgba(255,255,255,0.75); font-size: 0.78rem; padding: 0.45rem 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
     .topbar a { color: rgba(255,255,255,0.9); transition: color 0.15s; }
     .topbar a:hover { color: var(--gold); }
-    .site-nav { background: #fff; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(27,58,107,0.12); min-height: 72px; border-bottom: 2px solid var(--sand-dark); }
+    .site-nav { background: #fff; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(27,58,107,0.12); min-height: 72px; border-bottom: 2px solid var(--sand-dark); overflow: visible; }
     .nav-logo { display: flex; align-items: center; flex-shrink: 0; padding: 0; }
     .nav-logo img { display: block; height: 68px; width: auto; }
     .nav-links { display: flex; align-items: center; gap: 0.05rem; list-style: none; }
@@ -46,8 +46,8 @@
     .nav-links a:hover { color: var(--sky); background: var(--sky-light); }
     .nav-links .nav-cta { background: var(--navy); color: #fff !important; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700 !important; margin-left: 0.4rem; }
     .nav-links .nav-cta:hover { background: var(--navy-deep); filter: none; }
-    .menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; flex-direction: column; gap: 5px; }
-    .menu-btn span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; }
+    .menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; flex-direction: column; gap: 5px; align-items: center; justify-content: center; flex-shrink: 0; min-width: 44px; min-height: 44px; box-sizing: border-box; position: relative; z-index: 101; -webkit-tap-highlight-color: transparent; }
+    .menu-btn span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; flex-shrink: 0; }
     .hero { min-height: 76vh; display: flex; align-items: center; position: relative; overflow: hidden; }
     .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 90px; background: linear-gradient(to top, var(--white), transparent); }
     .hero-inner { position: relative; z-index: 2; padding: 5rem 1.5rem 6.5rem; max-width: 1160px; margin: 0 auto; width: 100%; }
@@ -253,6 +253,8 @@
       .loans-grid, .market-grid, .areas-grid { grid-template-columns: 1fr 1fr; }
       .hoods-grid, .blog-grid { grid-template-columns: 1fr 1fr; }
       .guide-sidebar { position: static; }
+      .nav-logo { min-width: 0; max-width: calc(100% - 52px); }
+      .nav-logo img { max-height: 56px; width: auto; object-fit: contain; }
       .nav-links { display: none; }
       .menu-btn { display: flex; }
       .form-row { grid-template-columns: 1fr; }
@@ -263,7 +265,7 @@
       .stat-cards { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
     }
-    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
+    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; z-index: 99; box-shadow: 0 8px 24px rgba(27,58,107,0.2); }
 
 
     /* LOAN PAGE */
@@ -375,8 +377,42 @@
     .step-title { font-weight:700; font-size:0.94rem; color:var(--navy); margin-bottom:0.25rem; }
     .step-desc { font-size:0.875rem; color:var(--text-muted); line-height:1.65; }
 
-    /* LOAN LIMITS TABLE */
-    .limits-table { width:100%; border-collapse:collapse; margin-top:1.25rem; font-size:0.875rem; }
+    /* LOAN LIMITS TABLE — wide grid: horizontal scroll on small screens (beats global table-layout:fixed) */
+    .limits-table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 1.25rem;
+      margin-left: -0.35rem;
+      margin-right: -0.35rem;
+      padding: 0.15rem 0.35rem 0.5rem;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    .limits-table {
+      width: 100%;
+      min-width: 620px;
+      table-layout: auto;
+      border-collapse: collapse;
+      margin-top: 0;
+      font-size: 0.875rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .limits-table th,
+    .limits-table td {
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: manual;
+    }
+    .limits-table th:not(:first-child),
+    .limits-table td:not(:first-child) {
+      white-space: nowrap;
+    }
+    .limits-table th:first-child,
+    .limits-table td:first-child {
+      white-space: normal;
+      min-width: 6.75rem;
+      max-width: 11rem;
+    }
     .limits-table th { background:var(--navy); color:#fff; padding:0.75rem 1rem; text-align:left; font-weight:700; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; }
     .limits-table th:first-child { border-radius:8px 0 0 0; }
     .limits-table th:last-child { border-radius:0 8px 0 0; }
@@ -385,6 +421,17 @@
     .limits-table tr:nth-child(even) td { background:var(--sand); }
     .limits-table td:first-child { font-weight:600; color:var(--navy); }
     .limits-note { font-size:0.78rem; color:var(--text-muted); margin-top:0.75rem; font-style:italic; }
+    @media (max-width: 600px) {
+      .limits-table-wrap {
+        margin-left: -0.65rem;
+        margin-right: -0.65rem;
+        padding-left: 0.65rem;
+        padding-right: 0.65rem;
+      }
+      .limits-table th,
+      .limits-table td { padding: 0.5rem 0.55rem; font-size: 0.8125rem; }
+      .limits-table th { font-size: 0.68rem; }
+    }
 
     /* FAQ */
     .loan-faq { display:flex; flex-direction:column; gap:0; }
@@ -552,7 +599,7 @@
           <div class="section-label">2026 Reference</div>
           <h2>Conforming Loan Limits — Southern California</h2>
           <p>Here is a quick reference for the counties I serve most. These limits are updated annually by the FHFA.</p>
-          <div style="overflow-x:auto;">
+          <div class="limits-table-wrap">
             <table class="limits-table">
               <thead>
                 <tr>

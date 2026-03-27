@@ -127,3 +127,61 @@ code {
     padding-right: max(0.75rem, env(safe-area-inset-right));
   }
 }
+
+/* Mobile hamburger + dropdown — consistent tap targets, stacking, and panel position
+   (overrides per-page inline CSS that used fixed top:64px, missing overflow, tiny hit areas) */
+@media (max-width: 900px) {
+  #site-nav.site-nav {
+    overflow: visible !important;
+    position: relative !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+  }
+
+  #site-nav .nav-logo {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: calc(100% - 56px);
+  }
+
+  #site-nav .nav-logo img {
+    max-height: 52px;
+    height: auto;
+    width: auto;
+  }
+
+  #site-nav .menu-btn {
+    display: flex !important;
+    position: relative;
+    z-index: 200;
+    flex-shrink: 0;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  #site-nav.nav-mobile-open .nav-links,
+  #site-nav.nav-mobile-open ul.nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 150 !important;
+    box-shadow: 0 8px 24px rgba(27, 58, 107, 0.22);
+  }
+
+  #site-nav.nav-mobile-open .nav-links a {
+    min-height: 2.75rem;
+    display: flex !important;
+    align-items: center;
+    box-sizing: border-box;
+  }
+}

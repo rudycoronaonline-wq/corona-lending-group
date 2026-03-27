@@ -41,8 +41,6 @@ const titles = {
     'Move-Up Purchase Calculator | California | Rudy Corona',
   'dist/calculators/debt-consolidation-refinance/index.html':
     'Debt Consolidation Refinance | California | Rudy Corona',
-  'dist/LoanOptions/index.html':
-    'California Mortgage Services | FHA, DSCR, Reverse & More | Rudy Corona',
   'dist/LoanOptions/conventional/index.html':
     'Conventional Loans California | Jumbo & High Balance | Rudy Corona',
   'dist/LoanOptions/fha/index.html': 'FHA Loans California | Low Down Payment | Rudy Corona',

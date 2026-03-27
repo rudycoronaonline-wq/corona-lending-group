@@ -303,6 +303,68 @@
     .calc-tab.active { background: var(--navy); color: #fff; border-color: var(--navy); box-shadow: 0 4px 14px rgba(27,58,107,0.22); }
     .calc-tab .tab-icon { font-size: 1.1rem; flex-shrink: 0; }
 
+    /* Bottom CTA — estimates vs real quotes */
+    .calc-bottom-cta {
+      margin-top: 2.5rem;
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 2.25rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .calc-bottom-cta-text { flex: 1 1 280px; min-width: 0; }
+    .calc-bottom-cta-kicker {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      line-height: 1.35;
+    }
+    .calc-bottom-cta-title {
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.3rem;
+    }
+    .calc-bottom-cta-sub {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+    .calc-bottom-cta-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+      align-items: center;
+    }
+    .calc-bottom-cta-actions a {
+      background: var(--gold);
+      color: var(--navy-deep);
+      padding: 0.875rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+      text-align: center;
+      transition: filter 0.15s;
+    }
+    .calc-bottom-cta-actions a:hover { filter: brightness(1.06); }
+    .calc-bottom-cta-actions a.secondary {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.3);
+      font-weight: 600;
+    }
+    .calc-bottom-cta-actions a.secondary:hover { filter: brightness(1.1); border-color: rgba(255,255,255,0.45); }
+
     /* Calculator panels */
     .calc-panel { display: none; }
     .calc-panel.active { display: block; }
@@ -492,11 +554,48 @@
       .input-row { grid-template-columns: 1fr; }
     }
     @media (max-width: 600px) {
-      .calc-tabs { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
-      .calc-tab { font-size: 0.8rem; padding: 0.85rem 0.5rem; }
+      .calc-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+      .calc-tab {
+        font-size: 0.78rem;
+        padding: 0.7rem 0.4rem;
+        white-space: normal;
+        line-height: 1.22;
+        flex-direction: column;
+        gap: 0.3rem;
+        min-height: 4.5rem;
+        align-items: center;
+        justify-content: center;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+      .calc-tab .tab-icon { font-size: 1rem; }
       .calc-card-header { padding: 1.5rem; }
       .calc-inputs, .calc-results { padding: 1.5rem; }
       .result-primary-value { font-size: 2.4rem; }
+      .calc-bottom-cta {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.5rem 1.15rem;
+        gap: 1.25rem;
+      }
+      .calc-bottom-cta-text { flex: 1 1 auto; }
+      .calc-bottom-cta-kicker {
+        font-size: 0.72rem;
+        letter-spacing: 0.06em;
+      }
+      .calc-bottom-cta-title { font-size: 1.2rem; }
+      .calc-bottom-cta-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+      .calc-bottom-cta-actions a,
+      .calc-bottom-cta-actions a.secondary {
+        width: 100%;
+        white-space: normal;
+        padding: 0.9rem 1rem;
+      }
     }
   </style>
 </head>
@@ -1779,15 +1878,15 @@
 
 
       <!-- Bottom CTA -->
-      <div style="margin-top:2.5rem;background:var(--navy);border-radius:16px;padding:2.25rem 2.5rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;">
-        <div>
-          <p style="color:var(--gold);font-weight:700;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.4rem;">Want numbers tailored to your situation?</p>
-          <p style="color:#fff;font-family:var(--font-display);font-size:1.4rem;font-weight:700;line-height:1.2;margin-bottom:0.3rem;">These are estimates. Real quotes are better.</p>
-          <p style="color:rgba(255,255,255,0.65);font-size:0.88rem;">A 20-minute free consultation gives you exact qualifying numbers — no obligation.</p>
+      <div class="calc-bottom-cta">
+        <div class="calc-bottom-cta-text">
+          <p class="calc-bottom-cta-kicker">Want numbers tailored to your situation?</p>
+          <p class="calc-bottom-cta-title">These are estimates. Real quotes are better.</p>
+          <p class="calc-bottom-cta-sub">A 20-minute free consultation gives you exact qualifying numbers — no obligation.</p>
         </div>
-        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;flex-shrink:0;">
-          <a href="https://www.rudycorona.com/contact" style="background:var(--gold);color:var(--navy-deep);padding:0.875rem 1.75rem;border-radius:8px;font-weight:700;font-size:0.92rem;white-space:nowrap;text-decoration:none;">Book a Free Consultation</a>
-          <a href="tel:+13105945362" style="background:rgba(255,255,255,0.1);color:#fff;border:1.5px solid rgba(255,255,255,0.3);padding:0.875rem 1.75rem;border-radius:8px;font-weight:600;font-size:0.92rem;white-space:nowrap;text-decoration:none;">📞 (310) 594-5362</a>
+        <div class="calc-bottom-cta-actions">
+          <a href="https://www.rudycorona.com/contact">Book a Free Consultation</a>
+          <a href="tel:+13105945362" class="secondary">📞 (310) 594-5362</a>
         </div>
       </div>
 

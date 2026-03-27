@@ -176,12 +176,47 @@ code {
     right: 0 !important;
     z-index: 150 !important;
     box-shadow: 0 8px 24px rgba(27, 58, 107, 0.22);
+    background: var(--navy, #1b3a6b) !important;
+    padding: 1rem 1.5rem 1.5rem !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    gap: 0.25rem !important;
+    align-items: stretch !important;
   }
 
+  #site-nav.nav-mobile-open .nav-links li {
+    width: 100%;
+  }
+
+  /* Verbatim Loan Options pages use navy menu background but lacked link color overrides
+     (desktop .nav-links a { color: navy } hid links). Match index / testimonials mobile menu. */
   #site-nav.nav-mobile-open .nav-links a {
     min-height: 2.75rem;
     display: flex !important;
     align-items: center;
     box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.95) !important;
+    white-space: normal !important;
+    padding: 0.65rem 0.5rem !important;
+    border-radius: 6px;
+  }
+
+  #site-nav.nav-mobile-open .nav-links a:hover {
+    color: var(--gold, #c9a84c) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  #site-nav.nav-mobile-open .nav-links .nav-cta {
+    background: var(--gold, #c9a84c) !important;
+    color: var(--navy-deep, #112448) !important;
+    margin-left: 0 !important;
+    margin-top: 0.35rem !important;
+    text-align: center !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  #site-nav.nav-mobile-open .nav-links .nav-cta:hover {
+    filter: brightness(1.06);
+    color: var(--navy-deep, #112448) !important;
   }
 }

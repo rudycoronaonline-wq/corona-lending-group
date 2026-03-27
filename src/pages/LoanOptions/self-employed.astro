@@ -1,0 +1,8 @@
+---
+/**
+ * Self-employed loan page: serves _self-employed-content.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import selfEmployedContentHtml from './_self-employed-content.html?raw';
+---
+<Fragment set:html={selfEmployedContentHtml} />

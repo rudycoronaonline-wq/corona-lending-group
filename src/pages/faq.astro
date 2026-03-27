@@ -1,0 +1,8 @@
+---
+/**
+ * FAQ page: serves _faq-content.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import faqContentHtml from './_faq-content.html?raw';
+---
+<Fragment set:html={faqContentHtml} />

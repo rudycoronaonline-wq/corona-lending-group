@@ -41,20 +41,20 @@ const titles = {
     'Move-Up Purchase Calculator | California | Rudy Corona',
   'dist/calculators/debt-consolidation-refinance/index.html':
     'Debt Consolidation Refinance | California | Rudy Corona',
-  'dist/services/index.html':
+  'dist/LoanOptions/index.html':
     'California Mortgage Services | FHA, DSCR, Reverse & More | Rudy Corona',
-  'dist/services/conventional/index.html':
+  'dist/LoanOptions/conventional/index.html':
     'Conventional Loans California | Jumbo & High Balance | Rudy Corona',
-  'dist/services/fha/index.html': 'FHA Loans California | Low Down Payment | Rudy Corona',
-  'dist/services/dscr/index.html':
+  'dist/LoanOptions/fha/index.html': 'FHA Loans California | Low Down Payment | Rudy Corona',
+  'dist/LoanOptions/dscr/index.html':
     'DSCR Loans California | Real Estate Investors | Rudy Corona',
-  'dist/services/reverse/index.html':
+  'dist/LoanOptions/reverse/index.html':
     'Reverse Mortgage California | HECM & Jumbo | Rudy Corona',
-  'dist/services/self-employed/index.html':
+  'dist/LoanOptions/self-employed/index.html':
     'Self-Employed Home Loans California | Bank Statement | Rudy Corona',
-  'dist/services/hard-money/index.html':
+  'dist/LoanOptions/hard-money/index.html':
     'Hard Money Loans California | Fast Financing | Rudy Corona',
-  'dist/services/commercial/index.html':
+  'dist/LoanOptions/commercial/index.html':
     'Commercial Real Estate Loans California | CRE | Rudy Corona',
   'dist/torrance-homes/index.html': 'Mortgage Broker Torrance CA | Home Loans | Rudy Corona',
   'dist/redondo-beach-homes/index.html':

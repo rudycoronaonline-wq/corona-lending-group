@@ -58,7 +58,7 @@ These posts pair well with jumbo planning:
 - [First-time buyer guide for Southern California](/blog/first-time-homebuyer-guide-southern-california/) — helpful even if you have bought before but feel rusty.
 - [What is a DSCR loan?](/blog/what-is-a-dscr-loan-real-estate-investors/) — if you are also thinking about investment property alongside a primary home.
 
-Buying with a **conventional** loan structure is common in higher price bands; you can skim [conventional loan options here](/services/conventional/) to see how that bucket fits next to jumbo.
+Buying with a **conventional** loan structure is common in higher price bands; you can skim [conventional loan options here](/LoanOptions/conventional/) to see how that bucket fits next to jumbo.
 
 ## FAQ: South Bay jumbo loans
 

@@ -1,0 +1,2 @@
+/services /LoanOptions/ 301
+/services/* /LoanOptions/:splat 301

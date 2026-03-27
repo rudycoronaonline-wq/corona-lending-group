@@ -1,0 +1,8 @@
+---
+/**
+ * Conventional loan page: serves _conventional-content.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import conventionalContentHtml from './_conventional-content.html?raw';
+---
+<Fragment set:html={conventionalContentHtml} />

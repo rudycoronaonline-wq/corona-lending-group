@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loan Options | Mortgage Services | Corona Lending Group | NMLS# 999113</title>
-  <meta name="description" content="Explore all mortgage loan options with Rudy Corona — Conventional, FHA, Jumbo, DSCR, Reverse, Self-Employed, Hard Money and Commercial loans. South Bay specialist. NMLS# 999113." />
-  <link rel="canonical" href="https://www.rudycorona.com/LoanOptions/" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/mobile-global.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>VA Loans Southern California | Zero Down for Veterans | Rudy Corona NMLS# 999113</title>
+  <meta name="description" content="VA loans for veterans and active duty in Southern California. Zero down payment, no PMI, competitive rates. Rudy Corona helps veterans maximize their VA benefit. NMLS# 999113."/>
+  <link rel="canonical" href="https://www.rudycorona.com/LoanOptions/va"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
-    
     :root {
       --navy:        #1B3A6B;
       --navy-deep:   #112448;
@@ -257,178 +255,120 @@
       .menu-btn { display: flex; }
       .form-row { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
-      /* Mobile-only: hamburger panel (avoids navy-on-navy links; scoped to this breakpoint) */
-      .nav-mobile-open .nav-links {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 200;
-        background: var(--navy);
-        padding: 1rem 1.5rem 1.5rem;
-        border-top: 1px solid rgba(255,255,255,0.1);
-        gap: 0.25rem;
-        align-items: stretch;
-        box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-      }
-      .nav-mobile-open .nav-links li { width: 100%; }
-      .nav-mobile-open .nav-links a {
-        color: rgba(255,255,255,0.95);
-        display: block;
-        padding: 0.65rem 0.5rem;
-        border-radius: 6px;
-      }
-      .nav-mobile-open .nav-links a:hover {
-        color: var(--gold);
-        background: rgba(255,255,255,0.08);
-      }
-      .nav-mobile-open .nav-links .nav-cta {
-        background: var(--gold);
-        color: var(--navy-deep) !important;
-        margin-left: 0;
-        margin-top: 0.35rem;
-        text-align: center;
-      }
-      .nav-mobile-open .nav-links .nav-cta:hover {
-        filter: brightness(1.06);
-        color: var(--navy-deep) !important;
-      }
     }
     @media (max-width: 600px) {
       .loans-grid, .market-grid, .hoods-grid, .blog-grid, .areas-grid { grid-template-columns: 1fr; }
       .stat-cards { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
     }
+    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
 
-
-    /* SERVICES PAGE */
-    .services-hero {
-      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1e4d8c 100%);
-      padding: 5rem 1.5rem 6.5rem;
-      position: relative; overflow: hidden; text-align: center;
-    }
-    .services-hero::before {
-      content:''; position:absolute; top:-80px; right:-80px;
-      width:420px; height:420px; border-radius:50%;
-      background:rgba(74,144,217,0.07); pointer-events:none;
-    }
-    .services-hero::after {
-      content:''; position:absolute; bottom:0; left:0; right:0; height:80px;
-      background:linear-gradient(to top, var(--sand), transparent);
-    }
-    .services-hero-inner { position:relative; z-index:2; max-width:720px; margin:0 auto; }
-    .services-eyebrow {
-      display:inline-flex; align-items:center; gap:0.5rem;
-      background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.4);
-      color:var(--gold); font-size:0.75rem; font-weight:700; letter-spacing:0.1em;
-      text-transform:uppercase; padding:0.38rem 1rem; border-radius:100px; margin-bottom:1.4rem;
-    }
-    .services-hero h1 {
-      font-family:var(--font-display); font-size:clamp(2.2rem,5vw,3.8rem); font-weight:700;
-      color:#fff; line-height:1.1; margin-bottom:1rem;
-    }
-    .services-hero h1 em { color:var(--gold); font-style:italic; }
-    .services-hero p { font-size:1.1rem; color:rgba(255,255,255,0.78); line-height:1.72; max-width:560px; margin:0 auto 2rem; }
-    .hero-btns { display:flex; flex-wrap:wrap; gap:0.9rem; justify-content:center; }
-    .btn-gold { background:var(--gold); color:var(--navy-deep); padding:0.9rem 2rem; border-radius:8px; font-weight:700; font-size:0.96rem; transition:filter 0.15s,transform 0.15s; }
-    .btn-gold:hover { filter:brightness(1.08); transform:translateY(-1px); color:var(--navy-deep); text-decoration:none; }
-    .btn-outline-white { background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.45); padding:0.9rem 2rem; border-radius:8px; font-weight:600; font-size:0.96rem; transition:border-color 0.15s; }
-    .btn-outline-white:hover { border-color:#fff; color:#fff; text-decoration:none; }
-
-    .trust-strip {
-      background: var(--navy-deep);
-      padding: 0.85rem 0;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-    .trust-track {
-      display: inline-flex; gap: 2.5rem;
-      animation: marquee 28s linear infinite;
-    }
-    .trust-strip:hover .trust-track { animation-play-state: paused; }
-    @keyframes marquee {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .trust-item { display: inline-flex; align-items: center; gap: 0.45rem; color: rgba(255,255,255,0.75); font-size: 0.82rem; font-weight: 500; white-space: nowrap; }
-    .trust-check { color: var(--gold); font-weight: 700; }
-    .trust-sep { color: rgba(255,255,255,0.2); font-size: 0.7rem; }
-
-    .services-intro { background:var(--sand); padding:4.5rem 1.5rem 3.5rem; }
-    .services-intro-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
-    .services-intro h2 { font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,2.6rem); font-weight:700; color:var(--navy); line-height:1.15; margin-bottom:1rem; }
-    .services-intro p { color:var(--text-muted); line-height:1.8; font-size:1.02rem; margin-bottom:1rem; }
-    .services-intro p strong { color:var(--text); }
-    .intro-stats { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-    .intro-stat { background:var(--white); border-radius:12px; padding:1.4rem; border-left:4px solid var(--gold); box-shadow:var(--shadow); }
-    .intro-stat-value { font-family:var(--font-display); font-size:2.1rem; font-weight:700; color:var(--navy); line-height:1; }
-    .intro-stat-label { font-size:0.79rem; color:var(--text-muted); margin-top:0.25rem; }
-
-    .loans-section { background:var(--white); padding:5rem 1.5rem; }
-    .loans-section-inner { max-width:1100px; margin:0 auto; }
-    .loans-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:2.5rem; }
-    .loan-card {
-      background:var(--white); border:1px solid var(--sand-dark); border-radius:16px;
-      padding:2rem; transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s;
-      position:relative; overflow:hidden; display:flex; flex-direction:column;
-    }
-    .loan-card::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:var(--navy); transition:background 0.2s; }
-    .loan-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-lg); border-color:var(--sky); }
-    .loan-card:hover::before { background:var(--gold); }
-    .loan-icon { font-size:2.25rem; margin-bottom:1rem; }
-    .loan-card h3 { font-family:var(--font-display); font-size:1.4rem; font-weight:700; color:var(--navy); margin-bottom:0.4rem; }
-    .loan-tagline { font-size:0.8rem; font-weight:700; color:var(--sky); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.85rem; }
-    .loan-card p { font-size:0.895rem; color:var(--text-muted); line-height:1.72; margin-bottom:1.1rem; flex-grow:1; }
-    .loan-tags { display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:1.25rem; }
-    .l-tag { font-size:0.72rem; font-weight:600; background:var(--sky-light); color:var(--navy); padding:0.2rem 0.6rem; border-radius:100px; border:1px solid rgba(74,144,217,0.2); }
-    .loan-link { display:inline-flex; align-items:center; gap:0.4rem; font-size:0.88rem; font-weight:700; color:var(--sky); transition:gap 0.15s; margin-top:auto; }
-    .loan-link:hover { gap:0.65rem; color:var(--navy); text-decoration:none; }
-
-    .process-section { background:var(--sand); padding:5rem 1.5rem; }
-    .process-section-inner { max-width:1100px; margin:0 auto; }
-    .process-steps { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-top:3rem; position:relative; }
-    .process-steps::before { content:''; position:absolute; top:28px; left:calc(12.5% + 8px); right:calc(12.5% + 8px); height:2px; background:var(--sand-dark); z-index:0; }
-    .process-step { text-align:center; position:relative; z-index:1; }
-    .step-num { width:56px; height:56px; border-radius:50%; background:var(--navy); color:#fff; font-family:var(--font-display); font-size:1.4rem; font-weight:700; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem; box-shadow:0 4px 16px rgba(27,58,107,0.25); }
-    .process-step h4 { font-family:var(--font-display); font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:0.4rem; }
-    .process-step p { font-size:0.86rem; color:var(--text-muted); line-height:1.65; }
-
-    .why-section { background:var(--navy); padding:5rem 1.5rem; }
-    .why-section-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
-    .why-section .section-label { color:var(--gold); }
-    .why-section h2 { font-family:var(--font-display); font-size:clamp(1.9rem,3.5vw,2.75rem); font-weight:700; color:#fff; line-height:1.15; margin-bottom:1rem; }
-    .why-section > div > p { color:rgba(255,255,255,0.72); line-height:1.78; font-size:0.975rem; margin-bottom:1rem; }
-    .why-section strong { color:#fff; }
-    .why-cards { display:flex; flex-direction:column; gap:1rem; }
-    .why-card { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:1.25rem 1.4rem; display:flex; gap:1rem; align-items:flex-start; transition:background 0.2s,border-color 0.2s; }
-    .why-card:hover { background:rgba(255,255,255,0.12); border-color:var(--gold); }
-    .why-card-icon { font-size:1.5rem; flex-shrink:0; margin-top:0.15rem; }
-    .why-card h4 { font-family:var(--font-display); font-size:1.1rem; font-weight:700; color:#fff; margin-bottom:0.25rem; }
-    .why-card p { font-size:0.86rem; color:rgba(255,255,255,0.65); line-height:1.62; margin:0; }
-
-    .cta-section { background:linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%); padding:5rem 1.5rem; text-align:center; }
-    .cta-section h2 { font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem); font-weight:700; color:#fff; margin-bottom:0.75rem; }
-    .cta-section h2 em { color:var(--gold); font-style:italic; }
-    .cta-section p { color:rgba(255,255,255,0.72); font-size:1.05rem; max-width:520px; margin:0 auto 2rem; line-height:1.7; }
-
-    @media(max-width:900px) {
-      .services-intro-inner { grid-template-columns:1fr; gap:2.5rem; }
-      .loans-grid { grid-template-columns:repeat(2,1fr); }
-      .process-steps { grid-template-columns:repeat(2,1fr); }
-      .process-steps::before { display:none; }
-      .why-section-inner { grid-template-columns:1fr; gap:2.5rem; }
-    }
-    @media(max-width:600px) {
-      .loans-grid { grid-template-columns:1fr; }
-      .process-steps { grid-template-columns:1fr; }
-      .intro-stats { grid-template-columns:1fr 1fr; }
-    }
-  </style>
+    .loan-hero{background:linear-gradient(135deg,#0a1f3d 0%,var(--navy) 55%,#1e4d8c 100%);padding:5rem 1.5rem 6.5rem;position:relative;overflow:hidden;}
+    .loan-hero::before{content:'';position:absolute;top:-80px;right:-80px;width:500px;height:500px;border-radius:50%;background:rgba(74,144,217,0.07);pointer-events:none;}
+    .loan-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to top,var(--sand),transparent);}
+    .loan-hero-inner{position:relative;z-index:2;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 360px;gap:4rem;align-items:center;}
+    .loan-breadcrumb{display:flex;align-items:center;gap:0.5rem;margin-bottom:1.25rem;font-size:0.8rem;}
+    .loan-breadcrumb a{color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.15s;} .loan-breadcrumb a:hover{color:var(--gold);} .loan-breadcrumb span{color:rgba(255,255,255,0.3);}
+    .loan-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);color:var(--gold);font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.38rem 1rem;border-radius:100px;margin-bottom:1.25rem;}
+    .loan-hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:700;color:#fff;line-height:1.08;margin-bottom:0.6rem;}
+    .loan-hero h1 em{color:var(--gold);font-style:italic;}
+    .loan-hero-sub{font-family:var(--font-display);font-size:1.15rem;font-style:italic;color:rgba(255,255,255,0.7);margin-bottom:1.25rem;}
+    .loan-hero-lead{font-size:1.02rem;color:rgba(255,255,255,0.78);line-height:1.75;max-width:520px;margin-bottom:2rem;}
+    .loan-hero-btns{display:flex;flex-wrap:wrap;gap:0.9rem;margin-bottom:2rem;}
+    .btn-gold{background:var(--gold);color:var(--navy-deep);padding:0.9rem 2rem;border-radius:8px;font-weight:700;font-size:0.96rem;transition:filter 0.15s,transform 0.15s;text-decoration:none;display:inline-block;}
+    .btn-gold:hover{filter:brightness(1.08);transform:translateY(-1px);color:var(--navy-deep);text-decoration:none;}
+    .btn-outline-white{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.45);padding:0.9rem 2rem;border-radius:8px;font-weight:600;font-size:0.96rem;transition:border-color 0.15s;text-decoration:none;display:inline-block;}
+    .btn-outline-white:hover{border-color:#fff;color:#fff;text-decoration:none;}
+    .loan-hero-pills{display:flex;flex-wrap:wrap;gap:0.6rem;}
+    .loan-pill{display:inline-flex;align-items:center;gap:0.4rem;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);font-size:0.8rem;font-weight:600;padding:0.38rem 0.9rem;border-radius:100px;}
+    .loan-hero-card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:18px;padding:2rem;}
+    .loan-hero-card h3{font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:1.25rem;}
+    .loan-quick-stat{display:flex;align-items:center;gap:0.85rem;padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.1);}
+    .loan-quick-stat:last-child{border-bottom:none;padding-bottom:0;}
+    .loan-qs-icon{width:36px;height:36px;background:rgba(201,168,76,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
+    .loan-qs-label{font-size:0.72rem;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:0.07em;font-weight:700;margin-bottom:0.15rem;}
+    .loan-qs-value{font-size:0.94rem;font-weight:700;color:#fff;}
+    .loan-page{background:var(--sand);}
+    .loan-body{max-width:1100px;margin:0 auto;padding:4rem 1.5rem 5rem;display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start;}
+    .loan-main{min-width:0;}
+    .loan-sidebar{position:sticky;top:90px;display:flex;flex-direction:column;gap:1.5rem;}
+    .loan-section{background:var(--white);border-radius:16px;padding:2.25rem;box-shadow:var(--shadow);margin-bottom:1.75rem;}
+    .loan-section h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.1rem);font-weight:700;color:var(--navy);margin-bottom:1rem;line-height:1.2;}
+    .loan-section h3{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--navy);margin:1.5rem 0 0.6rem;}
+    .loan-section h3:first-of-type{margin-top:0.5rem;}
+    .loan-section p{font-size:0.96rem;color:var(--text-muted);line-height:1.82;margin-bottom:1rem;}
+    .loan-section p:last-child{margin-bottom:0;}
+    .loan-section p strong{color:var(--text);}
+    .loan-divider{height:1px;background:var(--sand-dark);margin:1.5rem 0;}
+    .qualifier-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1.25rem;}
+    .qualifier-card{border-radius:12px;padding:1.5rem;}
+    .qualifier-card.good{background:rgba(22,163,74,0.06);border:1px solid rgba(22,163,74,0.25);}
+    .qualifier-card.bad{background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.2);}
+    .qualifier-card h4{font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin-bottom:0.85rem;}
+    .qualifier-card.good h4{color:#15803d;} .qualifier-card.bad h4{color:#dc2626;}
+    .qualifier-item{display:flex;align-items:flex-start;gap:0.6rem;font-size:0.875rem;color:var(--text-muted);line-height:1.6;margin-bottom:0.5rem;}
+    .qualifier-item:last-child{margin-bottom:0;}
+    .qi-icon{flex-shrink:0;margin-top:0.1rem;font-size:0.85rem;}
+    .feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1.25rem;}
+    .feature-card{background:var(--sand);border-radius:12px;padding:1.25rem;border-left:4px solid var(--navy);transition:border-color 0.2s;}
+    .feature-card:hover{border-color:var(--gold);}
+    .feature-card-icon{font-size:1.5rem;margin-bottom:0.5rem;}
+    .feature-card h4{font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.35rem;}
+    .feature-card p{font-size:0.82rem;color:var(--text-muted);line-height:1.6;margin:0;}
+    .process-steps{display:flex;flex-direction:column;gap:0;margin-top:1.25rem;}
+    .process-step{display:flex;gap:1.25rem;align-items:flex-start;padding:1rem 0;border-bottom:1px solid var(--sand-dark);}
+    .process-step:last-child{border-bottom:none;padding-bottom:0;}
+    .process-step:first-child{padding-top:0;}
+    .step-num{width:36px;height:36px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1rem;font-weight:700;color:#fff;flex-shrink:0;margin-top:0.1rem;}
+    .step-title{font-weight:700;font-size:0.94rem;color:var(--navy);margin-bottom:0.25rem;}
+    .step-desc{font-size:0.875rem;color:var(--text-muted);line-height:1.65;}
+    .myth-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.25rem;}
+    .myth-card{border-radius:12px;padding:1.25rem;}
+    .myth-card.myth{background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.2);}
+    .myth-card.reality{background:rgba(22,163,74,0.06);border:1px solid rgba(22,163,74,0.25);}
+    .myth-label{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem;}
+    .myth-card.myth .myth-label{color:#dc2626;} .myth-card.reality .myth-label{color:#15803d;}
+    .myth-card p{font-size:0.875rem;color:var(--text-muted);line-height:1.65;margin:0;}
+    .loan-faq{display:flex;flex-direction:column;}
+    .loan-faq-item{border-bottom:1px solid var(--sand-dark);}
+    .loan-faq-item:first-child{border-top:1px solid var(--sand-dark);}
+    .loan-faq-q{width:100%;background:none;border:none;text-align:left;padding:1.1rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:var(--navy);line-height:1.3;}
+    .loan-faq-q:hover{color:var(--sky);}
+    .loan-faq-chevron{flex-shrink:0;font-size:0.9rem;transition:transform 0.25s;color:var(--sky);}
+    .loan-faq-item.open .loan-faq-chevron{transform:rotate(180deg);}
+    .loan-faq-a{max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.92rem;color:var(--text-muted);line-height:1.78;}
+    .loan-faq-item.open .loan-faq-a{max-height:400px;padding-bottom:1.1rem;}
+    .sidebar-cta-card{background:var(--navy);border-radius:14px;padding:1.75rem;text-align:center;}
+    .sidebar-cta-card h3{font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:0.5rem;}
+    .sidebar-cta-card p{font-size:0.875rem;color:rgba(255,255,255,0.68);line-height:1.65;margin-bottom:1.25rem;}
+    .sidebar-cta-btn{display:block;background:var(--gold);color:var(--navy-deep);padding:0.85rem;border-radius:9px;font-weight:700;font-size:0.92rem;text-decoration:none;transition:filter 0.15s;margin-bottom:0.65rem;}
+    .sidebar-cta-btn:hover{filter:brightness(1.08);color:var(--navy-deep);text-decoration:none;}
+    .sidebar-cta-phone{font-size:0.82rem;color:rgba(255,255,255,0.6);}
+    .sidebar-cta-phone a{color:rgba(255,255,255,0.85);font-weight:700;}
+    .sidebar-info-card{background:var(--white);border-radius:14px;padding:1.5rem;box-shadow:var(--shadow);}
+    .sidebar-info-card h4{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:1rem;}
+    .sidebar-stat{display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0;border-bottom:1px solid var(--sand-dark);font-size:0.875rem;}
+    .sidebar-stat:last-child{border-bottom:none;padding-bottom:0;}
+    .sidebar-stat-label{color:var(--text-muted);} .sidebar-stat-value{font-weight:700;color:var(--navy);}
+    .sidebar-other-loans{background:var(--white);border-radius:14px;padding:1.5rem;box-shadow:var(--shadow);}
+    .sidebar-other-loans h4{font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:1rem;}
+    .other-loan-link{display:flex;align-items:center;justify-content:space-between;padding:0.6rem 0;border-bottom:1px solid var(--sand-dark);font-size:0.875rem;font-weight:600;color:var(--navy);text-decoration:none;transition:color 0.15s;}
+    .other-loan-link:last-child{border-bottom:none;padding-bottom:0;}
+    .other-loan-link:hover{color:var(--sky);text-decoration:none;}
+    .other-loan-link span{color:var(--sky);font-size:0.8rem;}
+    .info-note{background:var(--sky-light);border-radius:10px;padding:1rem 1.25rem;font-size:0.875rem;color:var(--navy);margin-top:1.25rem;}
+    .entitlement-box{background:var(--navy);border-radius:14px;padding:1.75rem;margin:1.25rem 0;}
+    .entitlement-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem;}
+    .entitlement-stat{text-align:center;background:rgba(255,255,255,0.07);border-radius:10px;padding:1rem;}
+    .entitlement-value{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--gold);line-height:1;}
+    .entitlement-label{font-size:0.72rem;color:rgba(255,255,255,0.6);margin-top:0.3rem;line-height:1.4;}
+    .va-benefit-bar{display:flex;flex-wrap:wrap;gap:0.75rem;margin-top:1.25rem;}
+    .va-benefit{display:flex;align-items:center;gap:0.5rem;background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.25);border-radius:8px;padding:0.55rem 0.9rem;font-size:0.85rem;font-weight:600;color:#15803d;}
+    @media(max-width:960px){.loan-hero-inner{grid-template-columns:1fr;} .loan-hero-card{display:none;} .loan-body{grid-template-columns:1fr;} .loan-sidebar{position:static;} .qualifier-grid,.feature-grid,.myth-grid{grid-template-columns:1fr;} .entitlement-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:600px){.entitlement-grid{grid-template-columns:1fr;}}
+</style>
 </head>
 <body>
-
   <div class="topbar">
     <span>📞 <a href="tel:+13105945362">(310) 594-5362</a> &nbsp;|&nbsp; ✉️ <a href="/cdn-cgi/l/email-protection#671512031e0408150809060b0209030e090027000a060e0b4904080a"><span class="__cf_email__" data-cfemail="d4a6a1b0adb7bba6bbbab5b8b1bab0bdbab394b3b9b5bdb8fab7bbb9">[email&#160;protected]</span></a></span>
     <span>NMLS# 999113 &nbsp;|&nbsp; Licensed in California &nbsp;|&nbsp; Serving Redondo Beach 90277 &amp; 90278 and All South Bay Zip Codes</span>
@@ -439,7 +379,7 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="https://www.rudycorona.com">Home</a></li>
       <li><a href="https://www.rudycorona.com/about">About</a></li>
-      <li><a href="https://www.rudycorona.com/LoanOptions/">Loan Options</a></li>
+      <li><a href="https://www.rudycorona.com/services">Loan Options</a></li>
       <li><a href="https://www.rudycorona.com/calculators">Calculators</a></li>
       <li><a href="https://www.rudycorona.com/resources">Resources</a></li>
       <li><a href="https://www.rudycorona.com/blog">Blog</a></li>
@@ -452,265 +392,238 @@
       <span></span><span></span><span></span>
     </button>
   </nav>
-
-  <!-- HERO -->
-  <section class="services-hero" aria-label="Services hero">
-    <div class="services-hero-inner">
-      <div class="services-eyebrow">🏡 South Bay Mortgage Specialist</div>
-      <h1>Every Loan Type.<br><em>One Trusted Advisor.</em></h1>
-      <p>From your first home to your fifth investment property — Rudy works with 50+ lenders to find the right loan for your exact situation. No matter where you are financially, there is a way.</p>
-      <div class="hero-btns">
-        <a href="https://www.rudycorona.com/contact" class="btn-gold">Book a Free Consultation</a>
+  <section class="loan-hero">
+  <div class="loan-hero-inner">
+    <div>
+      <div class="loan-breadcrumb"><a href="https://www.rudycorona.com/">Home</a><span>›</span><a href="https://www.rudycorona.com/LoanOptions">Loan Options</a><span>›</span><span style="color:rgba(255,255,255,0.75);">VA Loans</span></div>
+      <div class="loan-eyebrow">🎖️ VA Loans</div>
+      <h1>You Served.<br><em>Now Let Your Benefits Work for You.</em></h1>
+      <p class="loan-hero-sub">Zero down payment. No PMI. Competitive rates. It is one of the most powerful benefits in existence — and most veterans never fully use it.</p>
+      <p class="loan-hero-lead">The VA loan benefit was earned through your service. Rudy's job is to make sure you understand exactly what you have, how to use it, and how to get the best deal possible on your home. You deserve nothing less.</p>
+      <div class="loan-hero-btns">
+        <a href="https://www.rudycorona.com/contact" class="btn-gold">Check My VA Eligibility →</a>
         <a href="tel:+13105945362" class="btn-outline-white">📞 (310) 594-5362</a>
       </div>
+      <div class="loan-hero-pills">
+        <span class="loan-pill">✓ 0% Down Payment</span>
+        <span class="loan-pill">✓ No PMI Ever</span>
+        <span class="loan-pill">✓ Competitive Rates</span>
+        <span class="loan-pill">✓ Reusable for Life</span>
+      </div>
     </div>
-  </section>
+    <div class="loan-hero-card">
+      <h3>At a Glance</h3>
+      <div class="loan-quick-stat"><div class="loan-qs-icon">💰</div><div><div class="loan-qs-label">Down Payment</div><div class="loan-qs-value">0% required</div></div></div>
+      <div class="loan-quick-stat"><div class="loan-qs-icon">🛡️</div><div><div class="loan-qs-label">PMI</div><div class="loan-qs-value">None — ever</div></div></div>
+      <div class="loan-quick-stat"><div class="loan-qs-icon">📊</div><div><div class="loan-qs-label">Min. Credit Score</div><div class="loan-qs-value">580–620 (flexible)</div></div></div>
+      <div class="loan-quick-stat"><div class="loan-qs-icon">🏦</div><div><div class="loan-qs-label">Loan Limit (LA County)</div><div class="loan-qs-value">No limit (full entitlement)</div></div></div>
+      <div class="loan-quick-stat"><div class="loan-qs-icon">🔄</div><div><div class="loan-qs-label">Reusable</div><div class="loan-qs-value">Yes — multiple times</div></div></div>
+      <div class="loan-quick-stat"><div class="loan-qs-icon">⚡</div><div><div class="loan-qs-label">Avg. Close Time</div><div class="loan-qs-value">21–30 days</div></div></div>
+    </div>
+  </div>
+</section>
+  <div class="loan-page" id="main">
+    <div class="loan-body">
+      <main class="loan-main">
+  <div class="loan-section">
+    <div class="section-label">From Rudy</div>
+    <h2>This Benefit Was Earned. Make Sure You Use It Right.</h2>
+    <p>I have worked with veterans who had no idea the full power of the VA loan benefit they earned. People who had been renting for years when they could have been building equity. People who thought they needed a down payment when they did not. People who walked into a bank and were pointed toward FHA when VA would have saved them hundreds of dollars a month.</p>
+    <p>That makes me want to have a conversation with every veteran I meet. <strong>Because the VA loan is one of the best financial tools available to anyone in this country.</strong> Zero down. No PMI. Competitive rates. Reusable for life. There is no civilian loan program that comes close.</p>
+    <p>My job is to make sure you understand what you have — and that you actually use it. If you served, you earned this. Let us make sure it works for you.</p>
+  </div>
 
-  <!-- TRUST STRIP -->
-  <div class="trust-strip">
-    <div class="trust-track">
-      <div class="trust-item"><span class="trust-check">✓</span> Free Pre-Approval</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> Close in 21 Days</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> 50+ Lending Partners</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> All Loan Types</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> NMLS# 999113</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> Licensed in California</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> South Bay Specialist</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> Free Pre-Approval</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> Close in 21 Days</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> 50+ Lending Partners</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> All Loan Types</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> NMLS# 999113</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> Licensed in California</div>
-      <span class="trust-sep">◆</span>
-      <div class="trust-item"><span class="trust-check">✓</span> South Bay Specialist</div>
-      <span class="trust-sep">◆</span>
+  <div class="loan-section">
+    <div class="section-label">The Core Benefits</div>
+    <h2>Why VA Loans Are Unmatched</h2>
+    <div class="va-benefit-bar">
+      <span class="va-benefit">✓ $0 Down Payment</span>
+      <span class="va-benefit">✓ No Private Mortgage Insurance</span>
+      <span class="va-benefit">✓ Competitive Interest Rates</span>
+      <span class="va-benefit">✓ Flexible Credit Requirements</span>
+      <span class="va-benefit">✓ No Prepayment Penalties</span>
+      <span class="va-benefit">✓ Assumable Loan</span>
+      <span class="va-benefit">✓ Reusable Benefit for Life</span>
+      <span class="va-benefit">✓ Limited Closing Costs</span>
+    </div>
+    <div class="loan-divider"></div>
+    <div class="feature-grid">
+      <div class="feature-card"><div class="feature-card-icon">💰</div><h4>Zero Down Payment</h4><p>Buy a home with no down payment on a VA loan with full entitlement. In Los Angeles County with a $900,000 purchase — that is $180,000 you keep in your pocket compared to a conventional 20% down loan.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">🛡️</div><h4>No PMI — Ever</h4><p>Conventional loans with less than 20% down require PMI, which typically adds $100–$300 per month to your payment. VA loans have no PMI — not at closing, not over time, not ever.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">📉</div><h4>Lower Rates Than Conventional</h4><p>VA loans consistently offer rates below conventional due to the government guarantee. On a $700,000 loan, even a 0.25% rate difference saves you thousands over the life of the loan.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">🔄</div><h4>Reusable for Life</h4><p>You can use your VA benefit multiple times — to buy a new primary home, to refinance, or even to have multiple VA loans simultaneously if your entitlement allows. It does not expire.</p></div>
     </div>
   </div>
 
-  <!-- INTRO -->
-  <section class="services-intro">
-    <div class="services-intro-inner">
-      <div>
-        <div class="section-label">Why It Matters</div>
-        <h2>The Right Loan Changes Everything</h2>
-        <p>Most people get one mortgage in their life. The wrong loan — wrong rate, wrong structure, wrong lender — costs you thousands. The right one can change your financial future entirely.</p>
-        <p>Rudy has spent over 20 years matching real people with the right loan programs. <strong>Not the easiest loan. Not the fastest approval. The right one.</strong></p>
-        <p>Whether you're a first-time buyer, a seasoned investor, self-employed, or a senior looking to unlock your equity — there's a program built for your situation.</p>
-        <a href="https://www.rudycorona.com/contact" style="display:inline-block;margin-top:1.25rem;background:var(--navy);color:#fff;padding:0.85rem 1.75rem;border-radius:8px;font-weight:700;font-size:0.92rem;text-decoration:none;transition:background 0.15s;" onmouseover="this.style.background='var(--navy-deep)'" onmouseout="this.style.background='var(--navy)'">Talk to Rudy — Free →</a>
-      </div>
-      <div class="intro-stats">
-        <div class="intro-stat">
-          <div class="intro-stat-value">20+</div>
-          <div class="intro-stat-label">Years helping South Bay families</div>
-        </div>
-        <div class="intro-stat">
-          <div class="intro-stat-value">50+</div>
-          <div class="intro-stat-label">Lending partners in our network</div>
-        </div>
-        <div class="intro-stat">
-          <div class="intro-stat-value">9</div>
-          <div class="intro-stat-label">Loan programs available</div>
-        </div>
-        <div class="intro-stat">
-          <div class="intro-stat-value">21</div>
-          <div class="intro-stat-label">Days to close on average</div>
-        </div>
+  <div class="loan-section">
+    <div class="section-label">Who Qualifies</div>
+    <h2>VA Loan Eligibility</h2>
+    <p>The VA loan is available to servicemembers, veterans, and surviving spouses who meet service requirements. Here is a straightforward breakdown:</p>
+    <div class="feature-grid">
+      <div class="feature-card"><div class="feature-card-icon">🎖️</div><h4>Active Duty</h4><p>90 consecutive days of active service during wartime, or 181 days during peacetime. Currently serving qualifies.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">🏅</div><h4>Veterans</h4><p>Honorably discharged after meeting service minimums. 90 days wartime service or 181 days peacetime. National Guard and Reserves: 6 years, or 90 days active duty under Title 10.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">💛</div><h4>Surviving Spouses</h4><p>Un-remarried surviving spouses of veterans who died in service or from a service-connected disability may be eligible. Rudy will walk through your specific situation.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">📋</div><h4>Certificate of Eligibility (COE)</h4><p>The COE confirms your eligibility to lenders. Rudy obtains it for you — most are issued within minutes through the VA's automated system. You do not need to track it down yourself.</p></div>
+    </div>
+    <div class="info-note">💡 Not sure if you qualify? Tell Rudy your service history on the first call. He has worked with veterans in many different situations — Guard, Reserve, discharged, retired — and will give you a straight answer.</div>
+  </div>
+
+  <div class="loan-section">
+    <div class="section-label">Understanding Your Benefit</div>
+    <h2>VA Entitlement and Loan Limits</h2>
+    <p>VA entitlement is the dollar amount the VA guarantees on your loan. With <strong>full entitlement</strong> — meaning you have never used a VA loan or have fully paid one off — there is no loan limit. You can borrow as much as a lender will approve with zero down payment.</p>
+    <div class="entitlement-box">
+      <p style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--gold);margin:0 0 0.25rem;">2026 VA Loan Numbers — Southern California</p>
+      <p style="font-size:0.82rem;color:rgba(255,255,255,0.6);margin:0 0 1rem;">With full entitlement, no county loan limits apply.</p>
+      <div class="entitlement-grid">
+        <div class="entitlement-stat"><div class="entitlement-value">$0</div><div class="entitlement-label">Down Payment Required (full entitlement)</div></div>
+        <div class="entitlement-stat"><div class="entitlement-value">None</div><div class="entitlement-label">Loan limit with full entitlement</div></div>
+        <div class="entitlement-stat"><div class="entitlement-value">$0</div><div class="entitlement-label">PMI — ever, on any VA loan</div></div>
       </div>
     </div>
-  </section>
+    <h3>Remaining Entitlement (If You Have an Active VA Loan)</h3>
+    <p>If you currently have a VA loan, you may still have remaining entitlement to use for a second property. The calculation is based on the conforming loan limit and what was used on your first loan. Rudy will run the exact numbers for your situation — many veterans are surprised to find they can get a second VA loan simultaneously.</p>
+  </div>
 
-  <!-- LOAN CARDS -->
-  <section class="loans-section" id="main">
-    <div class="loans-section-inner">
-      <div class="section-header">
-        <div class="section-label">Loan Programs</div>
-        <h2 class="section-title">Find the Right Loan for You</h2>
-        <p class="section-sub">Every situation is different. Here's an honest overview of what each program does — and who it's best for.</p>
+  <div class="loan-section">
+    <div class="section-label">The Funding Fee</div>
+    <h2>Understanding the VA Funding Fee</h2>
+    <p>The VA charges a one-time funding fee that helps keep the program running for future veterans. It can be financed into the loan — no out-of-pocket cost at closing in most cases.</p>
+    <div class="feature-grid">
+      <div class="feature-card"><div class="feature-card-icon">1️⃣</div><h4>First Use — 0% Down</h4><p>2.15% of the loan amount. Can be financed into the loan. On a $700,000 loan, that is $15,050 — compared to $140,000 for a 20% down payment on conventional.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">🔄</div><h4>Subsequent Use — 0% Down</h4><p>3.3% of the loan amount. Still significantly less than saving a 20% down payment, and still no PMI to pay monthly.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">💵</div><h4>With Down Payment</h4><p>5–9% down: 1.5%. 10%+ down: 1.25%. Putting something down reduces the funding fee and lowers your monthly payment.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">🎖️</div><h4>Funding Fee Exempt</h4><p>Veterans with a service-connected disability rating of 10% or more are fully exempt from the funding fee. Surviving spouses of veterans who died in service are also exempt.</p></div>
+    </div>
+    <div class="info-note">💡 If you have a disability rating — even a pending one — tell Rudy on the first call. Exemption from the funding fee can save thousands of dollars. Rudy will make sure you are not paying it if you do not have to.</div>
+  </div>
+
+  <div class="loan-section">
+    <div class="section-label">Myths vs. Reality</div>
+    <h2>What Veterans Get Wrong About VA Loans</h2>
+    <div class="myth-grid">
+      <div class="myth-card myth"><div class="myth-label">❌ Myth</div><p>"I can only use my VA benefit once."</p></div>
+      <div class="myth-card reality"><div class="myth-label">✅ Reality</div><p>The VA benefit is reusable for life. You can use it again after paying off a VA loan, and in some cases simultaneously with another VA loan.</p></div>
+      <div class="myth-card myth"><div class="myth-label">❌ Myth</div><p>"VA loans take longer and sellers do not like them."</p></div>
+      <div class="myth-card reality"><div class="myth-label">✅ Reality</div><p>With the right lender and preparation, VA loans close as fast as conventional. Rudy consistently closes VA loans in 21–30 days.</p></div>
+      <div class="myth-card myth"><div class="myth-label">❌ Myth</div><p>"I need perfect credit to qualify."</p></div>
+      <div class="myth-card reality"><div class="myth-label">✅ Reality</div><p>VA loans are more flexible on credit than conventional. Many lenders approve at 580–620. The VA looks at the full borrower picture, not just a score.</p></div>
+      <div class="myth-card myth"><div class="myth-label">❌ Myth</div><p>"The funding fee makes VA loans not worth it."</p></div>
+      <div class="myth-card reality"><div class="myth-label">✅ Reality</div><p>The funding fee is far less than a 20% down payment — and you save PMI every single month. The math almost always favors VA for eligible borrowers.</p></div>
+      <div class="myth-card myth"><div class="myth-label">❌ Myth</div><p>"I cannot buy an expensive home with a VA loan."</p></div>
+      <div class="myth-card reality"><div class="myth-label">✅ Reality</div><p>With full entitlement there is no loan limit. VA loans can be used to purchase homes in Manhattan Beach, Palos Verdes, and the highest-value South Bay neighborhoods.</p></div>
+      <div class="myth-card myth"><div class="myth-label">❌ Myth</div><p>"All lenders know VA loans well."</p></div>
+      <div class="myth-card reality"><div class="myth-label">✅ Reality</div><p>VA loans have unique appraisal requirements (MPRs) and paperwork. An experienced VA lender — someone who closes them regularly — makes a real difference in how smoothly the deal goes.</p></div>
+    </div>
+  </div>
+
+  <div class="loan-section">
+    <div class="section-label">Refinance Options</div>
+    <h2>VA Refinance Programs</h2>
+    <h3>IRRRL — Interest Rate Reduction Refinance Loan</h3>
+    <p>Also called a VA Streamline Refinance. If you already have a VA loan and rates have dropped, the IRRRL is one of the simplest refinances available: no appraisal required in most cases, minimal income documentation, and reduced funding fee (0.5%). You must be refinancing into a lower rate and payment. Fast, low-cost, and designed specifically for VA borrowers.</p>
+    <div class="loan-divider"></div>
+    <h3>VA Cash-Out Refinance</h3>
+    <p>Refinance your existing loan — VA or non-VA — and pull out cash from your home equity. You can access up to 90% of your home's value. Use the funds for home improvements, debt consolidation, education, or other needs. Full appraisal and income documentation required. The funding fee applies but can be financed.</p>
+    <div class="info-note">💡 If you have a conventional loan right now, a VA cash-out refinance can convert it to a VA loan — potentially lowering your rate and eliminating PMI simultaneously.</div>
+  </div>
+
+  <div class="loan-section">
+    <div class="section-label">What to Expect</div>
+    <h2>The VA Loan Process with Rudy</h2>
+    <div class="process-steps">
+      <div class="process-step"><div class="step-num">1</div><div><div class="step-title">Free Consultation</div><div class="step-desc">Rudy reviews your service history, credit, income, and entitlement status. By the end of the call you know exactly what you qualify for and what your options are.</div></div></div>
+      <div class="process-step"><div class="step-num">2</div><div><div class="step-title">Certificate of Eligibility (COE)</div><div class="step-desc">Rudy obtains your COE through the VA's automated system — most are issued in minutes. You do not need to deal with the VA directly.</div></div></div>
+      <div class="process-step"><div class="step-num">3</div><div><div class="step-title">Pre-Approval — 1 to 3 Days</div><div class="step-desc">DD-214 or proof of service, 2 years W-2s or tax returns (self-employed), pay stubs, bank statements, ID. Pre-approval letter issued. You are ready to make competitive offers.</div></div></div>
+      <div class="process-step"><div class="step-num">4</div><div><div class="step-title">Find Your Home &amp; Make an Offer</div><div class="step-desc">Rudy stays available throughout your search. He can update your pre-approval letter quickly and answer lender questions from the seller's agent.</div></div></div>
+      <div class="process-step"><div class="step-num">5</div><div><div class="step-title">VA Appraisal (MPR Review)</div><div class="step-desc">The VA orders an appraisal that confirms value AND checks that the property meets Minimum Property Requirements (MPRs). Rudy knows how to handle MPR issues before they become problems.</div></div></div>
+      <div class="process-step"><div class="step-num">6</div><div><div class="step-title">Underwriting &amp; Closing</div><div class="step-desc">Rudy targets 21–30 days from accepted offer to closing day. He stays in contact at every step so you always know where things stand.</div></div></div>
+    </div>
+  </div>
+
+  <div class="loan-section">
+    <div class="section-label">Is It Right For You?</div>
+    <h2>VA vs. Conventional — Honest Comparison</h2>
+    <div class="qualifier-grid">
+      <div class="qualifier-card good">
+        <h4>✅ VA Is Almost Always Best If...</h4>
+        <div class="qualifier-item"><span class="qi-icon" style="color:#16a34a;">✓</span> You are eligible and buying a primary residence</div>
+        <div class="qualifier-item"><span class="qi-icon" style="color:#16a34a;">✓</span> You want 0% down and no PMI</div>
+        <div class="qualifier-item"><span class="qi-icon" style="color:#16a34a;">✓</span> Your credit is 580–720 (VA is more flexible)</div>
+        <div class="qualifier-item"><span class="qi-icon" style="color:#16a34a;">✓</span> You have a service-connected disability (funding fee exempt)</div>
+        <div class="qualifier-item"><span class="qi-icon" style="color:#16a34a;">✓</span> You want to preserve cash for other investments</div>
       </div>
-      <div class="loans-grid">
-
-        <div class="loan-card">
-          <div class="loan-icon">🏠</div>
-          <h3>Conventional Loans</h3>
-          <div class="loan-tagline">Best rates for qualified buyers</div>
-          <p>The most versatile loan type. Conventional loans offer the lowest rates for buyers with solid credit and at least 3–20% down. No upfront mortgage insurance with 20% down — and no limits on property type.</p>
-          <div class="loan-tags"><span class="l-tag">3% min down</span><span class="l-tag">620+ credit</span><span class="l-tag">No MIP at 20%</span></div>
-          <a href="https://www.rudycorona.com/services/conventional" class="loan-link">Learn more →</a>
-        </div>
-
-        <div class="loan-card">
-          <div class="loan-icon">🔑</div>
-          <h3>FHA Loans</h3>
-          <div class="loan-tagline">First-time buyer friendly</div>
-          <p>Lower credit requirements, just 3.5% down. FHA loans open the door for buyers who don't qualify for conventional programs yet. Gift funds are allowed — and the path to homeownership starts here.</p>
-          <div class="loan-tags"><span class="l-tag">3.5% min down</span><span class="l-tag">580+ credit</span><span class="l-tag">Gift funds OK</span></div>
-          <a href="https://www.rudycorona.com/services/fha" class="loan-link">Learn more →</a>
-        </div>
-
-        <div class="loan-card">
-          <div class="loan-icon">🏡</div>
-          <h3>Jumbo Loans</h3>
-          <div class="loan-tagline">South Bay luxury specialist</div>
-          <p>Financing above the conforming limit — starting at $806,500 in most California markets. Rudy closes jumbo loans up to $10M+ across Manhattan Beach, Palos Verdes, and the entire South Bay.</p>
-          <div class="loan-tags"><span class="l-tag">$806,500+</span><span class="l-tag">Up to $10M+</span><span class="l-tag">10–20% down</span></div>
-          <a href="https://www.rudycorona.com/services/conventional" class="loan-link">Learn more →</a>
-        </div>
-
-        <div class="loan-card">
-          <div class="loan-icon">📈</div>
-          <h3>DSCR Investment Loans</h3>
-          <div class="loan-tagline">Qualify on the property, not your income</div>
-          <p>Debt Service Coverage Ratio loans let investors qualify based on the rental income the property generates — not W-2s or tax returns. Perfect for self-employed investors building a portfolio.</p>
-          <div class="loan-tags"><span class="l-tag">No income docs</span><span class="l-tag">DSCR 1.0+</span><span class="l-tag">20–25% down</span></div>
-          <a href="https://www.rudycorona.com/services/dscr" class="loan-link">Learn more →</a>
-        </div>
-
-        <div class="loan-card">
-          <div class="loan-icon">🌿</div>
-          <h3>Reverse Mortgages</h3>
-          <div class="loan-tagline">Unlock your equity in retirement</div>
-          <p>For homeowners 62+, a reverse mortgage can eliminate your monthly mortgage payment and provide tax-free income from your home equity — while you continue living in your home.</p>
-          <div class="loan-tags"><span class="l-tag">Age 62+</span><span class="l-tag">No monthly payment</span><span class="l-tag">Stay in your home</span></div>
-          <a href="https://www.rudycorona.com/services/reverse" class="loan-link">Learn more →</a>
-        </div>
-
-        <div class="loan-card">
-          <div class="loan-icon">💼</div>
-          <h3>Self-Employed Loans</h3>
-          <div class="loan-tagline">Qualify on real cash flow</div>
-          <p>Bank statement loans, P&amp;L programs, and 1099 options let business owners qualify on what they actually earn — not what their tax returns show after deductions. Available at jumbo levels.</p>
-          <div class="loan-tags"><span class="l-tag">Bank statement</span><span class="l-tag">12–24 months</span><span class="l-tag">Jumbo available</span></div>
-          <a href="https://www.rudycorona.com/services/self-employed" class="loan-link">Learn more →</a>
-        </div>
-
-        <div class="loan-card">
-          <div class="loan-icon">⚡</div>
-          <h3>Hard Money Loans</h3>
-          <div class="loan-tagline">Fast funding for time-sensitive deals</div>
-          <p>When speed matters — fix-and-flip, bridge financing, or deals conventional lenders won't touch. Hard money closes fast because it's asset-based, not credit-based. Days, not weeks.</p>
-          <div class="loan-tags"><span class="l-tag">Close in days</span><span class="l-tag">Asset-based</span><span class="l-tag">Fix &amp; flip</span></div>
-          <a href="https://www.rudycorona.com/services/hard-money" class="loan-link">Learn more →</a>
-        </div>
-
-        <div class="loan-card">
-          <div class="loan-icon">🏢</div>
-          <h3>Commercial Loans</h3>
-          <div class="loan-tagline">Business property financing</div>
-          <p>Retail, office, multifamily, and mixed-use properties. Commercial loans are structured differently than residential — Rudy knows the programs and lenders that make them work.</p>
-          <div class="loan-tags"><span class="l-tag">Retail &amp; office</span><span class="l-tag">Multifamily</span><span class="l-tag">Mixed-use</span></div>
-          <a href="https://www.rudycorona.com/services/commercial" class="loan-link">Learn more →</a>
-        </div>
-
-        <div class="loan-card">
-          <div class="loan-icon">🎖️</div>
-          <h3>VA Loans</h3>
-          <div class="loan-tagline">Earned benefit for veterans &amp; military</div>
-          <p>No down payment, no PMI, competitive rates — the VA loan is the most powerful benefit available to veterans and active-duty service members. You earned it. Let's use it.</p>
-          <div class="loan-tags"><span class="l-tag">0% down</span><span class="l-tag">No PMI</span><span class="l-tag">Veterans only</span></div>
-          <a href="https://www.rudycorona.com/LoanOptions/va" class="loan-link">Learn more →</a>
-        </div>
-
+      <div class="qualifier-card bad">
+        <h4>⚠️ Worth Comparing If...</h4>
+        <div class="qualifier-item"><span class="qi-icon" style="color:#dc2626;">→</span> You have 20%+ down and 740+ credit (rates may be comparable)</div>
+        <div class="qualifier-item"><span class="qi-icon" style="color:#dc2626;">→</span> Buying a condo that is not VA-approved and seller will not repair</div>
+        <div class="qualifier-item"><span class="qi-icon" style="color:#dc2626;">→</span> The property has significant issues that may not pass MPR</div>
       </div>
     </div>
-  </section>
+    <p style="margin-top:1.25rem;font-size:0.875rem;color:var(--text-muted);">Rudy always runs both scenarios with real numbers. For most eligible veterans, VA wins — but he will show you the comparison and let you decide.</p>
+  </div>
 
-  <!-- HOW IT WORKS -->
-  <section class="process-section">
-    <div class="process-section-inner">
-      <div class="section-header" style="text-align:center;">
-        <div class="section-label">The Process</div>
-        <h2 class="section-title">From First Call to Closing Day</h2>
-        <p class="section-sub" style="margin:0 auto;">Simple. Transparent. No surprises. Here's what working with Rudy actually looks like.</p>
-      </div>
-      <div class="process-steps">
-        <div class="process-step">
-          <div class="step-num">1</div>
-          <h4>Free Consultation</h4>
-          <p>20 minutes. We talk through your situation, your goals, and what programs actually fit. No pitch. No pressure.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">2</div>
-          <h4>Pre-Approval</h4>
-          <p>We pull your documents, run your numbers, and get you a solid pre-approval letter — usually within 24 hours.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">3</div>
-          <h4>Find Your Home</h4>
-          <p>Shop with confidence. Sellers take pre-approved buyers seriously. Your agent will thank you.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">4</div>
-          <h4>Close in 21 Days</h4>
-          <p>Clear communication, fast underwriting, and a closing day that actually happens on time. Every time.</p>
-        </div>
-      </div>
+  <div class="loan-section">
+    <div class="section-label">Quick Answers</div>
+    <h2>VA Loan FAQ</h2>
+    <div class="loan-faq">
+      <div class="loan-faq-item"><button class="loan-faq-q" onclick="toggleLoanFaq(this)">How do I get my Certificate of Eligibility? <span class="loan-faq-chevron">▾</span></button><div class="loan-faq-a">You do not have to do anything — Rudy obtains it for you through the VA's automated system. Most COEs are issued within minutes. If yours requires additional documentation, Rudy handles that too.</div></div>
+      <div class="loan-faq-item"><button class="loan-faq-q" onclick="toggleLoanFaq(this)">Can I use my VA benefit if I still have an active VA loan? <span class="loan-faq-chevron">▾</span></button><div class="loan-faq-a">Possibly yes. If you have remaining entitlement, you may be able to take out a second VA loan simultaneously. The calculation is based on your current loan balance versus the county conforming limit. Rudy runs your specific numbers on the first call.</div></div>
+      <div class="loan-faq-item"><button class="loan-faq-q" onclick="toggleLoanFaq(this)">Can I use a VA loan for a condo? <span class="loan-faq-chevron">▾</span></button><div class="loan-faq-a">Yes — if the condo project is on the VA-approved list. Rudy can check the status of any condo complex and explore spot-approval options if needed.</div></div>
+      <div class="loan-faq-item"><button class="loan-faq-q" onclick="toggleLoanFaq(this)">What is an MPR and can it kill my deal? <span class="loan-faq-chevron">▾</span></button><div class="loan-faq-a">MPR stands for Minimum Property Requirements — the VA's basic standards for safety, structural soundness, and sanitation. Most homes pass without issue. If something comes up, it often just requires the seller to make a repair. Rudy knows how to handle MPR issues before they become emergencies.</div></div>
+      <div class="loan-faq-item"><button class="loan-faq-q" onclick="toggleLoanFaq(this)">I have a disability rating — am I exempt from the funding fee? <span class="loan-faq-chevron">▾</span></button><div class="loan-faq-a">If your service-connected disability rating is 10% or higher, you are fully exempt from the VA funding fee. This can save thousands of dollars. Always tell Rudy your disability status upfront — even if the rating is pending.</div></div>
+      <div class="loan-faq-item"><button class="loan-faq-q" onclick="toggleLoanFaq(this)">Can I use a VA loan to buy a multi-unit property? <span class="loan-faq-chevron">▾</span></button><div class="loan-faq-a">Yes — VA loans can be used on 1 to 4 unit properties as long as you occupy one unit as your primary residence. This is one of the best wealth-building strategies available to veterans: buy a duplex, triplex, or fourplex, live in one unit, and let rental income help pay the mortgage.</div></div>
+      <div class="loan-faq-item"><button class="loan-faq-q" onclick="toggleLoanFaq(this)">What credit score do I need? <span class="loan-faq-chevron">▾</span></button><div class="loan-faq-a">The VA does not set a minimum credit score — lenders do. Most VA-approved lenders work with scores as low as 580–620. Rudy reviews your full profile and finds the lender that fits your situation.</div></div>
     </div>
-  </section>
-
-  <!-- WHY RUDY -->
-  <section class="why-section">
-    <div class="why-section-inner">
-      <div>
-        <div class="section-label">Why Rudy</div>
-        <h2>"There is a way.<br>Let's find it together."</h2>
-        <p>Most mortgage brokers are order takers. They take your application, run it through their system, and tell you yes or no. Rudy does something different.</p>
-        <p><strong>He starts with your situation and works backward to the right loan.</strong> Twenty years of relationships with 50+ lenders means he's seen almost every scenario — and found a path through most of them.</p>
-        <a href="https://www.rudycorona.com/contact" style="display:inline-block;margin-top:1.25rem;background:var(--gold);color:var(--navy-deep);padding:0.9rem 2rem;border-radius:8px;font-weight:700;font-size:0.95rem;text-decoration:none;transition:filter 0.15s;" onmouseover="this.style.filter='brightness(1.08)'" onmouseout="this.style.filter='none'">Book a Free Call →</a>
-      </div>
-      <div class="why-cards">
-        <div class="why-card">
-          <div class="why-card-icon">🤝</div>
-          <div>
-            <h4>Independent Broker</h4>
-            <p>Not tied to one bank. Rudy shops 50+ lenders to find the best rate and terms for your situation — not whatever earns the highest commission.</p>
+  </div></main>
+      
+      <aside class="loan-sidebar">
+        <div class="sidebar-cta-card">
+          <h3>Check Your VA Eligibility</h3>
+          <p>Free consultation — Rudy reviews your service history, entitlement, and options in one call. No pressure, no obligation.</p>
+          <a href="https://www.rudycorona.com/contact" class="sidebar-cta-btn">Check My VA Eligibility →</a>
+          <div class="sidebar-cta-phone">Or call/text directly<br><a href="tel:+13105945362">(310) 594-5362</a></div>
+        </div>
+        <div class="sidebar-info-card">
+          <h4>Quick Stats</h4>
+          <div class="sidebar-stat"><span class="sidebar-stat-label">Down Payment</span><span class="sidebar-stat-value">$0 required</span></div>
+          <div class="sidebar-stat"><span class="sidebar-stat-label">PMI</span><span class="sidebar-stat-value">None — ever</span></div>
+          <div class="sidebar-stat"><span class="sidebar-stat-label">Min. Credit</span><span class="sidebar-stat-value">580–620</span></div>
+          <div class="sidebar-stat"><span class="sidebar-stat-label">Loan Limit</span><span class="sidebar-stat-value">None (full entitlement)</span></div>
+          <div class="sidebar-stat"><span class="sidebar-stat-label">Funding Fee</span><span class="sidebar-stat-value">2.15% (waived w/ disability)</span></div>
+          <div class="sidebar-stat"><span class="sidebar-stat-label">Close Time</span><span class="sidebar-stat-value">21–30 days</span></div>
+        </div>
+        <div class="sidebar-other-loans">
+          <h4>Other Loan Options</h4>
+          <a href="https://www.rudycorona.com/LoanOptions/conventional" class="other-loan-link">Conventional Loans <span>→</span></a>
+          <a href="https://www.rudycorona.com/LoanOptions/fha" class="other-loan-link">FHA Loans <span>→</span></a>
+          <a href="https://www.rudycorona.com/LoanOptions/dscr" class="other-loan-link">DSCR / Investors <span>→</span></a>
+          <a href="https://www.rudycorona.com/LoanOptions/reverse" class="other-loan-link">Reverse Mortgages <span>→</span></a>
+          <a href="https://www.rudycorona.com/LoanOptions/self-employed" class="other-loan-link">Self-Employed <span>→</span></a>
+          <a href="https://www.rudycorona.com/LoanOptions/hard-money" class="other-loan-link">Hard Money <span>→</span></a>
+          <a href="https://www.rudycorona.com/LoanOptions/commercial" class="other-loan-link">Commercial Loans <span>→</span></a>
+          <a href="https://www.rudycorona.com/LoanOptions" class="other-loan-link" style="color:var(--sky);font-weight:700;">← All Loan Options <span></span></a>
+        </div>
+        <div class="sidebar-info-card" style="text-align:center;">
+          <div style="font-size:0.78rem;color:var(--text-muted);line-height:1.65;">
+            <strong style="color:var(--navy);">Rudy Corona</strong><br>
+            NMLS# 999113 · DRE# 01343760<br>
+            Licensed in California<br>
+            (310) 594-5362
           </div>
         </div>
-        <div class="why-card">
-          <div class="why-card-icon">📞</div>
-          <div>
-            <h4>Direct Access to Rudy</h4>
-            <p>You'll have his personal cell number. No call center, no assistant — just the person responsible for your loan, every time you call.</p>
-          </div>
-        </div>
-        <div class="why-card">
-          <div class="why-card-icon">📍</div>
-          <div>
-            <h4>South Bay Expert</h4>
-            <p>Rudy has lived and worked in the South Bay for over 20 years. He knows these neighborhoods, these price points, and the agents who work here.</p>
-          </div>
-        </div>
-        <div class="why-card">
-          <div class="why-card-icon">⚡</div>
-          <div>
-            <h4>21-Day Closings</h4>
-            <p>In a competitive market, speed wins. Rudy consistently closes in 21 days or less — and sellers and agents know it.</p>
-          </div>
-        </div>
-      </div>
+      </aside>
     </div>
-  </section>
+  </div>
 
-  <!-- CTA -->
-  <section class="cta-section">
-    <div style="max-width:640px;margin:0 auto;">
-      <h2>Ready to Find <em>Your</em> Loan?</h2>
-      <p>A free 20-minute call is all it takes. Rudy will listen, answer your questions honestly, and give you a straight answer — no obligation, no pressure.</p>
+  <section style="background:linear-gradient(135deg,#0a1f3d 0%,var(--navy) 100%);padding:5rem 1.5rem;text-align:center;">
+    <div style="max-width:620px;margin:0 auto;">
+      <div style="font-size:2.5rem;margin-bottom:1rem;">🎖️</div>
+      <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,2.9rem);font-weight:700;color:#fff;margin-bottom:0.75rem;">You Served This Country.<br><em style="color:var(--gold);font-style:italic;">Let Your Benefit Serve You.</em></h2>
+      <p style="color:rgba(255,255,255,0.72);font-size:1.05rem;max-width:520px;margin:0 auto 2rem;line-height:1.7;">The consultation is free. Rudy will tell you exactly what you qualify for, what your entitlement looks like, and what the best path forward is. No pressure, no obligation — just a straight conversation.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="https://www.rudycorona.com/contact" class="btn-gold">Book a Free Consultation →</a>
-        <a href="tel:+13105945362" class="btn-outline-white">📞 Call (310) 594-5362</a>
+        <a href="https://www.rudycorona.com/contact" class="btn-gold">Check My VA Eligibility →</a>
+        <a href="tel:+13105945362" class="btn-outline-white">📞 (310) 594-5362</a>
       </div>
     </div>
   </section>
@@ -754,19 +667,10 @@
   </footer>
 
   <script>
-  const menuBtn = document.getElementById('menu-btn');
-  const siteNav = document.getElementById('site-nav');
-  menuBtn?.addEventListener('click', () => {
-    const isOpen = siteNav.classList.toggle('nav-mobile-open');
-    menuBtn.setAttribute('aria-expanded', String(isOpen));
-  });
-  document.querySelectorAll('#nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      siteNav.classList.remove('nav-mobile-open');
-      menuBtn?.setAttribute('aria-expanded', 'false');
-    });
-  });
+  function toggleLoanFaq(btn){const item=btn.closest('.loan-faq-item');const isOpen=item.classList.contains('open');document.querySelectorAll('.loan-faq-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');}
+  const menuBtn=document.getElementById('menu-btn');const siteNav=document.getElementById('site-nav');
+  menuBtn?.addEventListener('click',()=>{const isOpen=siteNav.classList.toggle('nav-mobile-open');menuBtn.setAttribute('aria-expanded',String(isOpen));});
+  document.querySelectorAll('#nav-links a').forEach(link=>{link.addEventListener('click',()=>{siteNav.classList.remove('nav-mobile-open');menuBtn?.setAttribute('aria-expanded','false');});});
   </script>
-
 </body>
 </html>

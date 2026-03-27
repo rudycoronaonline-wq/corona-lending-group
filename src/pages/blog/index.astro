@@ -1,0 +1,8 @@
+---
+/**
+ * Blog landing: serves _blog-content.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import blogContentHtml from './_blog-content.html?raw';
+---
+<Fragment set:html={blogContentHtml} />

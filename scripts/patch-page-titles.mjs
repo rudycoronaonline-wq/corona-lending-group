@@ -15,8 +15,6 @@ function esc(t) {
 
 /** rel path from project root -> plain title text (use & for ampersand) */
 const titles = {
-  'dist/index.html':
-    'California Mortgage Broker | Home Loans & Reverse Mortgages | Rudy Corona',
   'dist/about/index.html': 'About Rudy Corona | California Mortgage Broker',
   'dist/blog/index.html': 'California Mortgage Blog | Home Loan Tips | Rudy Corona',
   'dist/contact/index.html': 'Book a Mortgage Consultation | Rudy Corona',

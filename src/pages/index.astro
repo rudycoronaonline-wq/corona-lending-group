@@ -1,0 +1,8 @@
+---
+/**
+ * Home: serves _index-content.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import indexContentHtml from './_index-content.html?raw';
+---
+<Fragment set:html={indexContentHtml} />

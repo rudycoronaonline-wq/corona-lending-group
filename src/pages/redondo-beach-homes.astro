@@ -272,8 +272,8 @@ import ServiceAreaCityGrid from '../components/ServiceAreaCityGrid.astro';
     .btn-outline-dark:hover { background: var(--navy); color: #fff; }
     .site-footer { background: var(--navy-deep); color: rgba(255,255,255,0.72); padding: 3.5rem 1.5rem 1.5rem; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; max-width: 1160px; margin: 0 auto 2.5rem; }
-    .footer-brand .brand-name { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: #fff; }
-    .footer-brand .brand-name span { color: var(--gold); }
+    .footer-brand .brand-name { margin-bottom: 0.5rem; }
+    .footer-brand .brand-name img { display: inline-block; height: 28px; width: auto; vertical-align: middle; }
     .footer-brand p { font-size: 0.86rem; line-height: 1.6; margin: 0.75rem 0 0; max-width: 280px; }
     .footer-col h5 { font-size: 0.73rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.42); margin-bottom: 1rem; }
     .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
@@ -802,7 +802,7 @@ import ServiceAreaCityGrid from '../components/ServiceAreaCityGrid.astro';
   <footer class="site-footer" role="contentinfo">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="brand-name">Rudy <span>Corona</span></div>
+        <div class="brand-name" style="margin-bottom:0.5rem;"><img src="/images/logo.png?v=2" alt="Rudy Corona" height="28" style="display:inline-block;height:28px;width:auto;vertical-align:middle;margin-right:0.5rem;" /></div>
         <p>Your California Modern Mortgage Advisor — serving homebuyers across the South Bay and all of Southern California.</p>
         <p style="margin-top:0.5rem; font-size:0.79rem;">NMLS# 999113 &nbsp;|&nbsp; Licensed in California</p>
       </div>
@@ -832,7 +832,7 @@ import ServiceAreaCityGrid from '../components/ServiceAreaCityGrid.astro';
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Rudy Corona. All rights reserved. <a href="https://www.rudycorona.com/privacy">Privacy Policy</a></span>
+      <span style="display:inline-flex;align-items:center;flex-wrap:wrap;gap:0.4rem;"><img src="/images/logo.png?v=2" alt="Rudy Corona" height="28" style="display:inline-block;height:28px;width:auto;vertical-align:middle;margin-right:0.5rem;" />© 2026 Rudy Corona. All rights reserved. <a href="https://www.rudycorona.com/privacy">Privacy Policy</a></span>
       <span>Not a commitment to lend. All loans subject to credit and property approval. NMLS# 999113.</span>
     </div>
   </footer>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Loan Options | Mortgage Services | Corona Lending Group | NMLS# 999113</title>
   <meta name="description" content="Explore all mortgage loan options with Rudy Corona — Conventional, FHA, Jumbo, DSCR, Reverse, Self-Employed, Hard Money and Commercial loans. South Bay specialist. NMLS# 999113." />
-  <link rel="canonical" href="https://www.rudycorona.com/services" />
+  <link rel="canonical" href="https://www.rudycorona.com/LoanOptions/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -337,11 +337,23 @@
     .btn-outline-white:hover { border-color:#fff; color:#fff; text-decoration:none; }
 
     .trust-strip {
-      background:var(--navy-deep); padding:0.9rem 1.5rem;
-      display:flex; justify-content:center; flex-wrap:wrap; gap:1rem 2.5rem;
+      background: var(--navy-deep);
+      padding: 0.85rem 0;
+      overflow: hidden;
+      white-space: nowrap;
     }
-    .trust-item { display:flex; align-items:center; gap:0.45rem; color:rgba(255,255,255,0.75); font-size:0.82rem; font-weight:500; }
-    .trust-item .ti-check { color:var(--gold); font-weight:700; }
+    .trust-track {
+      display: inline-flex; gap: 2.5rem;
+      animation: marquee 28s linear infinite;
+    }
+    .trust-strip:hover .trust-track { animation-play-state: paused; }
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .trust-item { display: inline-flex; align-items: center; gap: 0.45rem; color: rgba(255,255,255,0.75); font-size: 0.82rem; font-weight: 500; white-space: nowrap; }
+    .trust-check { color: var(--gold); font-weight: 700; }
+    .trust-sep { color: rgba(255,255,255,0.2); font-size: 0.7rem; }
 
     .services-intro { background:var(--sand); padding:4.5rem 1.5rem 3.5rem; }
     .services-intro-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
@@ -426,7 +438,7 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="https://www.rudycorona.com">Home</a></li>
       <li><a href="https://www.rudycorona.com/about">About</a></li>
-      <li><a href="https://www.rudycorona.com/services">Loan Options</a></li>
+      <li><a href="https://www.rudycorona.com/LoanOptions/">Loan Options</a></li>
       <li><a href="https://www.rudycorona.com/calculators">Calculators</a></li>
       <li><a href="https://www.rudycorona.com/resources">Resources</a></li>
       <li><a href="https://www.rudycorona.com/blog">Blog</a></li>
@@ -455,12 +467,36 @@
 
   <!-- TRUST STRIP -->
   <div class="trust-strip">
-    <div class="trust-item"><span class="ti-check">✓</span> 50+ Lending Partners</div>
-    <div class="trust-item"><span class="ti-check">✓</span> All Loan Types</div>
-    <div class="trust-item"><span class="ti-check">✓</span> Close in 21 Days</div>
-    <div class="trust-item"><span class="ti-check">✓</span> Free Pre-Approval</div>
-    <div class="trust-item"><span class="ti-check">✓</span> NMLS# 999113</div>
-    <div class="trust-item"><span class="ti-check">✓</span> Licensed in California</div>
+    <div class="trust-track">
+      <div class="trust-item"><span class="trust-check">✓</span> Free Pre-Approval</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> Close in 21 Days</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> 50+ Lending Partners</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> All Loan Types</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> NMLS# 999113</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> Licensed in California</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> South Bay Specialist</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> Free Pre-Approval</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> Close in 21 Days</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> 50+ Lending Partners</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> All Loan Types</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> NMLS# 999113</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> Licensed in California</div>
+      <span class="trust-sep">◆</span>
+      <div class="trust-item"><span class="trust-check">✓</span> South Bay Specialist</div>
+      <span class="trust-sep">◆</span>
+    </div>
   </div>
 
   <!-- INTRO -->

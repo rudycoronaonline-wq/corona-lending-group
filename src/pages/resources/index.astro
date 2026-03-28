@@ -1,0 +1,8 @@
+---
+/**
+ * Resources hub: serves _resources-content.html verbatim (same pattern as site index).
+ */
+export const prerender = true;
+import resourcesContentHtml from './_resources-content.html?raw';
+---
+<Fragment set:html={resourcesContentHtml} />

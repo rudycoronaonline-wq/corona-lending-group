@@ -220,3 +220,53 @@ code {
     color: var(--navy-deep, #112448) !important;
   }
 }
+
+/* Mobile top bar: phone + email only; NMLS / license / serving line moves to footer (mobile-topbar.js) */
+@media (max-width: 900px) {
+  .topbar {
+    justify-content: center;
+  }
+
+  .topbar > .topbar-contact,
+  .topbar > span:first-child {
+    flex: 1 1 auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Hide second line until JS moves it (avoids duplicate text in the bar) */
+  .topbar > span:nth-child(2) {
+    display: none !important;
+  }
+
+  footer.site-footer .topbar-meta-footer-anchor {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.55rem 1rem;
+    padding-bottom: max(0.55rem, env(safe-area-inset-bottom, 0px));
+    background: var(--navy-deep, #112448);
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.74rem;
+    line-height: 1.45;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 0;
+  }
+
+  footer.site-footer .topbar-meta-footer-anchor .topbar-meta,
+  footer.site-footer .topbar-meta-footer-anchor > span {
+    display: block !important;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  footer.site-footer .topbar-meta-footer-anchor a {
+    color: rgba(255, 255, 255, 0.88);
+  }
+}
+
+@media (min-width: 901px) {
+  footer.site-footer .topbar-meta-footer-anchor:empty {
+    display: none;
+  }
+}

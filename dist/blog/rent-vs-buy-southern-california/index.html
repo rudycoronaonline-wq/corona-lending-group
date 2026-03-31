@@ -6,6 +6,8 @@
   <title>Rent vs. Buy in Southern California: What Nobody Tells You | Corona Lending Group</title>
   <meta name="description" content="The honest financial math behind renting vs. buying in SoCal — equity, appreciation, and rising rent. By Rudy Corona, NMLS# 999113." />
   <link rel="canonical" href="https://www.rudycorona.com/blog/rent-vs-buy-southern-california" />
+  <meta property="og:image" content="https://www.rudycorona.com/images/Rent%20or%20buy%20in%20SoCal_.png" />
+  <meta name="twitter:image" content="https://www.rudycorona.com/images/Rent%20or%20buy%20in%20SoCal_.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -277,8 +279,9 @@
 
     .post-hero {
       background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1e4d8c 100%);
-      padding: 4rem 1.5rem 0;
-      position: relative; overflow: hidden;
+      padding: 3rem 1.5rem 2rem;
+      position: relative;
+      overflow: visible;
     }
     .post-hero::before {
       content: ''; position: absolute; top: -80px; right: -80px;
@@ -311,13 +314,13 @@
       font-family: var(--font-display);
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 700; color: #fff;
-      line-height: 1.12; margin-bottom: 1rem;
+      line-height: 1.12; margin-bottom: 0.65rem;
     }
     .post-hero h1 em { color: var(--gold); font-style: italic; }
     .post-byline {
       display: flex; align-items: center; gap: 1rem;
-      padding: 1.25rem 0; border-top: 1px solid rgba(255,255,255,0.12);
-      margin-top: 1.5rem;
+      padding: 1.25rem 0 0; border-top: 1px solid rgba(255,255,255,0.12);
+      margin-top: 1.35rem;
     }
     .post-byline-avatar {
       width: 44px; height: 44px; border-radius: 50%;
@@ -341,17 +344,21 @@
     }
     .share-btn:hover { background: rgba(255,255,255,0.2); color: #fff; text-decoration: none; }
 
-    /* Hero image */
+    /* Hero image — directly under H1; no overflow clip so full graphic shows */
     .post-hero-img {
-      margin-top: 2.5rem;
-      border-radius: 16px 16px 0 0;
-      overflow: hidden;
-      max-width: 820px;
+      margin-top: 0.35rem;
+      margin-bottom: 0;
+      max-width: 100%;
       margin-left: auto; margin-right: auto;
+      background: #E8EDF4;
+      border-radius: 16px;
+      line-height: 0;
     }
     .post-hero-img img {
       width: 100%; height: auto;
+      max-height: none;
       display: block;
+      border-radius: 16px;
     }
 
     /* Article layout */
@@ -588,6 +595,9 @@
       </nav>
       <div class="post-cat-badge">First-Time Buyers</div>
       <h1>Rent vs. Buy in Southern California:<br><em>What Nobody Tells You</em></h1>
+      <div class="post-hero-img">
+        <img src="/images/Rent%20or%20buy%20in%20SoCal_.png" alt="Rent vs Buy in Southern California" />
+      </div>
       <div class="post-byline">
         <div class="post-byline-avatar">RC</div>
         <div class="post-byline-text">
@@ -601,9 +611,6 @@
           <a href="https://twitter.com/intent/tweet?url=https://www.rudycorona.com/blog/rent-vs-buy-southern-california&text=Rent+vs.+Buy+in+SoCal:+What+Nobody+Tells+You" target="_blank" rel="noopener" class="share-btn" title="Share on X">𝕏</a>
         </div>
       </div>
-    </div>
-    <div class="post-hero-img">
-      <img src="https://www.rudycorona.com/images/Rent%20or%20buy%20in%20SoCal_.png" alt="Rent vs Buy in Southern California" />
     </div>
   </section>
 

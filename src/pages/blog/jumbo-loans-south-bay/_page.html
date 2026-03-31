@@ -279,8 +279,9 @@
 
     .post-hero {
       background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1e4d8c 100%);
-      padding: 4rem 1.5rem 0;
-      position: relative; overflow: hidden;
+      padding: 3rem 1.5rem 2rem;
+      position: relative;
+      overflow: visible;
     }
     .post-hero::before {
       content: ''; position: absolute; top: -80px; right: -80px;
@@ -313,13 +314,13 @@
       font-family: var(--font-display);
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 700; color: #fff;
-      line-height: 1.12; margin-bottom: 1rem;
+      line-height: 1.12; margin-bottom: 0.65rem;
     }
     .post-hero h1 em { color: var(--gold); font-style: italic; }
     .post-byline {
       display: flex; align-items: center; gap: 1rem;
-      padding: 1.25rem 0; border-top: 1px solid rgba(255,255,255,0.12);
-      margin-top: 1.5rem;
+      padding: 1.25rem 0 0; border-top: 1px solid rgba(255,255,255,0.12);
+      margin-top: 1.35rem;
     }
     .post-byline-avatar {
       width: 44px; height: 44px; border-radius: 50%;
@@ -343,19 +344,21 @@
     }
     .share-btn:hover { background: rgba(255,255,255,0.2); color: #fff; text-decoration: none; }
 
-    /* Hero image */
+    /* Hero image — directly under H1; no overflow clip so full graphic shows */
     .post-hero-img {
-      margin-top: 0.8rem;
-      border-radius: 16px;
-      overflow: hidden;
-      max-width: 820px;
+      margin-top: 0.35rem;
+      margin-bottom: 0;
+      max-width: 100%;
       margin-left: auto; margin-right: auto;
       background: #E8EDF4;
+      border-radius: 16px;
+      line-height: 0;
     }
     .post-hero-img img {
       width: 100%; height: auto;
+      max-height: none;
       display: block;
-      object-fit: contain;
+      border-radius: 16px;
     }
 
     /* Article layout */
@@ -595,6 +598,9 @@
       </nav>
       <div class="post-cat-badge">Market News</div>
       <h1>Jumbo Loans in the South Bay:<br><em>A Practical Mortgage Guide</em></h1>
+      <div class="post-hero-img">
+        <img src="/images/jumbo-loans-south-bay-real-estate-guide-2026.png" alt="South Bay Real Estate Guide — Jumbo Loans in the South Bay, coastal scene with loan application and model home" />
+      </div>
       <div class="post-byline">
         <div class="post-byline-avatar">RC</div>
         <div class="post-byline-text">
@@ -608,9 +614,6 @@
           <a href="https://twitter.com/intent/tweet?url=https://www.rudycorona.com/blog/jumbo-loans-south-bay/&text=Jumbo+Loans+in+the+South+Bay" target="_blank" rel="noopener" class="share-btn" title="Share on X">𝕏</a>
         </div>
       </div>
-    </div>
-    <div class="post-hero-img">
-      <img src="/images/jumbo-loans-south-bay-real-estate-guide-2026.png" alt="South Bay Real Estate Guide — Jumbo Loans in the South Bay, coastal scene with loan application and model home" />
     </div>
   </section>
 

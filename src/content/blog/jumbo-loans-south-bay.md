@@ -5,7 +5,7 @@ description: "Jumbo loans kick in when you borrow above the conforming limit. He
 slug: jumbo-loans-south-bay
 date: 2026-03-24
 category: market-news
-image: /images/blog-1-jumbo-loans-south-bay.png
+image: /images/jumbo-loans-south-bay-real-estate-guide-2026.png
 ---
 
 Shopping in Manhattan Beach, Hermosa, Redondo, Palos Verdes, or nearby? There is a decent chance your loan will be a **jumbo** mortgage. That is not a bad thing—it just means the rules are a little different than a standard conforming loan.

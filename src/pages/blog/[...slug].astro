@@ -5,7 +5,10 @@ import '../../styles/global.css';
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   // Reserve specific slugs for fully custom page implementations.
-  const customPageSlugs = new Set(['jumbo-loans-south-bay']);
+  const customPageSlugs = new Set([
+    'jumbo-loans-south-bay',
+    'how-to-get-pre-approved-mortgage',
+  ]);
   return posts.map((entry) => {
     const slug = entry.data.slug ?? entry.id.replace(/\.md$/, '');
     if (customPageSlugs.has(slug)) return null;

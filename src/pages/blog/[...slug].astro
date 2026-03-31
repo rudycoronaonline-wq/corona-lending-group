@@ -8,6 +8,18 @@ export async function getStaticPaths() {
   const customPageSlugs = new Set([
     'jumbo-loans-south-bay',
     'how-to-get-pre-approved-mortgage',
+    'how-much-house-can-i-afford-southern-california',
+    'down-payment-first-time-buyer-southern-california',
+    'credit-score-to-buy-a-home-southern-california',
+    'calhfa-down-payment-assistance-southern-california',
+    'first-time-homebuyer-guide-southern-california',
+    'self-employed-mortgage-guide',
+    'how-reverse-mortgages-work-guide',
+    'what-is-a-reverse-mortgage-how-does-it-work',
+    'reverse-mortgage-myths-debunked',
+    'is-a-reverse-mortgage-a-good-idea',
+    'how-much-money-can-you-get-from-a-reverse-mortgage',
+    'what-is-a-dscr-loan-real-estate-investors',
   ]);
   return posts.map((entry) => {
     const slug = entry.data.slug ?? entry.id.replace(/\.md$/, '');

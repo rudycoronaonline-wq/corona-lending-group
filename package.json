@@ -14,5 +14,9 @@
     "@vercel/analytics": "^1.6.1",
     "astro": "^5.17.1",
     "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^17.0.5"
   }
 }

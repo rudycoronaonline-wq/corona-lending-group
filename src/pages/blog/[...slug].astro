@@ -4,10 +4,13 @@ import '../../styles/global.css';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
+  // Reserve specific slugs for fully custom page implementations.
+  const customPageSlugs = new Set(['jumbo-loans-south-bay']);
   return posts.map((entry) => {
     const slug = entry.data.slug ?? entry.id.replace(/\.md$/, '');
+    if (customPageSlugs.has(slug)) return null;
     return { params: { slug }, props: { entry } };
-  });
+  }).filter(Boolean);
 }
 
 const { entry } = Astro.props;

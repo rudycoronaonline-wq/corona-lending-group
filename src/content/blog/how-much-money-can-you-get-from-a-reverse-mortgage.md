@@ -5,7 +5,7 @@ description: Wondering how much a reverse mortgage will pay? Rudy Corona breaks 
 slug: how-much-money-can-you-get-from-a-reverse-mortgage
 date: 2025-03-01
 category: seniors
-image: /images/Blog-Reverse-mortgage.png
+image: /images/how-much-money-reverse-mortgage-guide.png
 toc:
   - { title: "The Number Everyone Wants to Know", slug: "the-number-everyone-wants-to-know" }
   - { title: "The Three Factors That Determine Your Amount", slug: "the-three-factors-that-determine-your-amount" }

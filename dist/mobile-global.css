@@ -229,9 +229,37 @@ code {
 
   .topbar > .topbar-contact,
   .topbar > span:first-child {
-    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     justify-content: center;
+    gap: 0.35rem;
+    width: auto;
+    max-width: 100%;
+    flex: 0 1 auto;
     text-align: center;
+    font-size: clamp(0.58rem, 2.6vw, 0.78rem);
+    line-height: 1.25;
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .topbar > .topbar-contact::-webkit-scrollbar,
+  .topbar > span:first-child::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Global `a { overflow-wrap: anywhere }` stacks phone/email; keep contact on one row */
+  .topbar .topbar-contact a,
+  .topbar > span:first-child a {
+    overflow-wrap: normal;
+    word-break: normal;
+    white-space: nowrap;
   }
 
   /* Hide second line until JS moves it (avoids duplicate text in the bar) */

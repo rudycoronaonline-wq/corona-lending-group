@@ -154,7 +154,7 @@ const RELATED_POOL = [
   { slug: 'first-time-homebuyer-guide-southern-california', cat: 'First-Time Buyers', title: 'First-Time Homebuyer Guide', img: '/images/Blog-California-1st-time-buyer.png' },
   { slug: 'self-employed-mortgage-guide', cat: 'First-Time Buyers', title: 'Self-Employed Home Loans', img: '/images/Blog-Self-Employed.png' },
   { slug: 'how-reverse-mortgages-work-guide', cat: 'Seniors', title: 'How Reverse Mortgages Work', img: '/images/Blog-Reverse-mortgage.png' },
-  { slug: 'what-is-a-reverse-mortgage-how-does-it-work', cat: 'Seniors', title: 'What Is a Reverse Mortgage?', img: '/images/Blog-Reverse-mortgage.png' },
+  { slug: 'what-is-a-reverse-mortgage-how-does-it-work', cat: 'Seniors', title: 'What Is a Reverse Mortgage?', img: '/images/what-is-reverse-mortgage-guide-featured.png' },
   { slug: 'reverse-mortgage-myths-debunked', cat: 'Seniors', title: 'Reverse Mortgage Myths Debunked', img: '/images/7-reverse-mortgage-myths-blog.png' },
   { slug: 'is-a-reverse-mortgage-a-good-idea', cat: 'Seniors', title: 'Is a Reverse Mortgage a Good Idea?', img: '/images/Blog-Reverse-mortgage.png' },
   { slug: 'how-much-money-can-you-get-from-a-reverse-mortgage', cat: 'Seniors', title: 'How Much From a Reverse Mortgage?', img: '/images/Blog-Reverse-mortgage.png' },

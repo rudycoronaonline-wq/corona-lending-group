@@ -9,14 +9,12 @@ Fallback when a post has no image (optional):
 Simple names (use as-is):
   Blog-3-simple-steps.png
   Blog-Self-Employed.png
-  Blog-Reverse-mortgage.png
-  what-is-a-reverse-mortgage-how-does-it-work.png  (for "What Is a Reverse Mortgage and How Does It Really Work?" post)
+  Blog-Reverse-mortgage.png  (also used for "What Is a Reverse Mortgage and How Does It Really Work?" until a dedicated hero is uploaded)
   7-reverse-mortgage-myths-blog.png  (for "7 Reverse Mortgage Myths..." post — use this name, no spaces)
   Blog-DSCR.png
   Blog-California-1st-time-buyer.png
 
 Names with spaces (use exactly as shown; URLs will be encoded):
-  What Is a Reverse Mortgage and How Does It Really Work?.png  (for "What Is a Reverse Mortgage..." post)
   How much house can I afford_.png
   Rent or buy in SoCal_.png
   The Honest Truth About Down Payments for First-Time Buyers in Southern California.png

@@ -5,7 +5,7 @@ description: Thinking about a reverse mortgage but not sure how it works? Rudy C
 slug: what-is-a-reverse-mortgage-how-does-it-work
 date: 2025-03-01
 category: seniors
-image: "/images/What Is a Reverse Mortgage and How Does It Really Work?.png"
+image: "/images/Blog-Reverse-mortgage.png"
 toc:
   - { title: "You Have Earned This. Now Let's Make Sure You Understand It.", slug: "you-have-earned-this-now-lets-make-sure-you-understand-it" }
   - { title: "The Simple Definition", slug: "the-simple-definition" }

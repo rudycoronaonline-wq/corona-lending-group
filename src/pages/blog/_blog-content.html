@@ -305,6 +305,15 @@
     .blog-grid-card { background:var(--white); border:1px solid var(--sand-dark); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s; text-decoration:none; color:inherit; }
     .blog-grid-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); border-color:var(--sky); text-decoration:none; color:inherit; }
     .blog-card-body { padding:1.4rem; flex-grow:1; display:flex; flex-direction:column; }
+    .blog-card-thumb {
+      width: 100%;
+      height: 180px;
+      flex-shrink: 0;
+      background-color: var(--sand);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
 
     .newsletter-bar { background:var(--navy); padding:3.5rem 1.5rem; }
     .newsletter-bar-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap; }
@@ -440,7 +449,7 @@
       </div>
       <div class="blog-grid" id="blog-grid">
         <a href="https://www.rudycorona.com/blog/how-much-house-can-i-afford-southern-california" class="blog-grid-card" data-cat="First-Time Buyers">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/How%20much%20house%20can%20I%20afford_.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/How%20much%20house%20can%20I%20afford_.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#4A90D9;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">First-Time Buyers</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">How Much House Can I Afford in Southern California?</h3>
@@ -452,7 +461,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/down-payment-first-time-buyer-southern-california" class="blog-grid-card" data-cat="First-Time Buyers">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/The%20Honest%20Truth%20About%20Down%20Payments%20for%20First-Time%20Buyers%20in%20Southern%20California.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/The%20Honest%20Truth%20About%20Down%20Payments%20for%20First-Time%20Buyers%20in%20Southern%20California.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#4A90D9;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">First-Time Buyers</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">The Honest Truth About Down Payments for First-Time Buyers in SoCal</h3>
@@ -464,7 +473,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/credit-score-to-buy-a-home-southern-california" class="blog-grid-card" data-cat="First-Time Buyers">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/What%20Credit%20Score%20Do%20You%20Actually%20Need%20to%20Buy%20a%20Home%20in%20Southern%20California.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/What%20Credit%20Score%20Do%20You%20Actually%20Need%20to%20Buy%20a%20Home%20in%20Southern%20California.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#4A90D9;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">First-Time Buyers</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">What Credit Score Do You Actually Need to Buy a Home?</h3>
@@ -476,7 +485,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/rent-vs-buy-southern-california" class="blog-grid-card" data-cat="First-Time Buyers">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/Rent%20or%20buy%20in%20SoCal_.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/Rent%20or%20buy%20in%20SoCal_.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#4A90D9;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">First-Time Buyers</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">Rent vs. Buy in Southern California: What Nobody Tells You</h3>
@@ -500,7 +509,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/calhfa-down-payment-assistance-southern-california" class="blog-grid-card" data-cat="First-Time Buyers">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/CalHFA%20and%20Down%20Payment%20Assistance%20in%20Southern%20California%20A%20Complete%20Guide%20for%20First-Time%20Buyers.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/CalHFA%20and%20Down%20Payment%20Assistance%20in%20Southern%20California%20A%20Complete%20Guide%20for%20First-Time%20Buyers.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#4A90D9;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">First-Time Buyers</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">CalHFA and Down Payment Assistance in Southern California: A Complete Guide</h3>
@@ -512,7 +521,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/first-time-homebuyer-guide-southern-california" class="blog-grid-card" data-cat="First-Time Buyers">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/Blog-California-1st-time-buyer.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/Blog-California-1st-time-buyer.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#4A90D9;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">First-Time Buyers</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">5 Things Every First-Time Homebuyer in California Needs to Know</h3>
@@ -524,7 +533,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/self-employed-mortgage-guide" class="blog-grid-card" data-cat="First-Time Buyers">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/Blog-Self-Employed.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/Blog-Self-Employed.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#4A90D9;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">First-Time Buyers</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">Self-Employed and Buying a Home? Here Is What You Need to Know</h3>
@@ -536,7 +545,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/how-reverse-mortgages-work-guide" class="blog-grid-card" data-cat="Seniors">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#16a34a;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Seniors</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">How Reverse Mortgages Work — And Who They Are Really For</h3>
@@ -548,7 +557,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/what-is-a-reverse-mortgage-how-does-it-work" class="blog-grid-card" data-cat="Seniors">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/what-is-reverse-mortgage-guide-featured.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/what-is-reverse-mortgage-guide-featured.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#16a34a;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Seniors</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">What Is a Reverse Mortgage and How Does It Really Work?</h3>
@@ -560,7 +569,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/reverse-mortgage-myths-debunked" class="blog-grid-card" data-cat="Seniors">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#16a34a;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Seniors</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">7 Reverse Mortgage Myths That Are Keeping SoCal Seniors from Financial Freedom</h3>
@@ -572,7 +581,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/what-happens-to-reverse-mortgage-when-you-die" class="blog-grid-card" data-cat="Seniors">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#16a34a;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Seniors</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">What Happens to a Reverse Mortgage When You Die?</h3>
@@ -584,7 +593,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/how-much-money-can-you-get-from-a-reverse-mortgage" class="blog-grid-card" data-cat="Seniors">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#16a34a;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Seniors</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">How Much Money Can You Get from a Reverse Mortgage?</h3>
@@ -596,7 +605,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/is-a-reverse-mortgage-a-good-idea" class="blog-grid-card" data-cat="Seniors">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/Blog-Reverse-mortgage.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#16a34a;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Seniors</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">Is a Reverse Mortgage a Good Idea? An Honest Look at Who It Helps</h3>
@@ -608,7 +617,7 @@
           </div>
         </a>
 <a href="https://www.rudycorona.com/blog/what-is-a-dscr-loan-real-estate-investors" class="blog-grid-card" data-cat="Investors">
-          <div style="width:100%;height:180px;background-image:url('https://www.rudycorona.com/images/Blog-DSCR.png');background-size:cover;background-position:center;"></div>
+          <div class="blog-card-thumb" style="background-image:url('https://www.rudycorona.com/images/Blog-DSCR.png');"></div>
           <div class="blog-card-body">
             <div class="post-cat" style="color:#7c3aed;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Investors</div>
             <h3 style="font-family:var(--font-display);font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.55rem;">What Is a DSCR Loan? A Complete Guide for Real Estate Investors</h3>

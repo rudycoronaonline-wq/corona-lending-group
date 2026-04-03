@@ -11,8 +11,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/mobile-global.css" />
-  <script defer src="/mobile-topbar.js"></script>
   <style>
     
     :root {
@@ -532,21 +530,21 @@
     .toc-list a:hover { background: var(--sky-light); color: var(--navy); text-decoration: none; }
     .toc-list a::before { content: '→'; color: var(--sky); font-size: 0.75rem; flex-shrink: 0; }
 
-    /* Bottom CTA */
-    .post-bottom-cta {
-      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
-      padding: 4.5rem 1.5rem; text-align: center;
-    }
-    .post-bottom-cta h2 {
-      font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.75rem);
-      font-weight: 700; color: #fff; margin-bottom: 0.75rem;
-    }
-    .post-bottom-cta h2 em { color: var(--gold); font-style: italic; }
-    .post-bottom-cta p { color: rgba(255,255,255,0.72); font-size: 1.02rem; max-width: 500px; margin: 0 auto 2rem; line-height: 1.7; }
+    /* Bottom CTA (in-article) */
     .btn-gold { background: var(--gold); color: var(--navy-deep); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 700; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: filter 0.15s, transform 0.15s; }
     .btn-gold:hover { filter: brightness(1.08); transform: translateY(-1px); color: var(--navy-deep); text-decoration: none; }
     .btn-outline-white { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.96rem; transition: border-color 0.15s; text-decoration: none; display: inline-block; }
     .btn-outline-white:hover { border-color: #fff; color: #fff; text-decoration: none; }
+
+    .post-bottom-cta { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%); padding: 4.5rem 1.5rem; text-align: center; margin-top: 3rem; border-radius: 12px; }
+    .post-bottom-cta h3 { color: #fff; font-family: var(--font-display); font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; margin-bottom: 0.75rem; }
+    .post-bottom-cta h3 em { color: var(--gold); font-style: italic; }
+    .post-bottom-cta p { color: rgba(255,255,255,0.72); font-size: 1.02rem; max-width: 500px; margin: 0 auto 2rem; line-height: 1.7; }
+    .post-bottom-cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .post-cta-btn { background: var(--gold); color: var(--navy-deep); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 700; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: filter 0.15s, transform 0.15s; }
+    .post-cta-btn:hover { filter: brightness(1.08); transform: translateY(-1px); color: var(--navy-deep); text-decoration: none; }
+    .post-cta-btn-sec { background: transparent; color: #7ec8f7; border: 2px solid rgba(126,200,247,0.5); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: border-color 0.15s, color 0.15s; }
+    .post-cta-btn-sec:hover { border-color: #7ec8f7; color: #fff; text-decoration: none; }
 
     @media (max-width: 960px) {
       .post-layout-inner { grid-template-columns: 1fr; gap: 3rem; }
@@ -588,31 +586,31 @@
   <!-- HERO -->
   <section class="post-hero">
     <div class="post-hero-inner">
-      <nav class="post-breadcrumb" aria-label="Breadcrumb">
-        <a href="https://www.rudycorona.com">Home</a>
+      <div class="post-breadcrumb">
+        <a href="https://www.rudycorona.com/">Home</a>
         <span>›</span>
         <a href="https://www.rudycorona.com/blog">Blog</a>
         <span>›</span>
         <span>Income in Redondo Beach</span>
-      </nav>
+      </div>
       <div class="post-cat-badge">First-Time Buyers</div>
       <h1>How Much Income Do You Need to Buy a Home in<br><em>Redondo Beach?</em></h1>
-      <div class="post-hero-img">
-        <img src="/images/income-needed-redondo-beach.png" alt="How much income do you need to buy a home in Redondo Beach" />
-      </div>
+      <p style="font-size:1.08rem;color:rgba(255,255,255,0.78);line-height:1.72;max-width:680px;margin-bottom:0;">If you are planning to buy in Redondo Beach, the first practical question is how much income you need to qualify. Here is a realistic way to build a target range before you start touring — and when to get a real pre-approval.</p>
       <div class="post-byline">
         <div class="post-byline-avatar">RC</div>
         <div class="post-byline-text">
-          <div class="post-byline-name">Rudy Corona</div>
-          <div class="post-byline-meta">Mortgage Advisor · NMLS# 999113 &nbsp;·&nbsp; March 31, 2026 &nbsp;·&nbsp; 6 min read</div>
+          <div class="post-byline-name">Rudy Corona · NMLS# 999113</div>
+          <div class="post-byline-meta">March 31, 2026 &nbsp;·&nbsp; 6 min read &nbsp;·&nbsp; First-Time Buyers · Redondo Beach</div>
         </div>
         <div class="post-share">
           <span class="post-share-label">Share</span>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.rudycorona.com/blog/income-needed-to-buy-home-redondo-beach/" target="_blank" rel="noopener" class="share-btn" title="Share on Facebook">f</a>
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.rudycorona.com/blog/income-needed-to-buy-home-redondo-beach/" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn">in</a>
-          <a href="https://twitter.com/intent/tweet?url=https://www.rudycorona.com/blog/income-needed-to-buy-home-redondo-beach/&text=Income+Needed+to+Buy+in+Redondo+Beach" target="_blank" rel="noopener" class="share-btn" title="Share on X">𝕏</a>
+          <a href="https://www.linkedin.com/shareArticle?url=https://www.rudycorona.com/blog/income-needed-to-buy-home-redondo-beach/" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn">in</a>
         </div>
       </div>
+    </div>
+    <div class="post-hero-img">
+      <img src="/images/income-needed-redondo-beach.png" alt="How much income do you need to buy a home in Redondo Beach" />
     </div>
   </section>
 
@@ -635,7 +633,7 @@
 
         <p>If you are planning to buy in Redondo Beach, this is usually the first practical question: <strong>how much income do I actually need to qualify?</strong> The short answer is that it depends on home price, down payment, interest rate, taxes, insurance, and your other debts. But you can still build a realistic target range before you start touring.</p>
 
-        <h2>Average Home Price</h2>
+        <h2 id="average-home-price">Average Home Price</h2>
         <p>Redondo Beach remains one of the most in-demand areas in the South Bay. Buyers are competing for a limited mix of condos, townhomes, and single-family homes close to the beach, schools, and major commuter routes.</p>
         <p>As a working estimate:</p>
         <ul>
@@ -645,7 +643,7 @@
         </ul>
         <p>For a location-specific lending strategy, see my local page for <a href="https://www.rudycorona.com/mortgage-broker-redondo-beach/">mortgage broker Redondo Beach</a>.</p>
 
-        <h2>Income Examples</h2>
+        <h2 id="income-examples">Income Examples</h2>
         <p>These examples are directional and assume typical debt-to-income guidelines with reasonable credit and documentation.</p>
 
         <div class="post-table-wrap">
@@ -675,7 +673,7 @@
         </ul>
         <p>If you want to map these numbers to your exact file, start with <a href="https://www.rudycorona.com/home-loans-redondo-beach/">home loans Redondo Beach</a>.</p>
 
-        <h2>Loan Options</h2>
+        <h2 id="loan-options">Loan Options</h2>
         <p>Redondo Beach buyers commonly use:</p>
         <ul>
           <li><strong>Conventional loans</strong> for many condo and single-family purchases.</li>
@@ -685,7 +683,7 @@
         </ul>
         <p>The best option is not always the lowest headline rate. Structure, cash-to-close, reserves, and long-term payment stability matter just as much.</p>
 
-        <h2>Tips to Qualify</h2>
+        <h2 id="tips-to-qualify">Tips to Qualify</h2>
         <p>If you want to strengthen your approval before writing offers:</p>
         <ol>
           <li><strong>Reduce monthly debt</strong> where possible before pre-approval.</li>
@@ -695,7 +693,7 @@
           <li><strong>Get pre-approved before touring heavily</strong> to move fast when the right property appears.</li>
         </ol>
 
-        <h2>Call or DM for Pre-Approval</h2>
+        <h2 id="call-dm-preapproval">Call or DM for Pre-Approval</h2>
         <p>Need a real number for your scenario in Redondo Beach? Call or DM and I will help you map your budget, loan options, and next step toward pre-approval.</p>
 
         <div class="post-callout" style="border-left-color:var(--gold);background:#FDF8EC;">
@@ -711,11 +709,12 @@
           <span class="post-tag">South Bay</span>
         </div>
 
-        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--sand-dark);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
-          <a href="https://www.rudycorona.com/blog/" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.88rem;font-weight:700;color:var(--sky);text-decoration:none;" onmouseover="this.style.color='var(--navy)'" onmouseout="this.style.color='var(--sky)'">← Back to all articles</a>
-          <div style="display:flex;gap:0.5rem;">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.rudycorona.com/blog/income-needed-to-buy-home-redondo-beach/" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on Facebook">f</a>
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.rudycorona.com/blog/income-needed-to-buy-home-redondo-beach/" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on LinkedIn">in</a>
+        <div class="post-bottom-cta">
+          <h3>Ready to Find Out<br><em>What You Qualify For?</em></h3>
+          <p>Stop wondering and start knowing. A free 20-minute call with Rudy gives you a real pre-approval number and a plan to get there.</p>
+          <div class="post-bottom-cta-btns">
+            <a href="https://www.rudycorona.com/contact" class="post-cta-btn">Book a Free Consultation →</a>
+            <a href="tel:+13105945362" class="post-cta-btn-sec">📞 (310) 594-5362</a>
           </div>
         </div>
 
@@ -725,9 +724,20 @@
       <aside class="post-sidebar">
 
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header">
-            <h4>📞 Talk to Rudy — Free</h4>
+          <div class="sidebar-widget-header"><h4>📋 In This Article</h4></div>
+          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
+            <ul class="toc-list">
+              <li><a href="#average-home-price">Average Home Price</a></li>
+              <li><a href="#income-examples">Income Examples</a></li>
+              <li><a href="#loan-options">Loan Options</a></li>
+              <li><a href="#tips-to-qualify">Tips to Qualify</a></li>
+              <li><a href="#call-dm-preapproval">Call or DM for Pre-Approval</a></li>
+            </ul>
           </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header"><h4>📞 Talk to Rudy — Free</h4></div>
           <div class="sidebar-widget-body">
             <p>Find out exactly what you qualify for — purchase price, loan programs, and monthly payment — in a free 20-minute call. No pressure, no obligation.</p>
             <a href="https://www.rudycorona.com/contact" class="sidebar-cta">Book a Free Consultation →</a>
@@ -736,74 +746,34 @@
         </div>
 
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📋 In This Article</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
-            <ul class="toc-list">
-              <li><a href="#" onclick="scrollToH2(0);return false;">Average Home Price</a></li>
-              <li><a href="#" onclick="scrollToH2(1);return false;">Income Examples</a></li>
-              <li><a href="#" onclick="scrollToH2(2);return false;">Loan Options</a></li>
-              <li><a href="#" onclick="scrollToH2(3);return false;">Tips to Qualify</a></li>
-              <li><a href="#" onclick="scrollToH2(4);return false;">Call or DM for Pre-Approval</a></li>
-            </ul>
+          <div class="sidebar-widget-header"><h4>📊 Redondo Quick Reference</h4></div>
+          <div class="sidebar-widget-body" style="padding:0;">
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Entry condos (working est.)</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">High $600s+</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Many SF homes</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">$1M+</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Example @ ~$1M price</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">~$180k+ income</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Typical DTI cap</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">43–45%</span></div>
+            <div style="padding:0.7rem 1.25rem;display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">LA County conv. limit (2026)</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">$1,249,125</span></div>
           </div>
         </div>
 
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">🧮 Free Calculators</h4>
-          </div>
-          <div class="sidebar-widget-body">
-            <p>Run payment estimates, affordability, and more with Rudy's free mortgage calculators.</p>
-            <a href="https://www.rudycorona.com/calculators" class="sidebar-cta-secondary" style="display:block;text-align:center;padding:0.75rem 1rem;border:1.5px solid var(--navy);border-radius:9px;font-weight:700;font-size:0.875rem;color:var(--navy);text-decoration:none;transition:background 0.15s,color 0.15s;" onmouseover="this.style.background='var(--navy)';this.style.color='#fff'" onmouseout="this.style.background='';this.style.color='var(--navy)'">Open Calculators →</a>
+          <div class="sidebar-widget-header"><h4>📖 Related Articles</h4></div>
+          <div class="sidebar-widget-body" style="padding:0.5rem 1.25rem;">
+            <a href="https://www.rudycorona.com/blog/rent-vs-buy-southern-california/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">Rent vs. Buy in Southern California</div></div></a>
+            <a href="https://www.rudycorona.com/blog/how-much-house-can-i-afford-southern-california/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">How Much House Can I Afford in SoCal?</div></div></a>
+            <a href="https://www.rudycorona.com/blog/down-payment-first-time-buyer-southern-california/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">The Honest Truth About Down Payments in SoCal</div></div></a>
           </div>
         </div>
 
-        <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📚 Related Articles</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:0.75rem 1.25rem;">
-            <a href="https://www.rudycorona.com/blog/rent-vs-buy-southern-california/" class="related-post">
-              <img src="https://www.rudycorona.com/images/Rent%20or%20buy%20in%20SoCal_.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">Rent vs. Buy in Southern California</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/how-much-house-can-i-afford-southern-california/" class="related-post">
-              <img src="https://www.rudycorona.com/images/How%20much%20house%20can%20I%20afford_.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">How Much House Can I Afford in SoCal?</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/down-payment-first-time-buyer-southern-california/" class="related-post">
-              <img src="https://www.rudycorona.com/images/The%20Honest%20Truth%20About%20Down%20Payments%20for%20First-Time%20Buyers%20in%20Southern%20California.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">The Honest Truth About Down Payments in SoCal</div>
-              </div>
-            </a>
-          </div>
+        <div style="background:var(--sand);border-radius:12px;padding:1.25rem;border:1px solid var(--sand-dark);font-size:0.75rem;color:var(--text-muted);line-height:1.65;text-align:center;">
+          <strong style="color:var(--navy);">Rudy Corona</strong> · NMLS# 999113<br>
+          Licensed in California<br>
+          For informational purposes only. All loan programs subject to credit and property approval. Figures are illustrative; rates and guidelines change.
         </div>
 
       </aside>
     </div>
   </div>
-
-  <!-- BOTTOM CTA -->
-  <section class="post-bottom-cta">
-    <div style="max-width:600px;margin:0 auto;">
-      <h2>Ready to Find Out<br><em>What You Qualify For?</em></h2>
-      <p>Stop wondering and start knowing. A free 20-minute call with Rudy gives you a real pre-approval number and a plan to get there.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="https://www.rudycorona.com/contact" class="btn-gold">Book a Free Consultation →</a>
-        <a href="tel:+13105945362" class="btn-outline-white">📞 (310) 594-5362</a>
-      </div>
-    </div>
-  </section>
 
   <footer class="site-footer" role="contentinfo">
     <div class="footer-grid">
@@ -844,13 +814,13 @@
   </footer>
 
   <script>
-  function scrollToH2(index) {
-    const headings = document.querySelectorAll('.post-body h2');
-    if (headings[index]) {
-      const top = headings[index].getBoundingClientRect().top + window.scrollY - 110;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  }
+  document.querySelectorAll('.toc-list a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 
   const menuBtn = document.getElementById('menu-btn');
   const siteNav = document.getElementById('site-nav');

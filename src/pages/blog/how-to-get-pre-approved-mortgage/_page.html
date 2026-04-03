@@ -11,8 +11,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/mobile-global.css" />
-  <script defer src="/mobile-topbar.js"></script>
   <style>
     
     :root {
@@ -265,22 +263,16 @@
       .loans-grid, .market-grid, .hoods-grid, .blog-grid, .areas-grid { grid-template-columns: 1fr; }
       .stat-cards { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
-      .topbar { font-size: 0.72rem; padding: 0.45rem 1rem; }
     }
-    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
-    .nav-mobile-open .nav-links a { color: rgba(255,255,255,0.92); }
-    .nav-mobile-open .nav-links a:hover { color: #fff; background: rgba(255,255,255,0.1); }
-    .nav-mobile-open .nav-links .nav-cta { background: var(--gold); color: var(--navy-deep) !important; }
-    .nav-mobile-open .nav-links .nav-cta:hover { background: var(--gold); filter: brightness(1.08); }
+    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
 
 
     /* ── BLOG POST PAGE ──────────────────────────────── */
 
     .post-hero {
       background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1e4d8c 100%);
-      padding: 3rem 1.5rem 2rem;
-      position: relative;
-      overflow: visible;
+      padding: 4rem 1.5rem 0;
+      position: relative; overflow: hidden;
     }
     .post-hero::before {
       content: ''; position: absolute; top: -80px; right: -80px;
@@ -313,13 +305,13 @@
       font-family: var(--font-display);
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 700; color: #fff;
-      line-height: 1.12; margin-bottom: 0.65rem;
+      line-height: 1.12; margin-bottom: 1rem;
     }
     .post-hero h1 em { color: var(--gold); font-style: italic; }
     .post-byline {
       display: flex; align-items: center; gap: 1rem;
-      padding: 1.25rem 0 0; border-top: 1px solid rgba(255,255,255,0.12);
-      margin-top: 1.35rem;
+      padding: 1.25rem 0; border-top: 1px solid rgba(255,255,255,0.12);
+      margin-top: 1.5rem;
     }
     .post-byline-avatar {
       width: 44px; height: 44px; border-radius: 50%;
@@ -343,21 +335,17 @@
     }
     .share-btn:hover { background: rgba(255,255,255,0.2); color: #fff; text-decoration: none; }
 
-    /* Hero image — directly under H1; no overflow clip so full graphic shows */
+    /* Hero image */
     .post-hero-img {
-      margin-top: 0.35rem;
-      margin-bottom: 0;
-      max-width: 100%;
+      margin-top: 2.5rem;
+      border-radius: 16px 16px 0 0;
+      overflow: hidden;
+      max-width: 820px;
       margin-left: auto; margin-right: auto;
-      background: #E8EDF4;
-      border-radius: 16px;
-      line-height: 0;
     }
     .post-hero-img img {
       width: 100%; height: auto;
-      max-height: none;
       display: block;
-      border-radius: 16px;
     }
 
     /* Article layout */
@@ -393,9 +381,6 @@
     .post-body p strong { color: var(--navy); }
     .post-body ul, .post-body ol {
       margin: 0.5rem 0 1.25rem 1.5rem;
-    }
-    .post-body ol {
-      list-style: decimal;
     }
     .post-body li {
       font-size: 1.02rem; color: var(--text);
@@ -557,6 +542,104 @@
       .post-byline { flex-wrap: wrap; }
       .post-share { width: 100%; justify-content: flex-start; }
     }
+  
+    .post-hero {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1e4d8c 100%);
+      padding: 4rem 1.5rem 3rem;
+      position: relative;
+    }
+    .post-hero::before {
+      content: ''; position: absolute; top: -80px; right: -80px;
+      width: 420px; height: 420px; border-radius: 50%;
+      background: rgba(74,144,217,0.07); pointer-events: none;
+    }
+    .post-hero-inner { position: relative; z-index: 2; max-width: 820px; margin: 0 auto; }
+    .post-breadcrumb { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-bottom: 1.5rem; }
+    .post-breadcrumb a { color: rgba(255,255,255,0.7); transition: color 0.15s; text-decoration: none; }
+    .post-breadcrumb a:hover { color: var(--gold); }
+    .post-breadcrumb span { color: rgba(255,255,255,0.35); }
+    .post-cat-badge { display: inline-block; background: rgba(201,168,76,0.2); border: 1px solid rgba(201,168,76,0.4); color: var(--gold); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.85rem; border-radius: 100px; margin-bottom: 1.1rem; }
+    .post-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; color: #fff; line-height: 1.12; margin-bottom: 1rem; }
+    .post-hero h1 em { color: var(--gold); font-style: italic; }
+    .post-byline { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 0; border-top: 1px solid rgba(255,255,255,0.12); margin-top: 1.5rem; }
+    .post-byline-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--navy-deep); flex-shrink: 0; }
+    .post-byline-text { flex: 1; }
+    .post-byline-name { font-size: 0.9rem; font-weight: 700; color: #fff; }
+    .post-byline-meta { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-top: 0.1rem; }
+    .post-share { display: flex; align-items: center; gap: 0.6rem; }
+    .post-share-label { font-size: 0.75rem; color: rgba(255,255,255,0.45); }
+    .share-btn { width: 32px; height: 32px; border-radius: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.75); font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: background 0.15s; text-decoration: none; }
+    .share-btn:hover { background: rgba(255,255,255,0.2); color: #fff; text-decoration: none; }
+    .post-hero-img { margin-top: 0.75rem; border-radius: 16px; overflow: hidden; max-width: 820px; margin-left: auto; margin-right: auto; }
+    .post-hero-img img { width: 100%; height: auto; display: block; }
+    .post-layout { background: var(--white); padding: 0 1.5rem 5rem; }
+    .post-layout-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: start; padding-top: 3.5rem; }
+    .post-body { min-width: 0; }
+    .post-body h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--navy); margin: 2.25rem 0 0.85rem; line-height: 1.2; padding-bottom: 0.6rem; border-bottom: 2px solid var(--sand-dark); }
+    .post-body h2:first-child { margin-top: 0; }
+    .post-body h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--navy); margin: 1.75rem 0 0.6rem; }
+    .post-body p { font-size: 1.05rem; color: var(--text); line-height: 1.85; margin-bottom: 1.1rem; }
+    .post-body p strong { color: var(--navy); }
+    .post-body ul, .post-body ol { margin: 0.5rem 0 1.25rem 1.5rem; }
+    .post-body li { font-size: 1.02rem; color: var(--text); line-height: 1.8; margin-bottom: 0.5rem; }
+    .post-callout { background: var(--sky-light); border-left: 4px solid var(--sky); border-radius: 0 10px 10px 0; padding: 1.25rem 1.5rem; margin: 1.75rem 0; }
+    .post-callout p { margin: 0; font-size: 1rem; color: var(--navy); line-height: 1.72; }
+    .post-callout strong { color: var(--navy-deep); }
+    .post-quote { background: var(--navy); border-radius: 12px; padding: 2rem 2.25rem; margin: 2rem 0; position: relative; }
+    .post-quote::before { content: '"'; font-family: var(--font-display); font-size: 5rem; line-height: 1; color: rgba(201,168,76,0.3); position: absolute; top: 0.5rem; left: 1.5rem; pointer-events: none; }
+    .post-quote p { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; color: #fff; line-height: 1.5; margin: 0; position: relative; z-index: 1; }
+    .post-quote cite { display: block; margin-top: 0.75rem; font-size: 0.82rem; color: rgba(255,255,255,0.55); font-style: normal; position: relative; z-index: 1; }
+    .post-table-wrap { overflow-x: auto; margin: 1.75rem 0; border-radius: 10px; border: 1px solid var(--sand-dark); }
+    .post-table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+    .post-table thead tr { background: var(--navy); }
+    .post-table thead th { padding: 0.85rem 1rem; text-align: left; color: #fff; font-weight: 700; font-size: 0.82rem; letter-spacing: 0.04em; white-space: nowrap; }
+    .post-table tbody tr:nth-child(even) { background: var(--sand); }
+    .post-table tbody tr:hover { background: var(--sky-light); }
+    .post-table tbody td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--sand-dark); color: var(--text); }
+    .post-table tbody tr:last-child td { border-bottom: none; }
+    .post-table .highlight { font-weight: 700; color: var(--navy); }
+    .post-key-points { background: var(--sand); border-radius: 12px; padding: 1.5rem 1.75rem; margin: 2rem 0; border: 1px solid var(--sand-dark); }
+    .post-key-points h4 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+    .post-key-points ul { margin: 0; padding: 0; list-style: none; }
+    .post-key-points li { display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.95rem; color: var(--text); line-height: 1.65; margin-bottom: 0.65rem; padding-bottom: 0.65rem; border-bottom: 1px solid var(--sand-dark); }
+    .post-key-points li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .post-key-points li::before { content: '✓'; color: var(--sky); font-weight: 700; flex-shrink: 0; margin-top: 0.15rem; }
+    .post-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--sand-dark); }
+    .post-tag { font-size: 0.78rem; font-weight: 600; background: var(--sky-light); color: var(--navy); padding: 0.25rem 0.7rem; border-radius: 100px; border: 1px solid rgba(74,144,217,0.2); }
+    .post-sidebar { position: sticky; top: 90px; display: flex; flex-direction: column; gap: 1.5rem; }
+    .sidebar-widget { background: var(--white); border-radius: 14px; box-shadow: var(--shadow); overflow: hidden; border: 1px solid var(--sand-dark); }
+    .sidebar-widget-header { background: var(--navy); padding: 1rem 1.4rem; }
+    .sidebar-widget-header h4 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: #fff; margin: 0; }
+    .sidebar-widget-body { padding: 1.25rem 1.4rem; }
+    .sidebar-widget-body p { font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1rem; }
+    .sidebar-cta { display: block; background: var(--gold); color: var(--navy-deep); text-align: center; padding: 0.85rem 1rem; border-radius: 9px; font-weight: 700; font-size: 0.9rem; text-decoration: none; transition: filter 0.15s, transform 0.15s; }
+    .sidebar-cta:hover { filter: brightness(1.07); transform: translateY(-1px); color: var(--navy-deep); text-decoration: none; }
+    .sidebar-cta-secondary { display: block; text-align: center; padding: 0.75rem 1rem; border: 1.5px solid var(--navy); border-radius: 9px; font-weight: 700; font-size: 0.875rem; color: var(--navy); text-decoration: none; margin-top: 0.65rem; transition: background 0.15s, color 0.15s; }
+    .sidebar-cta-secondary:hover { background: var(--navy); color: #fff; text-decoration: none; }
+    .related-post { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.85rem 0; border-bottom: 1px solid var(--sand-dark); text-decoration: none; color: inherit; transition: opacity 0.15s; }
+    .related-post:last-child { border-bottom: none; padding-bottom: 0; }
+    .related-post:first-child { padding-top: 0; }
+    .related-post:hover { opacity: 0.75; text-decoration: none; color: inherit; }
+    .related-post-cat { font-size: 0.7rem; font-weight: 700; color: var(--sky); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.2rem; }
+    .related-post-title { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--navy); line-height: 1.3; }
+    .toc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.1rem; }
+    .toc-list a { display: flex; align-items: center; gap: 0.5rem; font-size: 0.855rem; color: var(--text-muted); padding: 0.4rem 0.5rem; border-radius: 6px; transition: background 0.15s, color 0.15s; text-decoration: none; }
+    .toc-list a:hover { background: var(--sky-light); color: var(--navy); text-decoration: none; }
+    .toc-list a::before { content: '→'; color: var(--sky); font-size: 0.75rem; flex-shrink: 0; }
+    .post-bottom-cta { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%); padding: 4.5rem 1.5rem; text-align: center; margin-top: 3rem; }
+    .post-bottom-cta h3 { color: #fff; font-family: var(--font-display); font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; margin-bottom: 0.75rem; }
+    .post-bottom-cta p { color: rgba(255,255,255,0.72); font-size: 1.02rem; max-width: 500px; margin: 0 auto 2rem; line-height: 1.7; }
+    .post-bottom-cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .post-cta-btn { background: var(--gold); color: var(--navy-deep); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 700; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: filter 0.15s, transform 0.15s; }
+    .post-cta-btn:hover { filter: brightness(1.08); transform: translateY(-1px); color: var(--navy-deep); text-decoration: none; }
+    .post-cta-btn-sec { background: transparent; color: #7ec8f7; border: 2px solid rgba(126,200,247,0.5); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: border-color 0.15s, color 0.15s; }
+    .post-cta-btn-sec:hover { border-color: #7ec8f7; color: #fff; text-decoration: none; }
+    .req-card { background: var(--sand); border-radius: 12px; padding: 1.5rem; border-left: 4px solid var(--navy); margin-bottom: 1.1rem; transition: border-color 0.2s; }
+    .req-card:hover { border-color: var(--gold); }
+    .req-card h4 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+    .req-card p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.72; margin: 0; }
+    @media (max-width: 960px) { .post-layout-inner { grid-template-columns: 1fr; gap: 3rem; } .post-sidebar { position: static; } .post-hero-img img { height: auto; } }
+    @media (max-width: 600px) { .post-byline { flex-wrap: wrap; } .post-share { width: 100%; justify-content: flex-start; } }
   </style>
 </head>
 <body>
@@ -585,34 +668,33 @@
     </button>
   </nav>
 
-  <!-- HERO -->
   <section class="post-hero">
     <div class="post-hero-inner">
-      <nav class="post-breadcrumb" aria-label="Breadcrumb">
-        <a href="https://www.rudycorona.com">Home</a>
+      <div class="post-breadcrumb">
+        <a href="https://www.rudycorona.com/">Home</a>
         <span>›</span>
         <a href="https://www.rudycorona.com/blog">Blog</a>
         <span>›</span>
         <span>Pre-Approval Guide</span>
-      </nav>
+      </div>
       <div class="post-cat-badge">First-Time Buyers</div>
       <h1>How to Get Pre-Approved for a Mortgage in<br><em>3 Simple Steps</em></h1>
-      <div class="post-hero-img">
-        <img src="/images/Blog-3-simple-steps.png" alt="South Bay Real Estate Guide — Jumbo Loans in the South Bay, coastal scene with loan application and model home" />
-      </div>
+      <p style="font-size:1.08rem;color:rgba(255,255,255,0.78);line-height:1.72;max-width:680px;margin-bottom:0;">If you are thinking about buying a home, the single most important thing you can do before you look at a single listing is get pre-approved for a mortgage.</p>
       <div class="post-byline">
         <div class="post-byline-avatar">RC</div>
         <div class="post-byline-text">
-          <div class="post-byline-name">Rudy Corona</div>
-          <div class="post-byline-meta">Mortgage Advisor · NMLS# 999113 &nbsp;·&nbsp; February 24, 2026 &nbsp;·&nbsp; 6 min read</div>
+          <div class="post-byline-name">Rudy Corona · NMLS# 999113</div>
+          <div class="post-byline-meta">February 24, 2026 &nbsp;·&nbsp; 6 min read &nbsp;·&nbsp; First-Time Buyers · Pre-Approval</div>
         </div>
         <div class="post-share">
           <span class="post-share-label">Share</span>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" target="_blank" rel="noopener" class="share-btn" title="Share on Facebook">f</a>
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn">in</a>
-          <a href="https://twitter.com/intent/tweet?url=https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/&text=Jumbo+Loans+in+the+South+Bay" target="_blank" rel="noopener" class="share-btn" title="Share on X">𝕏</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" target="_blank" rel="noopener" class="share-btn">f</a>
+          <a href="https://www.linkedin.com/shareArticle?url=https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" target="_blank" rel="noopener" class="share-btn">in</a>
         </div>
       </div>
+    </div>
+    <div class="post-hero-img">
+      <img src="/images/Blog-3-simple-steps.png" alt="How to get pre-approved for a mortgage in three simple steps — document checklist, loan application, and homebuying confidence" />
     </div>
   </section>
 
@@ -633,12 +715,12 @@
   </ul>
 </div>
 
-<h2>Introduction</h2>
+<h2 id="introduction">Introduction</h2>
 <p>If you are thinking about buying a home, the single most important thing you can do before you look at a single listing is get pre-approved for a mortgage.</p>
 <p>Pre-approval tells you exactly how much home you can afford. It tells sellers that you are a serious, qualified buyer. And it gives you the leverage to move quickly in a competitive market — because in California, good homes do not wait around.</p>
 <p>The process is simpler than most people think. Here is exactly how it works.</p>
 
-<h2>Step 1: Gather Your Financial Documents</h2>
+<h2 id="step-1-gather-documents">Step 1: Gather Your Financial Documents</h2>
 <p>Your lender needs to verify your income, assets, employment, and credit history. Gathering these documents before you start the application will make the process significantly faster.</p>
 <p>Here is the standard document checklist:</p>
 <h3>Income Verification</h3>
@@ -663,7 +745,7 @@
   <p><strong>Pro tip:</strong> Have all of these in a folder — physical or digital — before your first conversation with your mortgage advisor. It will save you from the back-and-forth email chase that delays most applications.</p>
 </div>
 
-<h2>Step 2: Apply and Let Your Lender Review Your File</h2>
+<h2 id="step-2-apply-review">Step 2: Apply and Let Your Lender Review Your File</h2>
 <p>Once your documents are ready, your mortgage advisor will take you through a formal loan application — either in person, over the phone, or online. This is called a Uniform Residential Loan Application (also known as a 1003 form).</p>
 <p>Your application will cover:</p>
 <ul>
@@ -681,7 +763,7 @@
 </ul>
 <p>What is the difference between pre-qualification and pre-approval? Pre-qualification is a quick estimate based on self-reported information. Pre-approval is a formal review with verified documentation. Only pre-approval carries weight with sellers.</p>
 
-<h2>Step 3: Receive Your Pre-Approval Letter and Start Shopping</h2>
+<h2 id="step-3-letter-shopping">Step 3: Receive Your Pre-Approval Letter and Start Shopping</h2>
 <p>Once approved, your lender will issue a pre-approval letter stating the maximum loan amount you qualify for, the loan type, and the expiration date (typically 60-90 days).</p>
 <p>Here is how to use your pre-approval effectively:</p>
 <ul>
@@ -691,7 +773,7 @@
   <li><strong>Do not change your financial situation.</strong> No new credit accounts, car loans, or major purchases until after closing. Even a small change to your debt or credit score can affect your loan.</li>
 </ul>
 
-<h2>What Happens After Pre-Approval?</h2>
+<h2 id="after-pre-approval">What Happens After Pre-Approval?</h2>
 <p>Pre-approval is the first milestone, not the finish line. Here is what comes next after you have an accepted offer:</p>
 <ul>
   <li><strong>Formal Loan Application:</strong> Your pre-approval becomes a full application tied to a specific property.</li>
@@ -702,7 +784,7 @@
 </ul>
 <p>From accepted offer to closing typically takes 21-45 days depending on loan type and how quickly conditions are satisfied. A prepared buyer with an organized file is the biggest factor in keeping that timeline tight.</p>
 
-<h2>Final Thoughts</h2>
+<h2 id="final-thoughts">Final Thoughts</h2>
 <p>Getting pre-approved is not complicated — it is just a matter of gathering your documents, working with the right lender, and taking the first step. The whole process takes a few days and costs nothing.</p>
 <p>If you are thinking about buying in California and want to know exactly what you qualify for, I would love to connect. The first conversation is always free, always honest, and always focused on what is best for you.</p>
 <p>Ready to get pre-approved? Start today with a free consultation with Rudy Corona. Rudy will review your situation, explain your options, and get you a pre-approval letter you can shop with confidence. Visit the Contact page to get started.</p>
@@ -715,100 +797,65 @@
   <span class="post-tag">South Bay</span>
 </div>
 
-        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--sand-dark);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
-          <a href="https://www.rudycorona.com/blog/" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.88rem;font-weight:700;color:var(--sky);text-decoration:none;" onmouseover="this.style.color='var(--navy)'" onmouseout="this.style.color='var(--sky)'">← Back to all articles</a>
-          <div style="display:flex;gap:0.5rem;">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on Facebook">f</a>
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on LinkedIn">in</a>
+        <div class="post-bottom-cta">
+          <h3>Ready to Get Pre-Approved?</h3>
+          <p>A quick 20-minute call can map your budget, required documents, and next step toward a confident offer strategy.</p>
+          <div class="post-bottom-cta-btns">
+            <a href="https://www.rudycorona.com/contact" class="post-cta-btn">Book a Free Consultation →</a>
+            <a href="tel:+13105945362" class="post-cta-btn-sec">📞 (310) 594-5362</a>
           </div>
         </div>
 
       </article>
 
-      <!-- SIDEBAR -->
       <aside class="post-sidebar">
-
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header">
-            <h4>📞 Talk to Rudy — Free</h4>
+          <div class="sidebar-widget-header"><h4>📋 In This Article</h4></div>
+          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
+            <ul class="toc-list">
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#step-1-gather-documents">Step 1: Gather Your Financial Documents</a></li>
+              <li><a href="#step-2-apply-review">Step 2: Apply and Let Your Lender Review Your File</a></li>
+              <li><a href="#step-3-letter-shopping">Step 3: Receive Your Pre-Approval Letter and Start Shopping</a></li>
+              <li><a href="#after-pre-approval">What Happens After Pre-Approval?</a></li>
+              <li><a href="#final-thoughts">Final Thoughts</a></li>
+            </ul>
           </div>
+        </div>
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header"><h4>📞 Talk to Rudy — Free</h4></div>
           <div class="sidebar-widget-body">
             <p>Find out exactly what you qualify for — purchase price, loan programs, and monthly payment — in a free 20-minute call. No pressure, no obligation.</p>
             <a href="https://www.rudycorona.com/contact" class="sidebar-cta">Book a Free Consultation →</a>
             <a href="tel:+13105945362" class="sidebar-cta-secondary">📞 (310) 594-5362</a>
           </div>
         </div>
-
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📋 In This Article</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
-            <ul class="toc-list">
-              <li><a href="#" onclick="scrollToH2(0);return false;">Introduction</a></li>
-              <li><a href="#" onclick="scrollToH2(1);return false;">Step 1: Gather Your Financial Documents</a></li>
-              <li><a href="#" onclick="scrollToH2(2);return false;">Step 2: Apply and Let Your Lender Review Your File</a></li>
-              <li><a href="#" onclick="scrollToH2(3);return false;">Step 3: Receive Your Pre-Approval Letter and Start Shopping</a></li>
-              <li><a href="#" onclick="scrollToH2(4);return false;">What Happens After Pre-Approval?</a></li>
-              <li><a href="#" onclick="scrollToH2(5);return false;">Final Thoughts</a></li>
-            </ul>
+          <div class="sidebar-widget-header"><h4>📊 Pre-Approval Quick Reference</h4></div>
+          <div class="sidebar-widget-body" style="padding:0;">
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Letter turnaround</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">1–3 business days</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Letter validity</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Typically 60–90 days</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Typical max DTI</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">43% or lower</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Offer to closing</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">21–45 days</span></div>
+            <div style="padding:0.7rem 1.25rem;display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Credit review</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Middle of 3 bureaus</span></div>
           </div>
         </div>
-
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">🧮 Free Calculators</h4>
-          </div>
-          <div class="sidebar-widget-body">
-            <p>Run quick estimates and compare scenarios while you plan your purchase strategy.</p>
-            <a href="https://www.rudycorona.com/calculators" class="sidebar-cta-secondary" style="display:block;text-align:center;padding:0.75rem 1rem;border:1.5px solid var(--navy);border-radius:9px;font-weight:700;font-size:0.875rem;color:var(--navy);text-decoration:none;transition:background 0.15s,color 0.15s;" onmouseover="this.style.background='var(--navy)';this.style.color='#fff'" onmouseout="this.style.background='';this.style.color='var(--navy)'">Open Calculators →</a>
+          <div class="sidebar-widget-header"><h4>📖 Related Articles</h4></div>
+          <div class="sidebar-widget-body" style="padding:0.5rem 1.25rem;">
+            <a href="https://www.rudycorona.com/blog/jumbo-loans-south-bay/" class="related-post"><div><div class="related-post-cat">Mortgage Tips</div><div class="related-post-title">Jumbo Loans in the South Bay</div></div></a>
+            <a href="https://www.rudycorona.com/blog/how-much-house-can-i-afford-southern-california/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">How Much House Can I Afford in SoCal?</div></div></a>
+            <a href="https://www.rudycorona.com/blog/what-is-a-dscr-loan-real-estate-investors/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">What Is a DSCR Loan?</div></div></a>
           </div>
         </div>
-
-        <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📚 Related Articles</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:0.75rem 1.25rem;">
-            <a href="https://www.rudycorona.com/blog/jumbo-loans-south-bay/" class="related-post">
-              <img src="https://www.rudycorona.com/images/jumbo-loans-south-bay-real-estate-guide-2026.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">Mortgage Tips</div>
-                <div class="related-post-title">Jumbo Loans in the South Bay</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/how-much-house-can-i-afford-southern-california/" class="related-post">
-              <img src="https://www.rudycorona.com/images/How%20much%20house%20can%20I%20afford_.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">How Much House Can I Afford in SoCal?</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/what-is-a-dscr-loan-real-estate-investors/" class="related-post">
-              <img src="https://www.rudycorona.com/images/Blog-DSCR.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">What Is a DSCR Loan?</div>
-              </div>
-            </a>
-          </div>
+        <div style="background:var(--sand);border-radius:12px;padding:1.25rem;border:1px solid var(--sand-dark);font-size:0.75rem;color:var(--text-muted);line-height:1.65;text-align:center;">
+          <strong style="color:var(--navy);">Rudy Corona</strong> · NMLS# 999113<br>
+          Licensed in California<br>
+          For informational purposes only. All loan programs subject to credit and property approval.
         </div>
-
       </aside>
     </div>
   </div>
-
-  <!-- BOTTOM CTA -->
-  <section class="post-bottom-cta">
-    <div style="max-width:600px;margin:0 auto;">
-      <h2>Ready to Get Pre-Approved?<br><em>Let's Build Your Plan</em></h2>
-      <p>A quick 20-minute call can map your budget, required documents, and next step toward a confident offer strategy.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="https://www.rudycorona.com/contact" class="btn-gold">Book a Free Consultation →</a>
-        <a href="tel:+13105945362" class="btn-outline-white">📞 (310) 594-5362</a>
-      </div>
-    </div>
-  </section>
 
   <footer class="site-footer" role="contentinfo">
     <div class="footer-grid">
@@ -849,14 +896,6 @@
   </footer>
 
   <script>
-  function scrollToH2(index) {
-    const headings = document.querySelectorAll('.post-body h2');
-    if (headings[index]) {
-      const top = headings[index].getBoundingClientRect().top + window.scrollY - 110;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  }
-
   const menuBtn = document.getElementById('menu-btn');
   const siteNav = document.getElementById('site-nav');
   menuBtn?.addEventListener('click', () => {
@@ -867,6 +906,13 @@
     link.addEventListener('click', () => {
       siteNav.classList.remove('nav-mobile-open');
       menuBtn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+  document.querySelectorAll('.toc-list a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
   </script>

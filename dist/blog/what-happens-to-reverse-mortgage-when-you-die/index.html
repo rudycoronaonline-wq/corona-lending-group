@@ -270,8 +270,8 @@
 
     .post-hero {
       background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1e4d8c 100%);
-      padding: 4rem 1.5rem 0;
-      position: relative; overflow: hidden;
+      padding: 4rem 1.5rem 3rem;
+      position: relative;
     }
     .post-hero::before {
       content: ''; position: absolute; top: -80px; right: -80px;
@@ -336,8 +336,8 @@
 
     /* Hero image */
     .post-hero-img {
-      margin-top: 2.5rem;
-      border-radius: 16px 16px 0 0;
+      margin-top: 0.75rem;
+      border-radius: 16px;
       overflow: hidden;
       max-width: 820px;
       margin-left: auto; margin-right: auto;
@@ -520,7 +520,9 @@
     .post-bottom-cta {
       background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
       padding: 4.5rem 1.5rem; text-align: center;
+      margin-top: 3rem;
     }
+    .post-bottom-cta h3 { color: #fff; }
     .post-bottom-cta h2 {
       font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.75rem);
       font-weight: 700; color: #fff; margin-bottom: 0.75rem;
@@ -531,6 +533,11 @@
     .btn-gold:hover { filter: brightness(1.08); transform: translateY(-1px); color: var(--navy-deep); text-decoration: none; }
     .btn-outline-white { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.96rem; transition: border-color 0.15s; text-decoration: none; display: inline-block; }
     .btn-outline-white:hover { border-color: #fff; color: #fff; text-decoration: none; }
+    .post-bottom-cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .post-cta-btn { background: var(--gold); color: var(--navy-deep); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 700; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: filter 0.15s, transform 0.15s; }
+    .post-cta-btn:hover { filter: brightness(1.08); transform: translateY(-1px); color: var(--navy-deep); text-decoration: none; }
+    .post-cta-btn-sec { background: transparent; color: #7ec8f7; border: 2px solid rgba(126,200,247,0.5); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: border-color 0.15s, color 0.15s; }
+    .post-cta-btn-sec:hover { border-color: #7ec8f7; color: #fff; text-decoration: none; }
 
     @media (max-width: 960px) {
       .post-layout-inner { grid-template-columns: 1fr; gap: 3rem; }

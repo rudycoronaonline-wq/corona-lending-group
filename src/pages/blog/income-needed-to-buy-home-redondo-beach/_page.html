@@ -276,9 +276,8 @@
 
     .post-hero {
       background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1e4d8c 100%);
-      padding: 3rem 0 0;
-      position: relative;
-      overflow: hidden;
+      padding: 4rem 1.5rem 0;
+      position: relative; overflow: hidden;
     }
     .post-hero::before {
       content: ''; position: absolute; top: -80px; right: -80px;
@@ -288,7 +287,6 @@
     .post-hero-inner {
       position: relative; z-index: 2;
       max-width: 820px; margin: 0 auto;
-      padding: 0 1.5rem;
     }
     .post-breadcrumb {
       display: flex; align-items: center; gap: 0.5rem;
@@ -342,22 +340,16 @@
     }
     .share-btn:hover { background: rgba(255,255,255,0.2); color: #fff; text-decoration: none; }
 
-    /* Hero image — full width of .post-hero; image covers the band (sits after .post-hero-inner in DOM) */
+    /* Hero image (matches other blog posts: 820px max, rounded top, natural height) */
     .post-hero-img {
-      margin-top: 1.25rem;
-      margin-bottom: 0;
-      width: 100%;
-      background: #E8EDF4;
+      margin-top: 2.5rem;
+      border-radius: 16px 16px 0 0;
       overflow: hidden;
-      line-height: 0;
-      aspect-ratio: 21 / 9;
-      max-height: min(65vh, 720px);
+      max-width: 820px;
+      margin-left: auto; margin-right: auto;
     }
     .post-hero-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+      width: 100%; height: auto;
       display: block;
     }
 
@@ -552,10 +544,6 @@
     @media (max-width: 960px) {
       .post-layout-inner { grid-template-columns: 1fr; gap: 3rem; }
       .post-sidebar { position: static; }
-      .post-hero-img {
-        aspect-ratio: 16 / 9;
-        max-height: min(52vh, 480px);
-      }
     }
     @media (max-width: 600px) {
       .post-byline { flex-wrap: wrap; }

@@ -557,6 +557,16 @@
       .post-byline { flex-wrap: wrap; }
       .post-share { width: 100%; justify-content: flex-start; }
     }
+  
+    .post-bottom-cta { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%); padding: 4.5rem 1.5rem; text-align: center; margin-top: 3rem; }
+    .post-bottom-cta h3 { color: #fff; font-family: var(--font-display); font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; margin-bottom: 0.75rem; }
+    .post-bottom-cta p { color: rgba(255,255,255,0.72); font-size: 1.02rem; max-width: 500px; margin: 0 auto 2rem; line-height: 1.7; }
+    .post-bottom-cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .post-cta-btn { background: var(--gold); color: var(--navy-deep); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 700; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: filter 0.15s, transform 0.15s; }
+    .post-cta-btn:hover { filter: brightness(1.08); transform: translateY(-1px); color: var(--navy-deep); text-decoration: none; }
+    .post-cta-btn-sec { background: transparent; color: #7ec8f7; border: 2px solid rgba(126,200,247,0.5); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: border-color 0.15s, color 0.15s; }
+    .post-cta-btn-sec:hover { border-color: #7ec8f7; color: #fff; text-decoration: none; }
+
   </style>
 </head>
 <body>
@@ -588,33 +598,31 @@
   <!-- HERO -->
   <section class="post-hero">
     <div class="post-hero-inner">
-      <nav class="post-breadcrumb" aria-label="Breadcrumb">
-        <a href="https://www.rudycorona.com">Home</a>
+      <div class="post-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://www.rudycorona.com/">Home</a>
         <span>›</span>
         <a href="https://www.rudycorona.com/blog">Blog</a>
         <span>›</span>
         <span>Self-Employed</span>
-      </nav>
+      </div>
       <div class="post-cat-badge">First-Time Buyers</div>
       <h1>Self-Employed and Buying a Home?<br><em>Here Is What You Need to Know</em></h1>
-      <div class="post-hero-img">
-        <img src="/images/Blog-Self-Employed.png" alt="Self-Employed and Buying a Home? Here Is What You Need to Know" />
-      </div>
       <div class="post-byline">
         <div class="post-byline-avatar">RC</div>
         <div class="post-byline-text">
-          <div class="post-byline-name">Rudy Corona</div>
-          <div class="post-byline-meta">Mortgage Advisor · NMLS# 999113 &nbsp;·&nbsp; February 21, 2026 &nbsp;·&nbsp; 5 min read</div>
+          <div class="post-byline-name">Rudy Corona · NMLS# 999113</div>
+        <div class="post-byline-meta">February 21, 2026 &nbsp;·&nbsp; 5 min read &nbsp;·&nbsp; First-Time Buyers</div>
         </div>
         <div class="post-share">
           <span class="post-share-label">Share</span>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fself-employed-mortgage-guide%2F" target="_blank" rel="noopener" class="share-btn" title="Share on Facebook">f</a>
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fself-employed-mortgage-guide%2F" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn">in</a>
-          <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fself-employed-mortgage-guide%2F&text=Self-Employed%20and%20Buying%20a%20Home%3F%20Here%20Is%20What%20You%20Need%20to%20Know" target="_blank" rel="noopener" class="share-btn" title="Share on X">𝕏</a>
-        
-        </div>
+          <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fself-employed-mortgage-guide%2F" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn">in</a>
+          </div>
       </div>
     </div>
+    <div class="post-hero-img">
+        <img src="/images/Blog-Self-Employed.png" alt="Self-Employed and Buying a Home? Here Is What You Need to Know" />
+      </div>
   </section>
 
   <!-- ARTICLE + SIDEBAR -->
@@ -625,15 +633,15 @@
       <article class="post-body">
 
 
-<h2>Introduction</h2>
+<h2 id="introduction">Introduction</h2>
 <p>Being your own boss has a lot of advantages. Unfortunately, qualifying for a mortgage has not traditionally been one of them.</p>
 <p>If you are self-employed — whether you run a business, freelance, work as a contractor, or own rental properties — you have probably heard that getting a mortgage is harder for you than it is for someone with a W-2. And in some ways, that is true. But it is far from impossible.</p>
 <p>I am Rudy Corona, a licensed Mortgage Advisor in Southern California, and I specialize in helping self-employed borrowers find the right loan. In this post, I will walk you through why traditional loans can be challenging for the self-employed, what your options are, and exactly how to prepare yourself for a successful application.</p>
-<h2>Why Traditional Mortgage Qualification Is Tricky for Self-Employed Borrowers</h2>
+<h2 id="why-traditional-mortgage-qualification-is-tricky-for-self-employed-borrowers">Why Traditional Mortgage Qualification Is Tricky for Self-Employed Borrowers</h2>
 <p>When a W-2 employee applies for a mortgage, the lender looks at two years of tax returns and pay stubs and quickly gets a clear picture of income. Simple.</p>
 <p>When a self-employed borrower applies, the lender also looks at two years of tax returns — but the problem is that most business owners are incentivized to show as little taxable income as possible by writing off legitimate business expenses. That lower taxable income is great for minimizing your tax bill, but it can look like you earn far less than you actually do in terms of real cash flow.</p>
 <p>A self-employed borrower with $250,000 in actual revenue might show only $80,000 in taxable income after deductions. A conventional lender will base your qualifying amount on the $80,000 — which may not get you the loan size you need for the home you want.</p>
-<h2>Option 1: The Traditional Route (2-Year Tax Return Average)</h2>
+<h2 id="option-1-the-traditional-route-2-year-tax-return-average">Option 1: The Traditional Route (2-Year Tax Return Average)</h2>
 <p>If your taxable income after deductions is still strong enough to qualify, the conventional approach remains a solid option. You will need:</p>
 <ul>
 <li>Two years of personal tax returns (1040s)</li>
@@ -643,7 +651,7 @@
 <li>Business license or CPA letter confirming self-employment for 2+ years</li>
 </ul>
 <p>Lenders calculate your qualifying income by averaging your net income over the past two years — with adjustments for depreciation and other non-cash deductions that can be added back. If the numbers work, this route gets you the best rates.</p>
-<h2>Option 2: Bank Statement Loans</h2>
+<h2 id="option-2-bank-statement-loans">Option 2: Bank Statement Loans</h2>
 <p>Bank statement loans are specifically designed for self-employed borrowers and are one of the most popular alternatives to traditional income documentation.</p>
 <p>Instead of tax returns, the lender looks at your business or personal bank statements — typically 12 or 24 months — and calculates your average monthly deposits as a proxy for income. This lets your real cash flow do the talking, rather than your tax-return income.</p>
 <p>Here is how it generally works:</p>
@@ -653,13 +661,13 @@
 <li><strong>Expense factor:</strong> Lenders typically apply an expense ratio (40-50%) to your deposits to estimate net income — this accounts for business expenses without requiring full documentation.</li>
 </ul>
 <p>Bank statement loans typically come with slightly higher interest rates than conventional loans (usually 0.5% to 1.5% more), and require 10-20% down depending on the program. For many self-employed borrowers, the trade-off is absolutely worth it.</p>
-<h2>Option 3: 1099-Only Loans</h2>
+<h2 id="option-3-1099-only-loans">Option 3: 1099-Only Loans</h2>
 <p>If you are an independent contractor or freelancer and receive 1099s rather than W-2s, some lenders offer loans that use just your 1099 income — without requiring full tax returns. This avoids the penalty of excessive write-offs entirely and qualifies you based on your gross 1099 income.</p>
 <p>Requirements vary by lender, but generally you will need 1-2 years of 1099 forms plus a letter confirming you are actively self-employed.</p>
-<h2>Option 4: DSCR Loans for Investor-Entrepreneurs</h2>
+<h2 id="option-4-dscr-loans-for-investor-entrepreneurs">Option 4: DSCR Loans for Investor-Entrepreneurs</h2>
 <p>If you are a self-employed borrower purchasing an investment property — not your primary residence — a DSCR loan (Debt Service Coverage Ratio) may bypass your income documentation entirely. As I covered in another post, DSCR loans qualify the loan based on the rental income of the property, not your personal income.</p>
 <p>This is a powerful option for business owners who want to invest in real estate without their write-offs getting in the way.</p>
-<h2>How to Prepare for a Self-Employed Mortgage Application</h2>
+<h2 id="how-to-prepare-for-a-self-employed-mortgage-application">How to Prepare for a Self-Employed Mortgage Application</h2>
 <p>The earlier you start preparing, the smoother the process will be. Here is what I recommend:</p>
 <ol>
 <li><strong>Work with your CPA</strong> to understand your qualifying income before you apply. If your tax-return income is too low, your accountant may be able to make legal adjustments on upcoming returns — but this takes time.</li>
@@ -668,26 +676,29 @@
 <li><strong>Save for a larger down payment.</strong> More skin in the game gives lenders more confidence in self-employed borrowers.</li>
 <li><strong>Gather documentation early.</strong> Two years of returns, bank statements, and a current P&amp;L statement will all be needed. Having them organized saves significant time.</li>
 </ol>
-<h2>Final Thoughts</h2>
+<h2 id="final-thoughts">Final Thoughts</h2>
 <p>Being self-employed does not mean being locked out of homeownership. It means you need a mortgage advisor who understands the options available to you and can find the right fit for your specific financial picture.</p>
 <p>I work with self-employed borrowers regularly and have access to lenders with both bank statement and 1099 programs. If you want to find out exactly what you qualify for, let us talk.</p>
 <p>Self-employed and ready to buy a home? Book a free consultation with Rudy Corona. I will find the loan that works for your real income — not just what the IRS sees.</p>
 
 
-<div class="post-tags">
+        <div class="post-tags">
   <span class="post-tag">First-Time Buyers</span>
   <span class="post-tag">Mortgage Tips</span>
   <span class="post-tag">Southern California</span>
   <span class="post-tag">Homebuyers</span>
 </div>
 
-        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--sand-dark);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
-          <a href="https://www.rudycorona.com/blog/" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.88rem;font-weight:700;color:var(--sky);text-decoration:none;" onmouseover="this.style.color='var(--navy)'" onmouseout="this.style.color='var(--sky)'">← Back to all articles</a>
-          <div style="display:flex;gap:0.5rem;">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fself-employed-mortgage-guide%2F" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on Facebook">f</a>
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fself-employed-mortgage-guide%2F" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on LinkedIn">in</a>
+        <div class="post-bottom-cta">
+          <h3>Self-Employed Financing Bank Statement &amp; More</h3>
+          <p>We work with lenders who understand real cash flow — not just what shows on a tax return.</p>
+          <div class="post-bottom-cta-btns">
+            <a href="https://www.rudycorona.com/contact" class="post-cta-btn">Book a Free Consultation →</a>
+            <a href="tel:+13105945362" class="post-cta-btn-sec">📞 (310) 594-5362</a>
           </div>
         </div>
+
+</div>
 
 
       </article>
@@ -700,80 +711,54 @@
             <h4>📞 Talk to Rudy — Free</h4>
           </div>
           <div class="sidebar-widget-body">
+            <p>Find out exactly what you qualify for — purchase price, loan programs, and monthly payment — in a f      <aside class="post-sidebar">
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header"><h4>📋 In This Article</h4></div>
+          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
+            <ul class="toc-list">
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#why-traditional-mortgage-qualification-is-tricky-for-self-employed-borrowers">Why Traditional Mortgage Qualification Is Tricky for Self-Employed Borrowers</a></li>
+              <li><a href="#option-1-the-traditional-route-2-year-tax-return-average">Option 1: The Traditional Route (2-Year Tax Return Average)</a></li>
+              <li><a href="#option-2-bank-statement-loans">Option 2: Bank Statement Loans</a></li>
+              <li><a href="#option-3-1099-only-loans">Option 3: 1099-Only Loans</a></li>
+              <li><a href="#option-4-dscr-loans-for-investor-entrepreneurs">Option 4: DSCR Loans for Investor-Entrepreneurs</a></li>
+              <li><a href="#how-to-prepare-for-a-self-employed-mortgage-application">How to Prepare for a Self-Employed Mortgage Application</a></li>
+              <li><a href="#final-thoughts">Final Thoughts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header"><h4>📞 Talk to Rudy — Free</h4></div>
+          <div class="sidebar-widget-body">
             <p>Find out exactly what you qualify for — purchase price, loan programs, and monthly payment — in a free 20-minute call. No pressure, no obligation.</p>
             <a href="https://www.rudycorona.com/contact" class="sidebar-cta">Book a Free Consultation →</a>
             <a href="tel:+13105945362" class="sidebar-cta-secondary">📞 (310) 594-5362</a>
           </div>
         </div>
-
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📋 In This Article</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
-            <ul class="toc-list">
-              <li><a href="#" onclick="scrollToH2(0);return false;">Introduction</a></li>
-              <li><a href="#" onclick="scrollToH2(1);return false;">Why Traditional Mortgage Qualification Is Tricky for Self-Employed Borrowers</a></li>
-              <li><a href="#" onclick="scrollToH2(2);return false;">Option 1: The Traditional Route (2-Year Tax Return Average)</a></li>
-              <li><a href="#" onclick="scrollToH2(3);return false;">Option 2: Bank Statement Loans</a></li>
-              <li><a href="#" onclick="scrollToH2(4);return false;">Option 3: 1099-Only Loans</a></li>
-              <li><a href="#" onclick="scrollToH2(5);return false;">Option 4: DSCR Loans for Investor-Entrepreneurs</a></li>
-              <li><a href="#" onclick="scrollToH2(6);return false;">How to Prepare for a Self-Employed Mortgage Application</a></li>
-              <li><a href="#" onclick="scrollToH2(7);return false;">Final Thoughts</a></li>
-            </ul>
+          <div class="sidebar-widget-header"><h4>📊 Quick Reference</h4></div>
+          <div class="sidebar-widget-body" style="padding:0;">
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Income docs</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Taxes, P&amp;L, bank statements</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Programs</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Bank statement, 1099, assets</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">DTI</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Varies by program</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Reserves</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Often higher than W-2</span></div>
+            <div style="padding:0.7rem 1.25rem;display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Tip</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Organize docs before you shop</span></div>
           </div>
         </div>
-
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">🧮 Free Calculators</h4>
-          </div>
-          <div class="sidebar-widget-body">
-            <p>Run quick estimates and compare scenarios while you plan your purchase strategy.</p>
-            <a href="https://www.rudycorona.com/calculators" class="sidebar-cta-secondary" style="display:block;text-align:center;padding:0.75rem 1rem;border:1.5px solid var(--navy);border-radius:9px;font-weight:700;font-size:0.875rem;color:var(--navy);text-decoration:none;transition:background 0.15s,color 0.15s;" onmouseover="this.style.background='var(--navy)';this.style.color='#fff'" onmouseout="this.style.background='';this.style.color='var(--navy)'">Open Calculators →</a>
-          </div>
-        </div>
-
-                <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📚 Related Articles</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:0.75rem 1.25rem;">
-            <a href="https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" class="related-post">
-              <img src="https://www.rudycorona.com/images/Blog-3-simple-steps.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">How to Get Pre-Approved in a Few Clear Steps</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/how-much-house-can-i-afford-southern-california/" class="related-post">
-              <img src="https://www.rudycorona.com/images/How%2520much%2520house%2520can%2520I%2520afford_.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">How Much House Can I Afford in SoCal?</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/down-payment-first-time-buyer-southern-california/" class="related-post">
-              <img src="https://www.rudycorona.com/images/The%2520Honest%2520Truth%2520About%2520Down%2520Payments%2520for%2520First-Time%2520Buyers%2520in%2520Southern%2520California.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">Down Payments for First-Time Buyers</div>
-              </div>
-            </a>
+          <div class="sidebar-widget-header"><h4>📖 Related Articles</h4></div>
+          <div class="sidebar-widget-body" style="padding:0.5rem 1.25rem;">
+            <a href="https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">How to Get Pre-Approved in a Few Clear Steps</div></div></a>
+            <a href="https://www.rudycorona.com/blog/how-much-house-can-i-afford-southern-california/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">How Much House Can I Afford in SoCal?</div></div></a>
+            <a href="https://www.rudycorona.com/blog/down-payment-first-time-buyer-southern-california/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">Down Payments for First-Time Buyers</div></div></a>
           </div>
         </div>
-
-
-      </aside>
-    </div>
-  </div>
-
-  <!-- BOTTOM CTA -->
-  <section class="post-bottom-cta">
-    <div style="max-width:600px;margin:0 auto;">
-      <h2>Self-Employed Financing<br><em>Bank Statement & More</em></h2>
-      <p>We work with lenders who understand real cash flow — not just what shows on a tax return.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <div style="background:var(--sand);border-radius:12px;padding:1.25rem;border:1px solid var(--sand-dark);font-size:0.75rem;color:var(--text-muted);line-height:1.65;text-align:center;">
+          <strong style="color:var(--navy);">Rudy Corona</strong> · NMLS# 999113<br>
+          Licensed in California<br>
+          For informational purposes only. All loan programs subject to credit and property approval.
+        </div>
+      </aside>flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="https://www.rudycorona.com/contact" class="btn-gold">Book a Free Consultation →</a>
         <a href="tel:+13105945362" class="btn-outline-white">📞 (310) 594-5362</a>
       </div>
@@ -818,15 +803,7 @@
     </div>
   </footer>
 
-  <script>
-  function scrollToH2(index) {
-    const headings = document.querySelectorAll('.post-body h2');
-    if (headings[index]) {
-      const top = headings[index].getBoundingClientRect().top + window.scrollY - 110;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  }
-
+    <script>
   const menuBtn = document.getElementById('menu-btn');
   const siteNav = document.getElementById('site-nav');
   menuBtn?.addEventListener('click', () => {
@@ -837,6 +814,13 @@
     link.addEventListener('click', () => {
       siteNav.classList.remove('nav-mobile-open');
       menuBtn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+  document.querySelectorAll('.toc-list a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
   </script>

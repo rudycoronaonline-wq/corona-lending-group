@@ -557,6 +557,16 @@
       .post-byline { flex-wrap: wrap; }
       .post-share { width: 100%; justify-content: flex-start; }
     }
+  
+    .post-bottom-cta { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%); padding: 4.5rem 1.5rem; text-align: center; margin-top: 3rem; }
+    .post-bottom-cta h3 { color: #fff; font-family: var(--font-display); font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; margin-bottom: 0.75rem; }
+    .post-bottom-cta p { color: rgba(255,255,255,0.72); font-size: 1.02rem; max-width: 500px; margin: 0 auto 2rem; line-height: 1.7; }
+    .post-bottom-cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .post-cta-btn { background: var(--gold); color: var(--navy-deep); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 700; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: filter 0.15s, transform 0.15s; }
+    .post-cta-btn:hover { filter: brightness(1.08); transform: translateY(-1px); color: var(--navy-deep); text-decoration: none; }
+    .post-cta-btn-sec { background: transparent; color: #7ec8f7; border: 2px solid rgba(126,200,247,0.5); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: border-color 0.15s, color 0.15s; }
+    .post-cta-btn-sec:hover { border-color: #7ec8f7; color: #fff; text-decoration: none; }
+
   </style>
 </head>
 <body>
@@ -588,33 +598,31 @@
   <!-- HERO -->
   <section class="post-hero">
     <div class="post-hero-inner">
-      <nav class="post-breadcrumb" aria-label="Breadcrumb">
-        <a href="https://www.rudycorona.com">Home</a>
+      <div class="post-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://www.rudycorona.com/">Home</a>
         <span>›</span>
         <a href="https://www.rudycorona.com/blog">Blog</a>
         <span>›</span>
         <span>DSCR Loans</span>
-      </nav>
+      </div>
       <div class="post-cat-badge">Investors</div>
       <h1>What Is a DSCR Loan?<br><em>A Complete Guide for Investors</em></h1>
-      <div class="post-hero-img">
-        <img src="/images/Blog-DSCR.png" alt="What Is a DSCR Loan? A Complete Guide for Real Estate Investors" />
-      </div>
       <div class="post-byline">
         <div class="post-byline-avatar">RC</div>
         <div class="post-byline-text">
-          <div class="post-byline-name">Rudy Corona</div>
-          <div class="post-byline-meta">Mortgage Advisor · NMLS# 999113 &nbsp;·&nbsp; February 17, 2026 &nbsp;·&nbsp; 5 min read</div>
+          <div class="post-byline-name">Rudy Corona · NMLS# 999113</div>
+        <div class="post-byline-meta">February 17, 2026 &nbsp;·&nbsp; 5 min read &nbsp;·&nbsp; Investors</div>
         </div>
         <div class="post-share">
           <span class="post-share-label">Share</span>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fwhat-is-a-dscr-loan-real-estate-investors%2F" target="_blank" rel="noopener" class="share-btn" title="Share on Facebook">f</a>
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fwhat-is-a-dscr-loan-real-estate-investors%2F" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn">in</a>
-          <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fwhat-is-a-dscr-loan-real-estate-investors%2F&text=What%20Is%20a%20DSCR%20Loan%3F%20A%20Complete%20Guide%20for%20Real%20Estate%20Investors" target="_blank" rel="noopener" class="share-btn" title="Share on X">𝕏</a>
-        
-        </div>
+          <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fwhat-is-a-dscr-loan-real-estate-investors%2F" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn">in</a>
+          </div>
       </div>
     </div>
+    <div class="post-hero-img">
+        <img src="/images/Blog-DSCR.png" alt="What Is a DSCR Loan? A Complete Guide for Real Estate Investors" />
+      </div>
   </section>
 
   <!-- ARTICLE + SIDEBAR -->
@@ -625,15 +633,15 @@
       <article class="post-body">
 
 
-<h2>Introduction</h2>
+<h2 id="introduction">Introduction</h2>
 <p>If you are a real estate investor who has ever been told you make too much in write-offs to qualify for a traditional mortgage, or if you are self-employed and tired of drowning in bank statements and tax return requests, a DSCR loan might be exactly what you have been looking for.</p>
 <p>DSCR loans — short for Debt Service Coverage Ratio loans — are one of the most powerful financing tools available to real estate investors today. And yet, many investors do not know they exist. In this guide, I am going to break down exactly what a DSCR loan is, how it works, who qualifies, and whether it makes sense for your investment strategy.</p>
-<h2>What Does DSCR Stand For?</h2>
+<h2 id="what-does-dscr-stand-for">What Does DSCR Stand For?</h2>
 <p>DSCR stands for Debt Service Coverage Ratio. It is a simple formula lenders use to determine whether a rental property generates enough income to cover its own mortgage payment.</p>
 <p>The formula is straightforward:</p>
 <p><strong>DSCR = Gross Rental Income / Total Monthly Debt Payments (PITIA: Principal, Interest, Taxes, Insurance, and HOA)</strong></p>
 <p>For example, if a property generates $2,500/month in rent and the total monthly payment (PITIA) is $2,000, the DSCR is 1.25. A DSCR above 1.0 means the property earns more than it costs to carry. Most lenders want to see a DSCR of at least 1.0 to 1.25.</p>
-<h2>How Is a DSCR Loan Different from a Conventional Investment Loan?</h2>
+<h2 id="how-is-a-dscr-loan-different-from-a-conventional-investment-loan">How Is a DSCR Loan Different from a Conventional Investment Loan?</h2>
 <p>With a conventional investment property loan, the lender analyzes your personal income — your W-2s, tax returns, pay stubs, and existing debt — to determine how much you qualify for. This creates two major problems for many investors:</p>
 <ol>
 <li>If you are self-employed with heavy write-offs, your taxable income on paper looks much lower than your actual cash flow.</li>
@@ -641,7 +649,7 @@
 </ol>
 <p>A DSCR loan removes your personal income from the equation entirely. The lender only cares about one thing: does this property make enough money to pay for itself? Your personal tax returns, W-2s, and employment status are not part of the underwriting decision.</p>
 <p>This makes DSCR loans ideal for investors who are building a portfolio and do not want their personal finances to be a bottleneck.</p>
-<h2>Who Is a DSCR Loan Best For?</h2>
+<h2 id="who-is-a-dscr-loan-best-for">Who Is a DSCR Loan Best For?</h2>
 <p>DSCR loans are a great fit for:</p>
 <ul>
 <li>Experienced real estate investors growing a rental portfolio</li>
@@ -650,7 +658,7 @@
 <li>Buyers who cannot qualify with traditional income documentation</li>
 <li>Investors who want to close quickly without the paperwork of a conventional loan</li>
 </ul>
-<h2>What Are the Typical Requirements?</h2>
+<h2 id="what-are-the-typical-requirements">What Are the Typical Requirements?</h2>
 <p>Requirements vary by lender, but here is a general framework for what to expect:</p>
 <ul>
 <li><strong>Credit Score:</strong> Most DSCR lenders want a minimum of 620-680. Better credit means better rates.</li>
@@ -661,14 +669,14 @@
 <li><strong>No personal income documentation required:</strong> No tax returns, no pay stubs, no employment verification.</li>
 </ul>
 <p>Rates on DSCR loans are typically slightly higher than conventional investment loans — usually 0.5% to 1.5% above a comparable conventional rate — because they carry more flexibility. For most investors, that trade-off is worth it.</p>
-<h2>How Are Rents Calculated for DSCR Approval?</h2>
+<h2 id="how-are-rents-calculated-for-dscr-approval">How Are Rents Calculated for DSCR Approval?</h2>
 <p>Lenders use one of two methods to calculate the rental income for the DSCR formula:</p>
 <ul>
 <li><strong>Actual Lease:</strong> If the property is already rented, the lender uses the current signed lease.</li>
 <li><strong>Market Rent Appraisal:</strong> If the property is vacant or newly purchased, the lender orders a market rent appraisal (called a 1007 or 1025 form) to estimate what the property would rent for.</li>
 </ul>
 <p>For short-term rentals like Airbnb or VRBO properties, some lenders accept historical rental income from platforms like AirDNA or from prior year 1099s.</p>
-<h2>What Are the Pros and Cons of DSCR Loans?</h2>
+<h2 id="what-are-the-pros-and-cons-of-dscr-loans">What Are the Pros and Cons of DSCR Loans?</h2>
 <p><strong>Pros</strong></p>
 <ul>
 <li>No personal income documentation — ideal for self-employed investors</li>
@@ -684,29 +692,32 @@
 <li>Not available for owner-occupied properties — investment use only</li>
 <li>Property must cash flow — if the numbers do not work, you will not qualify</li>
 </ul>
-<h2>Is a DSCR Loan Right for You?</h2>
+<h2 id="is-a-dscr-loan-right-for-you">Is a DSCR Loan Right for You?</h2>
 <p>If you are buying an investment property that generates solid rental income and you want to keep your personal finances out of the underwriting process, a DSCR loan deserves serious consideration.</p>
 <p>On the other hand, if you have strong W-2 income and your debt-to-income ratio supports a conventional loan, you may get a slightly better rate going the traditional route.</p>
 <p>The best way to know is to have a quick conversation with a mortgage advisor who works with both conventional and DSCR products — and can compare options side by side for your specific deal.</p>
-<h2>Final Thoughts</h2>
+<h2 id="final-thoughts">Final Thoughts</h2>
 <p>DSCR loans have opened the door for a new generation of real estate investors who build real wealth through rental income but cannot qualify through traditional channels. If that sounds like you, I would love to walk you through the numbers on your next deal.</p>
 <p>Thinking about buying a rental property? Let us run the numbers together. Book a free consultation with Rudy Corona and find out if a DSCR loan is the right fit for your investment strategy.</p>
 
 
-<div class="post-tags">
+        <div class="post-tags">
   <span class="post-tag">Investors</span>
   <span class="post-tag">Mortgage Tips</span>
   <span class="post-tag">Southern California</span>
   <span class="post-tag">Real Estate Investing</span>
 </div>
 
-        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--sand-dark);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
-          <a href="https://www.rudycorona.com/blog/" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.88rem;font-weight:700;color:var(--sky);text-decoration:none;" onmouseover="this.style.color='var(--navy)'" onmouseout="this.style.color='var(--sky)'">← Back to all articles</a>
-          <div style="display:flex;gap:0.5rem;">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fwhat-is-a-dscr-loan-real-estate-investors%2F" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on Facebook">f</a>
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Fwhat-is-a-dscr-loan-real-estate-investors%2F" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on LinkedIn">in</a>
+        <div class="post-bottom-cta">
+          <h3>Growing a Rental Portfolio? See If DSCR Fits</h3>
+          <p>Qualify from rental income — not tax returns. Book a call to compare DSCR vs conventional for your next deal.</p>
+          <div class="post-bottom-cta-btns">
+            <a href="https://www.rudycorona.com/contact" class="post-cta-btn">Book a Free Consultation →</a>
+            <a href="tel:+13105945362" class="post-cta-btn-sec">📞 (310) 594-5362</a>
           </div>
         </div>
+
+</div>
 
 
       </article>
@@ -719,81 +730,55 @@
             <h4>📞 Talk to Rudy — Free</h4>
           </div>
           <div class="sidebar-widget-body">
+            <p>Find out exactly what you qualify for — purchase price, loan programs, and monthly payment — in a free 20-minute call. No pressure,       <aside class="post-sidebar">
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header"><h4>📋 In This Article</h4></div>
+          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
+            <ul class="toc-list">
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#what-does-dscr-stand-for">What Does DSCR Stand For?</a></li>
+              <li><a href="#how-is-a-dscr-loan-different-from-a-conventional-investment-loan">How Is a DSCR Loan Different from a Conventional Investment Loan?</a></li>
+              <li><a href="#who-is-a-dscr-loan-best-for">Who Is a DSCR Loan Best For?</a></li>
+              <li><a href="#what-are-the-typical-requirements">What Are the Typical Requirements?</a></li>
+              <li><a href="#how-are-rents-calculated-for-dscr-approval">How Are Rents Calculated for DSCR Approval?</a></li>
+              <li><a href="#what-are-the-pros-and-cons-of-dscr-loans">What Are the Pros and Cons of DSCR Loans?</a></li>
+              <li><a href="#is-a-dscr-loan-right-for-you">Is a DSCR Loan Right for You?</a></li>
+              <li><a href="#final-thoughts">Final Thoughts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header"><h4>📞 Talk to Rudy — Free</h4></div>
+          <div class="sidebar-widget-body">
             <p>Find out exactly what you qualify for — purchase price, loan programs, and monthly payment — in a free 20-minute call. No pressure, no obligation.</p>
             <a href="https://www.rudycorona.com/contact" class="sidebar-cta">Book a Free Consultation →</a>
             <a href="tel:+13105945362" class="sidebar-cta-secondary">📞 (310) 594-5362</a>
           </div>
         </div>
-
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📋 In This Article</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
-            <ul class="toc-list">
-              <li><a href="#" onclick="scrollToH2(0);return false;">Introduction</a></li>
-              <li><a href="#" onclick="scrollToH2(1);return false;">What Does DSCR Stand For?</a></li>
-              <li><a href="#" onclick="scrollToH2(2);return false;">How Is a DSCR Loan Different from a Conventional Investment Loan?</a></li>
-              <li><a href="#" onclick="scrollToH2(3);return false;">Who Is a DSCR Loan Best For?</a></li>
-              <li><a href="#" onclick="scrollToH2(4);return false;">What Are the Typical Requirements?</a></li>
-              <li><a href="#" onclick="scrollToH2(5);return false;">How Are Rents Calculated for DSCR Approval?</a></li>
-              <li><a href="#" onclick="scrollToH2(6);return false;">What Are the Pros and Cons of DSCR Loans?</a></li>
-              <li><a href="#" onclick="scrollToH2(7);return false;">Is a DSCR Loan Right for You?</a></li>
-              <li><a href="#" onclick="scrollToH2(8);return false;">Final Thoughts</a></li>
-            </ul>
+          <div class="sidebar-widget-header"><h4>📊 Quick Reference</h4></div>
+          <div class="sidebar-widget-body" style="padding:0;">
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Qualifies on</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Rental income / DSCR</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Typical use</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Investment properties</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Documentation</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Cash-flow focused</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Down payment</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Varies by lender</span></div>
+            <div style="padding:0.7rem 1.25rem;display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Best for</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Real estate investors</span></div>
           </div>
         </div>
-
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">🧮 Free Calculators</h4>
-          </div>
-          <div class="sidebar-widget-body">
-            <p>Run quick estimates and compare scenarios while you plan your purchase strategy.</p>
-            <a href="https://www.rudycorona.com/calculators" class="sidebar-cta-secondary" style="display:block;text-align:center;padding:0.75rem 1rem;border:1.5px solid var(--navy);border-radius:9px;font-weight:700;font-size:0.875rem;color:var(--navy);text-decoration:none;transition:background 0.15s,color 0.15s;" onmouseover="this.style.background='var(--navy)';this.style.color='#fff'" onmouseout="this.style.background='';this.style.color='var(--navy)'">Open Calculators →</a>
-          </div>
-        </div>
-
-                <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📚 Related Articles</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:0.75rem 1.25rem;">
-            <a href="https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" class="related-post">
-              <img src="https://www.rudycorona.com/images/Blog-3-simple-steps.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">How to Get Pre-Approved in a Few Clear Steps</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/jumbo-loans-south-bay/" class="related-post">
-              <img src="https://www.rudycorona.com/images/jumbo-loans-south-bay-real-estate-guide-2026.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">Market News</div>
-                <div class="related-post-title">Jumbo Loans in the South Bay</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/how-much-house-can-i-afford-southern-california/" class="related-post">
-              <img src="https://www.rudycorona.com/images/How%2520much%2520house%2520can%2520I%2520afford_.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">First-Time Buyers</div>
-                <div class="related-post-title">How Much House Can I Afford in SoCal?</div>
-              </div>
-            </a>
+          <div class="sidebar-widget-header"><h4>📖 Related Articles</h4></div>
+          <div class="sidebar-widget-body" style="padding:0.5rem 1.25rem;">
+            <a href="https://www.rudycorona.com/blog/how-to-get-pre-approved-mortgage/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">How to Get Pre-Approved in a Few Clear Steps</div></div></a>
+            <a href="https://www.rudycorona.com/blog/jumbo-loans-south-bay/" class="related-post"><div><div class="related-post-cat">Market News</div><div class="related-post-title">Jumbo Loans in the South Bay</div></div></a>
+            <a href="https://www.rudycorona.com/blog/how-much-house-can-i-afford-southern-california/" class="related-post"><div><div class="related-post-cat">First-Time Buyers</div><div class="related-post-title">How Much House Can I Afford in SoCal?</div></div></a>
           </div>
         </div>
-
-
-      </aside>
-    </div>
-  </div>
-
-  <!-- BOTTOM CTA -->
-  <section class="post-bottom-cta">
-    <div style="max-width:600px;margin:0 auto;">
-      <h2>Growing a Rental Portfolio?<br><em>See If DSCR Fits</em></h2>
-      <p>Qualify from rental income — not tax returns. Book a call to compare DSCR vs conventional for your next deal.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <div style="background:var(--sand);border-radius:12px;padding:1.25rem;border:1px solid var(--sand-dark);font-size:0.75rem;color:var(--text-muted);line-height:1.65;text-align:center;">
+          <strong style="color:var(--navy);">Rudy Corona</strong> · NMLS# 999113<br>
+          Licensed in California<br>
+          For informational purposes only. All loan programs subject to credit and property approval.
+        </div>
+      </aside>justify-content:center;flex-wrap:wrap;">
         <a href="https://www.rudycorona.com/contact" class="btn-gold">Book a Free Consultation →</a>
         <a href="tel:+13105945362" class="btn-outline-white">📞 (310) 594-5362</a>
       </div>
@@ -838,15 +823,7 @@
     </div>
   </footer>
 
-  <script>
-  function scrollToH2(index) {
-    const headings = document.querySelectorAll('.post-body h2');
-    if (headings[index]) {
-      const top = headings[index].getBoundingClientRect().top + window.scrollY - 110;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  }
-
+    <script>
   const menuBtn = document.getElementById('menu-btn');
   const siteNav = document.getElementById('site-nav');
   menuBtn?.addEventListener('click', () => {
@@ -857,6 +834,13 @@
     link.addEventListener('click', () => {
       siteNav.classList.remove('nav-mobile-open');
       menuBtn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+  document.querySelectorAll('.toc-list a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
   </script>

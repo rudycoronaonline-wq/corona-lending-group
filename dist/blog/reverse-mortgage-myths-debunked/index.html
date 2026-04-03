@@ -557,6 +557,16 @@
       .post-byline { flex-wrap: wrap; }
       .post-share { width: 100%; justify-content: flex-start; }
     }
+  
+    .post-bottom-cta { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%); padding: 4.5rem 1.5rem; text-align: center; margin-top: 3rem; }
+    .post-bottom-cta h3 { color: #fff; font-family: var(--font-display); font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; margin-bottom: 0.75rem; }
+    .post-bottom-cta p { color: rgba(255,255,255,0.72); font-size: 1.02rem; max-width: 500px; margin: 0 auto 2rem; line-height: 1.7; }
+    .post-bottom-cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .post-cta-btn { background: var(--gold); color: var(--navy-deep); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 700; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: filter 0.15s, transform 0.15s; }
+    .post-cta-btn:hover { filter: brightness(1.08); transform: translateY(-1px); color: var(--navy-deep); text-decoration: none; }
+    .post-cta-btn-sec { background: transparent; color: #7ec8f7; border: 2px solid rgba(126,200,247,0.5); padding: 0.9rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.96rem; text-decoration: none; display: inline-block; transition: border-color 0.15s, color 0.15s; }
+    .post-cta-btn-sec:hover { border-color: #7ec8f7; color: #fff; text-decoration: none; }
+
   </style>
 </head>
 <body>
@@ -588,33 +598,31 @@
   <!-- HERO -->
   <section class="post-hero">
     <div class="post-hero-inner">
-      <nav class="post-breadcrumb" aria-label="Breadcrumb">
-        <a href="https://www.rudycorona.com">Home</a>
+      <div class="post-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://www.rudycorona.com/">Home</a>
         <span>›</span>
         <a href="https://www.rudycorona.com/blog">Blog</a>
         <span>›</span>
         <span>Reverse Myths</span>
-      </nav>
+      </div>
       <div class="post-cat-badge">Seniors</div>
       <h1>7 Reverse Mortgage Myths<br><em>Debunked</em></h1>
-      <div class="post-hero-img">
-        <img src="/images/7-reverse-mortgage-myths-blog.png" alt="7 Reverse Mortgage Myths That Are Keeping Southern California Seniors from Financial Freedom" />
-      </div>
       <div class="post-byline">
         <div class="post-byline-avatar">RC</div>
         <div class="post-byline-text">
-          <div class="post-byline-name">Rudy Corona</div>
-          <div class="post-byline-meta">Mortgage Advisor · NMLS# 999113 &nbsp;·&nbsp; February 28, 2025 &nbsp;·&nbsp; 6 min read</div>
+          <div class="post-byline-name">Rudy Corona · NMLS# 999113</div>
+        <div class="post-byline-meta">February 28, 2025 &nbsp;·&nbsp; 6 min read &nbsp;·&nbsp; Seniors</div>
         </div>
         <div class="post-share">
           <span class="post-share-label">Share</span>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Freverse-mortgage-myths-debunked%2F" target="_blank" rel="noopener" class="share-btn" title="Share on Facebook">f</a>
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Freverse-mortgage-myths-debunked%2F" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn">in</a>
-          <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Freverse-mortgage-myths-debunked%2F&text=7%20Reverse%20Mortgage%20Myths%20That%20Are%20Keeping%20Southern%20California%20Seniors%20from%20Financial%20Freedom" target="_blank" rel="noopener" class="share-btn" title="Share on X">𝕏</a>
-        
-        </div>
+          <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Freverse-mortgage-myths-debunked%2F" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn">in</a>
+          </div>
       </div>
     </div>
+    <div class="post-hero-img">
+        <img src="/images/7-reverse-mortgage-myths-blog.png" alt="7 Reverse Mortgage Myths That Are Keeping Southern California Seniors from Financial Freedom" />
+      </div>
   </section>
 
   <!-- ARTICLE + SIDEBAR -->
@@ -626,62 +634,65 @@
 
 
 <p>The Fear Is Real. But Most of What You Have Heard Is Simply Wrong.</p>
-<h2>Fear Keeps More People From This Than Anything Else</h2>
+<h2 id="fear-keeps-more-people-from-this-than-anything-else">Fear Keeps More People From This Than Anything Else</h2>
 <p>Over the years, I have sat with hundreds of Southern California seniors who were curious about reverse mortgages but afraid to move forward. And almost every time, the fear was not based on how reverse mortgages actually work today. It was based on stories, rumors, half-truths, and outdated information from a decade or two ago.</p>
 <p>The reverse mortgage industry has changed dramatically. The consumer protections are real, the regulations are strong, and for the right homeowner in the right situation, it genuinely can change your life. But the myths keep getting in the way.</p>
 <p>Let me go through the ones I hear most often, and tell you what is actually true.</p>
-<h2>Myth #1: The Bank Takes Your Home When You Get a Reverse Mortgage</h2>
+<h2 id="myth-1-the-bank-takes-your-home-when-you-get-a-reverse-mortgage">Myth #1: The Bank Takes Your Home When You Get a Reverse Mortgage</h2>
 <p>This is the biggest one, and it is completely false.</p>
 <p>When you take out a reverse mortgage, you remain the owner of your home. Your name stays on the title. The lender places a lien on the property, exactly the same as a traditional mortgage, but they do not own your home and they cannot take it from you.</p>
 <p>You can be required to repay the loan early only if you stop paying property taxes and insurance, let the home fall into significant disrepair, or move out permanently. These are the same obligations you have as any homeowner. As long as you meet them, your home is yours.</p>
 <p><strong>Fact:</strong> You retain full ownership of your home throughout the life of the loan. The bank holds a lien, not the deed.</p>
-<h2>Myth #2: Your Children Will Inherit Nothing</h2>
+<h2 id="myth-2-your-children-will-inherit-nothing">Myth #2: Your Children Will Inherit Nothing</h2>
 <p>This one stops families in their tracks, and it does not have to.</p>
 <p>When you pass away, your heirs inherit the home just as they would if there were a traditional mortgage on it. The reverse mortgage balance must be repaid, but your heirs have options. They can sell the home and keep any equity remaining after the loan is paid. They can refinance the reverse mortgage into a traditional mortgage if they want to keep the property. Or, if the loan balance exceeds the home&#39;s value, they can simply walk away with no personal liability whatsoever.</p>
 <p>Here in Southern California, where home values have appreciated significantly over decades, many reverse mortgage borrowers still leave substantial equity to their families, even after years of drawing from the loan.</p>
 <p><strong>Fact:</strong> Your heirs inherit your home and all its equity above the loan balance. They are never personally responsible for more than the home is worth.</p>
-<h2>Myth #3: You Can Owe More Than Your Home Is Worth and Leave Your Family in Debt</h2>
+<h2 id="myth-3-you-can-owe-more-than-your-home-is-worth-and-leave-your-family-in-debt">Myth #3: You Can Owe More Than Your Home Is Worth and Leave Your Family in Debt</h2>
 <p>This myth causes more anxiety than almost any other, and the protection against it is built directly into the federal program.</p>
 <p>HECM reverse mortgages are non-recourse loans. This means that when the loan is repaid, the most that ever has to be paid back is the value of the home at that time. If the loan balance has grown larger than the home&#39;s value, the FHA, which insures every HECM, covers the difference. Your children do not cover it. Your estate does not cover it. The government-backed insurance program covers it. That is what the mortgage insurance premium you pay as part of the reverse mortgage is for.</p>
 <p><strong>Fact:</strong> You and your heirs will never owe more than your home is worth. FHA insurance covers any shortfall. This protection is written into federal law.</p>
-<h2>Myth #4: Reverse Mortgages Are Only for People Who Are Desperate</h2>
+<h2 id="myth-4-reverse-mortgages-are-only-for-people-who-are-desperate">Myth #4: Reverse Mortgages Are Only for People Who Are Desperate</h2>
 <p>This one frustrates me the most, because it has caused people who could genuinely benefit from this tool to feel embarrassed even thinking about it.</p>
 <p>Financial planners across the country increasingly recommend reverse mortgages as part of a comprehensive retirement strategy, not as a last resort. Using a reverse mortgage line of credit early in retirement to preserve other investments, to delay Social Security and maximize lifetime benefits, or to manage healthcare costs without depleting savings is sophisticated financial planning. Not desperation.</p>
 <p>In a 2024 survey, 62% of older homeowners agreed that reverse mortgages offer more financial freedom in retirement, once they understood how they actually worked. The people using these loans include former professionals, retired business owners, and homeowners in high-value Southern California markets who are simply choosing to access wealth they have already earned.</p>
 <p><strong>Fact:</strong> Reverse mortgages are used by financially savvy retirees as a strategic retirement planning tool, not just by people in financial distress.</p>
-<h2>Myth #5: You Have to Own Your Home Free and Clear to Qualify</h2>
+<h2 id="myth-5-you-have-to-own-your-home-free-and-clear-to-qualify">Myth #5: You Have to Own Your Home Free and Clear to Qualify</h2>
 <p>Many people assume they cannot get a reverse mortgage because they still have a mortgage balance. This is not true.</p>
 <p>You can qualify for a reverse mortgage even if you still owe money on your home, as long as you have sufficient equity. When you close on the reverse mortgage, the existing mortgage is paid off first from the reverse mortgage proceeds. For homeowners carrying a significant monthly mortgage payment into retirement, this can be one of the most immediate and powerful benefits: eliminating that required monthly payment entirely.</p>
 <p><strong>Fact:</strong> You do not need to own your home outright. Existing mortgages are paid off at closing with reverse mortgage proceeds.</p>
-<h2>Myth #6: A Reverse Mortgage Will Hurt Your Social Security and Medicare</h2>
+<h2 id="myth-6-a-reverse-mortgage-will-hurt-your-social-security-and-medicare">Myth #6: A Reverse Mortgage Will Hurt Your Social Security and Medicare</h2>
 <p>Reverse mortgage proceeds are loan funds, not income. They are not counted as taxable income by the IRS and they do not affect Social Security or Medicare benefits.</p>
 <p>There is one area worth monitoring: if you are receiving Medicaid or Supplemental Security Income, which are needs-based programs, you will want to be careful about how much you draw from your reverse mortgage and when, because large balances in your bank account could affect needs-based program eligibility. This is a conversation worth having with a financial advisor, but it affects a small subset of borrowers and is manageable with proper planning.</p>
 <p><strong>Fact:</strong> Reverse mortgage proceeds do not affect Social Security or Medicare. Medicaid recipients should consult an advisor about draw timing.</p>
-<h2>Myth #7: Reverse Mortgages Are Scams</h2>
+<h2 id="myth-7-reverse-mortgages-are-scams">Myth #7: Reverse Mortgages Are Scams</h2>
 <p>The federal HECM program is regulated by the U.S. Department of Housing and Urban Development and insured by the Federal Housing Administration. It requires independent, mandatory counseling with a HUD-approved third party before any loan can proceed. It has extensive disclosure requirements, a 3-day right of rescission after closing, and federal consumer protection laws governing every aspect of the transaction.</p>
 <p>There are bad actors in every corner of the financial world, and seniors should always verify the credentials of any lender they work with. But the HECM program itself is among the most consumer-protected loan products in existence.</p>
 <p><strong>Fact:</strong> The HECM reverse mortgage is federally regulated, FHA-insured, and requires mandatory independent counseling. Work with an FHA-approved lender and verify NMLS credentials.</p>
-<h2>The Truth About Reverse Mortgages</h2>
+<h2 id="the-truth-about-reverse-mortgages">The Truth About Reverse Mortgages</h2>
 <p>The seniors who benefit most from reverse mortgages are the ones who take the time to understand how they actually work, talk to a trusted advisor who will be honest with them, and make a decision based on real information rather than fear.</p>
 <p>If you have been holding back because of something you heard, I want to have that conversation. You might be surprised by what is actually true.</p>
 <p>Get the Truth About Reverse Mortgages from Rudy Corona</p>
 <p>Free consultation | No pressure | Rudy Corona | NMLS# 999113 | Serving SoCal Seniors</p>
 
 
-<div class="post-tags">
+        <div class="post-tags">
   <span class="post-tag">Seniors</span>
   <span class="post-tag">Mortgage Tips</span>
   <span class="post-tag">Southern California</span>
   <span class="post-tag">Retirement</span>
 </div>
 
-        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--sand-dark);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
-          <a href="https://www.rudycorona.com/blog/" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.88rem;font-weight:700;color:var(--sky);text-decoration:none;" onmouseover="this.style.color='var(--navy)'" onmouseout="this.style.color='var(--sky)'">← Back to all articles</a>
-          <div style="display:flex;gap:0.5rem;">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Freverse-mortgage-myths-debunked%2F" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on Facebook">f</a>
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.rudycorona.com%2Fblog%2Freverse-mortgage-myths-debunked%2F" target="_blank" rel="noopener" class="share-btn" style="background:var(--sky-light);color:var(--navy);border-color:rgba(74,144,217,0.3);" title="Share on LinkedIn">in</a>
+        <div class="post-bottom-cta">
+          <h3>Get the Facts — Not the Fear Talk to Rudy</h3>
+          <p>Separate outdated stories from today’s regulated HECM program in one honest conversation.</p>
+          <div class="post-bottom-cta-btns">
+            <a href="https://www.rudycorona.com/contact" class="post-cta-btn">Book a Free Consultation →</a>
+            <a href="tel:+13105945362" class="post-cta-btn-sec">📞 (310) 594-5362</a>
           </div>
         </div>
+
+</div>
 
 
       </article>
@@ -692,81 +703,55 @@
         <div class="sidebar-widget">
           <div class="sidebar-widget-header">
             <h4>📞 Talk to Rudy — Free</h4>
+             <aside class="post-sidebar">
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header"><h4>📋 In This Article</h4></div>
+          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
+            <ul class="toc-list">
+              <li><a href="#fear-keeps-more-people-from-this-than-anything-else">Fear Keeps More People From This Than Anything Else</a></li>
+              <li><a href="#myth-1-the-bank-takes-your-home-when-you-get-a-reverse-mortgage">Myth #1: The Bank Takes Your Home When You Get a Reverse Mortgage</a></li>
+              <li><a href="#myth-2-your-children-will-inherit-nothing">Myth #2: Your Children Will Inherit Nothing</a></li>
+              <li><a href="#myth-3-you-can-owe-more-than-your-home-is-worth-and-leave-your-family-in-debt">Myth #3: You Can Owe More Than Your Home Is Worth and Leave Your Family in Debt</a></li>
+              <li><a href="#myth-4-reverse-mortgages-are-only-for-people-who-are-desperate">Myth #4: Reverse Mortgages Are Only for People Who Are Desperate</a></li>
+              <li><a href="#myth-5-you-have-to-own-your-home-free-and-clear-to-qualify">Myth #5: You Have to Own Your Home Free and Clear to Qualify</a></li>
+              <li><a href="#myth-6-a-reverse-mortgage-will-hurt-your-social-security-and-medicare">Myth #6: A Reverse Mortgage Will Hurt Your Social Security and Medicare</a></li>
+              <li><a href="#myth-7-reverse-mortgages-are-scams">Myth #7: Reverse Mortgages Are Scams</a></li>
+              <li><a href="#the-truth-about-reverse-mortgages">The Truth About Reverse Mortgages</a></li>
+            </ul>
           </div>
+        </div>
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-header"><h4>📞 Talk to Rudy — Free</h4></div>
           <div class="sidebar-widget-body">
             <p>Find out exactly what you qualify for — purchase price, loan programs, and monthly payment — in a free 20-minute call. No pressure, no obligation.</p>
             <a href="https://www.rudycorona.com/contact" class="sidebar-cta">Book a Free Consultation →</a>
             <a href="tel:+13105945362" class="sidebar-cta-secondary">📞 (310) 594-5362</a>
           </div>
         </div>
-
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📋 In This Article</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:1rem 1.25rem;">
-            <ul class="toc-list">
-              <li><a href="#" onclick="scrollToH2(0);return false;">Fear Keeps More People From This Than Anything Else</a></li>
-              <li><a href="#" onclick="scrollToH2(1);return false;">Myth #1: The Bank Takes Your Home When You Get a Reverse Mortgage</a></li>
-              <li><a href="#" onclick="scrollToH2(2);return false;">Myth #2: Your Children Will Inherit Nothing</a></li>
-              <li><a href="#" onclick="scrollToH2(3);return false;">Myth #3: You Can Owe More Than Your Home Is Worth and Leave Your Family in Debt</a></li>
-              <li><a href="#" onclick="scrollToH2(4);return false;">Myth #4: Reverse Mortgages Are Only for People Who Are Desperate</a></li>
-              <li><a href="#" onclick="scrollToH2(5);return false;">Myth #5: You Have to Own Your Home Free and Clear to Qualify</a></li>
-              <li><a href="#" onclick="scrollToH2(6);return false;">Myth #6: A Reverse Mortgage Will Hurt Your Social Security and Medicare</a></li>
-              <li><a href="#" onclick="scrollToH2(7);return false;">Myth #7: Reverse Mortgages Are Scams</a></li>
-              <li><a href="#" onclick="scrollToH2(8);return false;">The Truth About Reverse Mortgages</a></li>
-            </ul>
+          <div class="sidebar-widget-header"><h4>📊 Quick Reference</h4></div>
+          <div class="sidebar-widget-body" style="padding:0;">
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Typical age floor</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">62+ (FHA HECM)</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Counseling</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Required before application</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Use of funds</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Pay off, cash out, or line of credit</span></div>
+            <div style="padding:0.7rem 1.25rem;border-bottom:1px solid var(--sand-dark);display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Equity</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Heirs keep remaining equity</span></div>
+            <div style="padding:0.7rem 1.25rem;display:flex;justify-content:space-between;"><span style="font-size:0.82rem;color:var(--text-muted);">Planning</span><span style="font-size:0.85rem;font-weight:700;color:var(--navy);">Talk through total cost picture</span></div>
           </div>
         </div>
-
         <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">🧮 Free Calculators</h4>
-          </div>
-          <div class="sidebar-widget-body">
-            <p>Run quick estimates and compare scenarios while you plan your purchase strategy.</p>
-            <a href="https://www.rudycorona.com/calculators" class="sidebar-cta-secondary" style="display:block;text-align:center;padding:0.75rem 1rem;border:1.5px solid var(--navy);border-radius:9px;font-weight:700;font-size:0.875rem;color:var(--navy);text-decoration:none;transition:background 0.15s,color 0.15s;" onmouseover="this.style.background='var(--navy)';this.style.color='#fff'" onmouseout="this.style.background='';this.style.color='var(--navy)'">Open Calculators →</a>
-          </div>
-        </div>
-
-                <div class="sidebar-widget">
-          <div class="sidebar-widget-header" style="background:var(--sand);border-bottom:1px solid var(--sand-dark);">
-            <h4 style="color:var(--navy);">📚 Related Articles</h4>
-          </div>
-          <div class="sidebar-widget-body" style="padding:0.75rem 1.25rem;">
-            <a href="https://www.rudycorona.com/blog/how-reverse-mortgages-work-guide/" class="related-post">
-              <img src="https://www.rudycorona.com/images/Blog-Reverse-mortgage.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">Seniors</div>
-                <div class="related-post-title">How Reverse Mortgages Work</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/what-is-a-reverse-mortgage-how-does-it-work/" class="related-post">
-              <img src="https://www.rudycorona.com/images/what-is-reverse-mortgage-guide-featured.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">Seniors</div>
-                <div class="related-post-title">What Is a Reverse Mortgage?</div>
-              </div>
-            </a>
-            <a href="https://www.rudycorona.com/blog/is-a-reverse-mortgage-a-good-idea/" class="related-post">
-              <img src="https://www.rudycorona.com/images/is-reverse-mortgage-good-idea.png" alt="" class="related-post-img" />
-              <div>
-                <div class="related-post-cat">Seniors</div>
-                <div class="related-post-title">Is a Reverse Mortgage a Good Idea?</div>
-              </div>
-            </a>
+          <div class="sidebar-widget-header"><h4>📖 Related Articles</h4></div>
+          <div class="sidebar-widget-body" style="padding:0.5rem 1.25rem;">
+            <a href="https://www.rudycorona.com/blog/how-reverse-mortgages-work-guide/" class="related-post"><div><div class="related-post-cat">Seniors</div><div class="related-post-title">How Reverse Mortgages Work</div></div></a>
+            <a href="https://www.rudycorona.com/blog/what-is-a-reverse-mortgage-how-does-it-work/" class="related-post"><div><div class="related-post-cat">Seniors</div><div class="related-post-title">What Is a Reverse Mortgage?</div></div></a>
+            <a href="https://www.rudycorona.com/blog/is-a-reverse-mortgage-a-good-idea/" class="related-post"><div><div class="related-post-cat">Seniors</div><div class="related-post-title">Is a Reverse Mortgage a Good Idea?</div></div></a>
           </div>
         </div>
-
-
-      </aside>
-    </div>
-  </div>
-
-  <!-- BOTTOM CTA -->
-  <section class="post-bottom-cta">
-    <div style="max-width:600px;margin:0 auto;">
-      <h2>Get the Facts — Not the Fear<br><em>Talk to Rudy</em></h2>
+        <div style="background:var(--sand);border-radius:12px;padding:1.25rem;border:1px solid var(--sand-dark);font-size:0.75rem;color:var(--text-muted);line-height:1.65;text-align:center;">
+          <strong style="color:var(--navy);">Rudy Corona</strong> · NMLS# 999113<br>
+          Licensed in California<br>
+          For informational purposes only. All loan programs subject to credit and property approval.
+        </div>
+      </aside>Fear<br><em>Talk to Rudy</em></h2>
       <p>Separate outdated stories from today’s regulated HECM program in one honest conversation.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="https://www.rudycorona.com/contact" class="btn-gold">Book a Free Consultation →</a>
@@ -813,15 +798,7 @@
     </div>
   </footer>
 
-  <script>
-  function scrollToH2(index) {
-    const headings = document.querySelectorAll('.post-body h2');
-    if (headings[index]) {
-      const top = headings[index].getBoundingClientRect().top + window.scrollY - 110;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  }
-
+    <script>
   const menuBtn = document.getElementById('menu-btn');
   const siteNav = document.getElementById('site-nav');
   menuBtn?.addEventListener('click', () => {
@@ -832,6 +809,13 @@
     link.addEventListener('click', () => {
       siteNav.classList.remove('nav-mobile-open');
       menuBtn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+  document.querySelectorAll('.toc-list a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
   </script>

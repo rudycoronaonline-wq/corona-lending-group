@@ -43,7 +43,7 @@ import ServiceAreaCityGrid from '../components/ServiceAreaCityGrid.astro';
     .topbar a { color: rgba(255,255,255,0.9); transition: color 0.15s; }
     .topbar a:hover { color: var(--gold); }
     /* ═══ NAV (matches resources main page) ═══ */
-    .site-nav { background: #fff; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(27,58,107,0.12); min-height: 72px; border-bottom: 2px solid var(--sand-dark); }
+    .site-nav { background: #fff; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; position: sticky; top: 0; z-index: 100; overflow: visible; box-shadow: 0 2px 12px rgba(27,58,107,0.12); min-height: 72px; border-bottom: 2px solid var(--sand-dark); }
     .nav-logo { display: flex; align-items: center; flex-shrink: 0; padding: 0; }
     .nav-logo img { display: block; height: 68px; width: auto; }
     .nav-links { display: flex; align-items: center; gap: 0.05rem; list-style: none; }
@@ -269,7 +269,7 @@ import ServiceAreaCityGrid from '../components/ServiceAreaCityGrid.astro';
       .stat-cards { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
     }
-    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
+    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; z-index: 200; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
     .nav-mobile-open .nav-links a { color: rgba(255,255,255,0.92); }
     .nav-mobile-open .nav-links a:hover { color: #fff; background: rgba(255,255,255,0.1); }
     .nav-mobile-open .nav-links .nav-cta { background: var(--gold); color: var(--navy-deep) !important; }
@@ -278,7 +278,7 @@ import ServiceAreaCityGrid from '../components/ServiceAreaCityGrid.astro';
 </head>
 <body>
   <div class="topbar"><span>📞 <a href="tel:+13105945362">(310) 594-5362</a> &nbsp;|&nbsp; ✉️ <a href="mailto:rudycoronalending@gmail.com">rudycoronalending@gmail.com</a></span><span>NMLS# 999113 &nbsp;|&nbsp; Serving Wilmington 90744, 90748 and All South Bay Zip Codes</span></div>
-  <nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation"><a href="https://www.rudycorona.com" class="nav-logo"><img src="/images/logo.png?v=2" alt="Rudy Corona" height="68" style="display:block;height:68px;width:auto;" /></a><ul class="nav-links" id="nav-links"><li><a href="https://www.rudycorona.com">Home</a></li><li><a href="https://www.rudycorona.com/about">About</a></li><li><a href="https://www.rudycorona.com/LoanOptions">Loan Options</a></li><li><a href="https://www.rudycorona.com/calculators/">Calculators</a></li><li><a href="https://www.rudycorona.com/resources/">Resources</a></li><li><a href="https://www.rudycorona.com/blog">Blog</a></li><li><a href="https://www.rudycorona.com/testimonials">Testimonials</a></li><li><a href="https://www.rudycorona.com/faq">FAQ</a></li><li><a href="https://www.rudycorona.com/contact">Contact</a></li><li><a href="https://www.rudycorona.com/contact" class="nav-cta">Book a Call</a></li></ul><button class="menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button></nav>
+  <nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation"><a href="https://www.rudycorona.com" class="nav-logo"><img src="/images/logo.png?v=2" alt="Rudy Corona" height="68" style="display:block;height:68px;width:auto;" /></a><ul class="nav-links" id="nav-links"><li><a href="https://www.rudycorona.com">Home</a></li><li><a href="https://www.rudycorona.com/about">About</a></li><li><a href="https://www.rudycorona.com/LoanOptions">Loan Options</a></li><li><a href="https://www.rudycorona.com/calculators/">Calculators</a></li><li><a href="https://www.rudycorona.com/resources/">Resources</a></li><li><a href="https://www.rudycorona.com/blog">Blog</a></li><li><a href="https://www.rudycorona.com/testimonials">Testimonials</a></li><li><a href="https://www.rudycorona.com/faq">FAQ</a></li><li><a href="https://www.rudycorona.com/contact">Contact</a></li><li><a href="https://www.rudycorona.com/contact" class="nav-cta">Book a Call</a></li></ul><button type="button" class="menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button></nav>
   <section class="hero" style="background:linear-gradient(155deg,rgba(17,36,72,0.93) 0%,rgba(27,58,107,0.84) 55%,rgba(40,70,100,0.45) 100%),url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=80') center/cover no-repeat;" aria-label="Page hero">
     <div class="hero-inner">
       <div class="hero-badge">📍 Wilmington, California — 90744 &amp; 90748</div>

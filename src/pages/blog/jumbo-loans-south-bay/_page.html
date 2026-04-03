@@ -38,7 +38,7 @@
     .topbar { background: var(--navy-deep); color: rgba(255,255,255,0.75); font-size: 0.78rem; padding: 0.45rem 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
     .topbar a { color: rgba(255,255,255,0.9); transition: color 0.15s; }
     .topbar a:hover { color: var(--gold); }
-    .site-nav { background: #fff; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(27,58,107,0.12); min-height: 72px; border-bottom: 2px solid var(--sand-dark); }
+    .site-nav { background: #fff; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; position: sticky; top: 0; z-index: 100; overflow: visible; box-shadow: 0 2px 12px rgba(27,58,107,0.12); min-height: 72px; border-bottom: 2px solid var(--sand-dark); }
     .nav-logo { display: flex; align-items: center; flex-shrink: 0; padding: 0; }
     .nav-logo img { display: block; height: 68px; width: auto; }
     .nav-links { display: flex; align-items: center; gap: 0.05rem; list-style: none; }
@@ -263,7 +263,7 @@
       .stat-cards { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
     }
-    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
+    .nav-mobile-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; z-index: 200; background: var(--navy); padding: 1rem 1.5rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); gap: 0.2rem; align-items: flex-start; }
 
 
     /* ── BLOG POST PAGE ──────────────────────────────── */
@@ -662,7 +662,7 @@
       <li><a href="https://www.rudycorona.com/contact">Contact</a></li>
       <li><a href="https://www.rudycorona.com/contact" class="nav-cta">Book a Call</a></li>
     </ul>
-    <button class="menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false">
+    <button type="button" class="menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>

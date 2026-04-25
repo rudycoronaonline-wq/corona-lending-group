@@ -5,27 +5,32 @@
   "redirects": [
     {
       "source": "/loanoptions",
-      "destination": "/services/",
+      "destination": "/LoanOptions/",
       "permanent": true
     },
     {
       "source": "/loanoptions/",
-      "destination": "/services/",
+      "destination": "/LoanOptions/",
       "permanent": true
     },
     {
-      "source": "/LoanOptions/:path*",
-      "destination": "/services/:path*",
+      "source": "/services/:path*",
+      "destination": "/LoanOptions/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/LoanOptions/",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "destination": "/LoanOptions/",
       "permanent": true
     },
     {
       "source": "/LoanOptions",
-      "destination": "/services/",
-      "permanent": true
-    },
-    {
-      "source": "/LoanOptions/",
-      "destination": "/services/",
+      "destination": "/LoanOptions/",
       "permanent": true
     },
     {

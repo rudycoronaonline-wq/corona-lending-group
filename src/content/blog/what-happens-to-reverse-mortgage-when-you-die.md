@@ -5,7 +5,7 @@ description: One of the most searched reverse mortgage questions. What happens t
 slug: what-happens-to-reverse-mortgage-when-you-die
 date: 2025-03-01
 category: seniors
-image: /images/Blog-Reverse-mortgage.png
+image: /images/reverse-mortgage-after-death-what-heirs-need-to-know-california.png
 toc:
   - { title: "This Is the Question Every Family Needs to Talk About", slug: "this-is-the-question-every-family-needs-to-talk-about" }
   - { title: "Step One: The Loan Becomes Due", slug: "step-one-the-loan-becomes-due" }

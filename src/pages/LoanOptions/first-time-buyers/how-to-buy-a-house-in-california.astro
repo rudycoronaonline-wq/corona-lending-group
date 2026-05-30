@@ -1,0 +1,8 @@
+---
+/**
+ * How to Buy a House in California SEO page: serves _how-to-buy-a-house-in-california.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import howToBuyHouseCaliforniaContentHtml from './_how-to-buy-a-house-in-california.html?raw';
+---
+<Fragment set:html={howToBuyHouseCaliforniaContentHtml} />

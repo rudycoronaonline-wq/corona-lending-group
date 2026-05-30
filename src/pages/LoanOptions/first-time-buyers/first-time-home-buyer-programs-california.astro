@@ -1,0 +1,8 @@
+---
+/**
+ * First-Time Home Buyer Programs California SEO page: serves _first-time-home-buyer-programs-california.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import firstTimeHomeBuyerProgramsContentHtml from './_first-time-home-buyer-programs-california.html?raw';
+---
+<Fragment set:html={firstTimeHomeBuyerProgramsContentHtml} />

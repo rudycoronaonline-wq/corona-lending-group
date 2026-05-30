@@ -1,0 +1,8 @@
+---
+/**
+ * Reverse Mortgage Redondo Beach SEO page: serves _reverse-mortgage-redondo-beach.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import reverseMortgageRedondoBeachHtml from './_reverse-mortgage-redondo-beach.html?raw';
+---
+<Fragment set:html={reverseMortgageRedondoBeachHtml} />

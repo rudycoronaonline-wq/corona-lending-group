@@ -1,0 +1,8 @@
+---
+/**
+ * DSCR Loans California SEO page: serves _dscr-loans-california.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import dscrLoansContentHtml from './_dscr-loans-california.html?raw';
+---
+<Fragment set:html={dscrLoansContentHtml} />

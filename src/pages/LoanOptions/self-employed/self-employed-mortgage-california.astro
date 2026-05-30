@@ -1,0 +1,8 @@
+---
+/**
+ * Self-Employed Mortgage California SEO page: serves _self-employed-mortgage-california.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import selfEmployedMortgageContentHtml from './_self-employed-mortgage-california.html?raw';
+---
+<Fragment set:html={selfEmployedMortgageContentHtml} />

@@ -1,0 +1,8 @@
+---
+/**
+ * Bank Statement Loans California SEO page: serves _bank-statement-loans-california.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import bankStatementContentHtml from './_bank-statement-loans-california.html?raw';
+---
+<Fragment set:html={bankStatementContentHtml} />

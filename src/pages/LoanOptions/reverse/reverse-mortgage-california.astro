@@ -1,0 +1,8 @@
+---
+/**
+ * Reverse Mortgage California SEO page: serves _reverse-mortgage-california.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import reverseMortgageCaliforniaHtml from './_reverse-mortgage-california.html?raw';
+---
+<Fragment set:html={reverseMortgageCaliforniaHtml} />

@@ -1,0 +1,8 @@
+---
+/**
+ * HECM Loan California SEO page: serves _hecm-loan-california.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import hecmContentHtml from './_hecm-loan-california.html?raw';
+---
+<Fragment set:html={hecmContentHtml} />

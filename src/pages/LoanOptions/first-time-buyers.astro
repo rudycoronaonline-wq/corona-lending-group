@@ -1,0 +1,8 @@
+---
+/**
+ * First-Time Homebuyer Programs California page: serves _first-time-buyers.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import firstTimeBuyersContentHtml from './_first-time-buyers.html?raw';
+---
+<Fragment set:html={firstTimeBuyersContentHtml} />

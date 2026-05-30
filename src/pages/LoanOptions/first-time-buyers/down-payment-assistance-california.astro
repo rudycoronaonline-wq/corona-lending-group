@@ -1,0 +1,8 @@
+---
+/**
+ * Down Payment Assistance California SEO page: serves _down-payment-assistance-california.html verbatim (no Astro processing of inner HTML).
+ */
+export const prerender = true;
+import downPaymentAssistanceContentHtml from './_down-payment-assistance-california.html?raw';
+---
+<Fragment set:html={downPaymentAssistanceContentHtml} />
